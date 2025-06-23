@@ -1,5 +1,4 @@
-
-import { Mountain, Phone, Mail } from "lucide-react";
+import { Mountain, Phone, Mail, Facebook, Instagram } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Footer = () => {
@@ -14,9 +13,27 @@ const Footer = () => {
               <Mountain className="h-8 w-8 mr-2 text-blue-400" />
               <span className="text-xl font-bold text-white">{t('hero.title')}</span>
             </div>
-            <p className="text-slate-400 leading-relaxed">
+            <p className="text-slate-400 leading-relaxed mb-4">
               {t('footer.description')}
             </p>
+            <div className="flex space-x-4">
+              <a 
+                href="https://facebook.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-blue-400 transition-colors"
+              >
+                <Facebook className="h-6 w-6" />
+              </a>
+              <a 
+                href="https://instagram.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-blue-400 transition-colors"
+              >
+                <Instagram className="h-6 w-6" />
+              </a>
+            </div>
           </div>
 
           <div>
