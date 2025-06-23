@@ -15,28 +15,28 @@ const translations = {
   en: {
     // Hero
     'hero.title': 'Hemavan Adventure',
-    'hero.subtitle': 'Expert Ski Touring Guides in Swedish Lapland',
+    'hero.subtitle': 'Ski touring and alanche courses in Swedish Lapland',
     'hero.location': 'Hemavan, Sweden',
-    'hero.bookAdventure': 'Book Your Adventure',
-    'hero.learnMore': 'Learn More',
+    'hero.bookAdventure': 'Book your adventure',
+    'hero.learnMore': 'Learn more',
 
     // About
-    'about.title': 'Your Mountain Adventure Specialists',
+    'about.title': 'Your specialists for every mountain adventure',
     'about.description': 'Experience the pristine wilderness of Swedish Lapland with our expert ski touring guides. We offer unforgettable adventures in one of Europe\'s most spectacular mountain regions.',
-    'about.expertGuides': 'Expert Guides',
-    'about.expertGuidesDesc': 'Our certified mountain guides have years of experience in the Hemavan region, ensuring your safety and maximizing your adventure experience.',
-    'about.localKnowledge': 'Local Knowledge',
+    'about.expertGuides': 'Certified guides',
+    'about.expertGuidesDesc': 'Our certified mountain leaders have years of experience in the Hemavan region, ensuring your safety and maximizing your adventure experience.',
+    'about.localKnowledge': 'Local knowledge',
     'about.localKnowledgeDesc': 'Deep local knowledge of the Hemavan area\'s best routes, weather patterns, and hidden gems that only locals know about.',
-    'about.safetyFirst': 'Safety First',
+    'about.safetyFirst': 'Safety first',
     'about.safetyFirstDesc': 'All our tours prioritize safety with proper equipment, avalanche training, and comprehensive risk management protocols.',
-    'about.discoverTitle': 'Discover Hemavan\'s Wilderness',
+    'about.discoverTitle': 'Discover Hemavan\'s wilderness',
     'about.discoverDesc1': 'Located in the heart of Swedish Lapland, Hemavan offers some of Europe\'s most pristine ski touring terrain. From gentle alpine meadows perfect for beginners to challenging peaks for experienced mountaineers, we have adventures for every skill level.',
-    'about.discoverDesc2': 'Our small group sizes ensure personalized attention and an intimate connection with the stunning Arctic landscape that surrounds us.',
+    'about.discoverDesc2': 'Our small group sizes ensure personalized attention and an intimate connection with the stunning arctic landscape that surrounds us.',
     'about.imagePlaceholder': '[Mountain landscape image placeholder]',
     'about.imageCaption': 'Stunning views of Hemavan\'s peaks',
 
     // Services
-    'services.title': 'Our Ski Touring Services',
+    'services.title': 'Our ski touring services',
     'services.description': 'Choose from our range of guided ski touring experiences, tailored to different skill levels and adventure preferences.',
     'services.halfDay': 'Half-Day Tours',
     'services.halfDayDesc': 'Perfect introduction to ski touring with basic technique instruction and scenic routes.',
@@ -60,10 +60,10 @@ const translations = {
     'services.bookToday': 'Book Your Adventure Today',
 
     // Contact
-    'contact.title': 'Ready for Your Adventure?',
+    'contact.title': 'Ready for your adventure?',
     'contact.description': 'Get in touch to book your ski touring experience or ask any questions about our services.',
     'contact.phone': 'Phone',
-    'contact.phoneAvailable': 'Available 8:00 - 18:00 (CET)',
+    /*'contact.phoneAvailable': 'Available 8:00 - 18:00 (CET)',*/
     'contact.email': 'Email',
     'contact.emailResponse': 'We respond within 24 hours',
     'contact.location': 'Location',
