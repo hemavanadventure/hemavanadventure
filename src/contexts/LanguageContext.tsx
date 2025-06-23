@@ -169,8 +169,8 @@ const translations = {
     'footer.services': 'Tjänster',
     'footer.halfDayTours': 'Halvdagsturer',
     'footer.fullDayAdventures': 'Heldagsäventyr',
-    'footer.multiDayExpeditions': 'Off Pist Guidning',
-    'footer.privateGuiding': 'Privat Guidning',
+    'footer.multiDayExpeditions': 'Off-pist guidning',
+    'footer.privateGuiding': 'Privat duidning',
     'footer.copyright': '© 2024 Hemavan Adventure. Alla rättigheter förbehållna.'
   }
 };
