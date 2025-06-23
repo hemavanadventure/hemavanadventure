@@ -1,19 +1,10 @@
-
-import { Clock, Users, Mountain } from "lucide-react";
+import { Users, Mountain } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Services = () => {
   const { t } = useLanguage();
 
   const services = [
-    {
-      title: t('services.halfDay'),
-      description: t('services.halfDayDesc'),
-      duration: t('services.halfDayDuration'),
-      groupSize: t('services.groupSizeSmall'),
-      difficulty: t('services.beginner'),
-      icon: Clock
-    },
     {
       title: t('services.fullDay'),
       description: t('services.fullDayDesc'),
