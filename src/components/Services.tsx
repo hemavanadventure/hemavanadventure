@@ -1,4 +1,5 @@
-import { Users, Mountain } from "lucide-react";
+
+import { Users, Mountain, GraduationCap } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
 
@@ -23,6 +24,15 @@ const Services = () => {
       difficulty: t('services.advanced'),
       icon: Users,
       link: '/off-pist-guiding'
+    },
+    {
+      title: t('services.skiSchool'),
+      description: t('services.skiSchoolDesc'),
+      duration: t('services.skiSchoolDuration'),
+      groupSize: t('services.groupSizeMedium'),
+      difficulty: t('services.beginner'),
+      icon: GraduationCap,
+      link: '/ski-school'
     }
   ];
 

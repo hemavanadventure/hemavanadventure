@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import FullDayAdventures from "./pages/FullDayAdventures";
 import OffPistGuiding from "./pages/OffPistGuiding";
+import SkiSchool from "./pages/SkiSchool";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/full-day-adventures" element={<FullDayAdventures />} />
             <Route path="/off-pist-guiding" element={<OffPistGuiding />} />
+            <Route path="/ski-school" element={<SkiSchool />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -1,3 +1,4 @@
+
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 type Language = 'en' | 'se';
@@ -44,14 +45,18 @@ const translations = {
     'services.fullDayDesc': 'Comprehensive ski touring experience with lunch in the mountains and advanced terrain.',
     'services.multiDay': 'Off Pist Guidning',
     'services.multiDayDesc': 'Expert off-piste guiding in pristine powder and untouched mountain terrain.',
+    'services.skiSchool': 'Ski School',
+    'services.skiSchoolDesc': 'Learn fundamental skiing and touring techniques with our certified instructors in a supportive environment.',
     'services.duration': 'Duration:',
     'services.groupSize': 'Group Size:',
     'services.difficulty': 'Difficulty:',
     'services.halfDayDuration': '4-5 hours',
     'services.fullDayDuration': '7-8 timmar',
     'services.multiDayDuration': '2-5 dagar',
+    'services.skiSchoolDuration': '2-3 hours',
     'services.groupSizeSmall': '2-6 people',
     'services.groupSizeTiny': '2-4 people',
+    'services.groupSizeMedium': '4-8 people',
     'services.beginner': 'Beginner to Intermediate',
     'services.intermediate': 'Intermediate to Advanced',
     'services.advanced': 'Advanced',
@@ -63,7 +68,6 @@ const translations = {
     'contact.title': 'Ready for your adventure?',
     'contact.description': 'Get in touch to book your ski touring experience or ask any questions about our services.',
     'contact.phone': 'Phone',
-    /*'contact.phoneAvailable': 'Available 8:00 - 18:00 (CET)',*/
     'contact.email': 'Email',
     'contact.emailResponse': 'We respond within 24 hours',
     'contact.location': 'Location',
@@ -79,7 +83,6 @@ const translations = {
     'contact.messagePlaceholder': 'Tell us about your ski touring experience and what you\'re looking for...',
     'contact.sendButton': 'Send Message',
 
-    // Footer
     'footer.description': 'Your trusted partner for ski touring adventures in the breathtaking wilderness of Swedish Lapland.',
     'footer.quickContact': 'Quick Contact',
     'footer.services': 'Services',
@@ -122,14 +125,18 @@ const translations = {
     'services.fullDayDesc': 'Omfattande skidturupplevelse med lunch i bergen och avancerad terräng.',
     'services.multiDay': 'Off Pist Guidning',
     'services.multiDayDesc': 'Expert off-pist guidning i opulvrad snö och orörda fjällområden.',
+    'services.skiSchool': 'Skidskola',
+    'services.skiSchoolDesc': 'Lär dig grundläggande skid- och turtekniker med våra certifierade instruktörer i en stödjande miljö.',
     'services.duration': 'Varaktighet:',
     'services.groupSize': 'Gruppstorlek:',
     'services.difficulty': 'Svårighetsgrad:',
     'services.halfDayDuration': '4-5 timmar',
     'services.fullDayDuration': '7-8 timmar',
     'services.multiDayDuration': '2-5 dagar',
+    'services.skiSchoolDuration': '2-3 timmar',
     'services.groupSizeSmall': '2-6 personer',
     'services.groupSizeTiny': '2-4 personer',
+    'services.groupSizeMedium': '4-8 personer',
     'services.beginner': 'Anpassas enligt grupp',
     'services.intermediate': 'Anpassas enligt grupp',
     'services.advanced': 'Anpassas enligt grupp',
@@ -157,7 +164,6 @@ const translations = {
     'contact.messagePlaceholder': 'Berätta om din skidturexperiens och vad du letar efter...',
     'contact.sendButton': 'Skicka Meddelande',
 
-    // Footer
     'footer.description': 'Din pålitliga partner för skidturäventyr i den häpnadsväckande vildmarken i svensk Lappland.',
     'footer.quickContact': 'Snabbkontakt',
     'footer.services': 'Tjänster',
