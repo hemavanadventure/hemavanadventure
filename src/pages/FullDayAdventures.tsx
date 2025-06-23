@@ -1,15 +1,17 @@
-
 import { Mountain, Clock, Users, Award } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
+import Navigation from "@/components/Navigation";
 
 const FullDayAdventures = () => {
   const { t } = useLanguage();
 
   return (
     <div className="min-h-screen bg-slate-50">
+      <Navigation />
+      
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white pt-32">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
