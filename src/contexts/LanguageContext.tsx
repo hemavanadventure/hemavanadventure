@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 type Language = 'en' | 'se';
@@ -18,7 +17,8 @@ const translations = {
     'hero.subtitle': 'Ski touring and alanche courses in Swedish Lapland',
     'hero.location': 'Hemavan, Sweden',
     'hero.bookAdventure': 'Book your adventure',
-    'hero.learnMore': 'Learn more',
+    'hero.aboutUs': 'About us',
+    'hero.services': 'Services',
 
     // About
     'about.title': 'Your specialists for every mountain adventure',
@@ -95,7 +95,8 @@ const translations = {
     'hero.subtitle': 'Certifierade fjälledare för toppturer i svenska Lappland',
     'hero.location': 'Hemavan, Sverige',
     'hero.bookAdventure': 'Boka ditt äventyr',
-    'hero.learnMore': 'Läs mer',
+    'hero.aboutUs': 'Om oss',
+    'hero.services': 'Tjänster',
 
     // About
     'about.title': 'Dina specialister på fjälläventyr',

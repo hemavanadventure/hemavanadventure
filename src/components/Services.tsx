@@ -1,4 +1,3 @@
-
 import { Users, Mountain } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
@@ -28,7 +27,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-20 bg-slate-50">
+    <section id="services" className="py-20 bg-slate-50">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
