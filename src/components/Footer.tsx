@@ -18,7 +18,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://facebook.com" 
+                href="https://www.facebook.com/profile.php?id=61577211217055" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-slate-400 hover:text-blue-400 transition-colors"
@@ -26,7 +26,7 @@ const Footer = () => {
                 <Facebook className="h-6 w-6" />
               </a>
               <a 
-                href="https://instagram.com" 
+                href="https://instagram.com/hemavanadventure" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-slate-400 hover:text-blue-400 transition-colors"
