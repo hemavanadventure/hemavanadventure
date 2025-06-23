@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 type Language = 'en' | 'se';
@@ -129,9 +128,9 @@ const translations = {
     'services.multiDayDuration': '2-5 dagar',
     'services.groupSizeSmall': '2-6 personer',
     'services.groupSizeTiny': '2-4 personer',
-    'services.beginner': 'Nybörjare till Medel',
-    'services.intermediate': 'Medel till Avancerad',
-    'services.advanced': 'Avancerad',
+    'services.beginner': 'Anpassas enligt grupp',
+    'services.intermediate': 'Anpassas enligt grupp',
+    'services.advanced': 'Anpassas enligt grupp',
     'services.learnMore': 'Läs Mer',
     'services.bottomDesc': 'Alla turer inkluderar professionell guidning, säkerhetsutrustning och grundläggande lavinutbildning.',
     'services.bookToday': 'Boka Ditt Äventyr Idag',
