@@ -1,3 +1,4 @@
+
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 type Language = 'en' | 'se';
@@ -41,14 +42,14 @@ const translations = {
     'services.halfDayDesc': 'Perfect introduction to ski touring with basic technique instruction and scenic routes.',
     'services.fullDay': 'Full-Day Adventures',
     'services.fullDayDesc': 'Comprehensive ski touring experience with lunch in the mountains and advanced terrain.',
-    'services.multiDay': 'Multi-Day Expeditions',
-    'services.multiDayDesc': 'Immersive wilderness experience with hut-to-hut touring and backcountry camping.',
+    'services.multiDay': 'Off Pist Guidning',
+    'services.multiDayDesc': 'Expert off-piste guiding in pristine powder and untouched mountain terrain.',
     'services.duration': 'Duration:',
     'services.groupSize': 'Group Size:',
     'services.difficulty': 'Difficulty:',
     'services.halfDayDuration': '4-5 hours',
-    'services.fullDayDuration': '7-8 hours',
-    'services.multiDayDuration': '2-5 days',
+    'services.fullDayDuration': '7-8 timmar',
+    'services.multiDayDuration': '2-5 dagar',
     'services.groupSizeSmall': '2-6 people',
     'services.groupSizeTiny': '2-4 people',
     'services.beginner': 'Beginner to Intermediate',
@@ -84,7 +85,7 @@ const translations = {
     'footer.services': 'Services',
     'footer.halfDayTours': 'Half-Day Tours',
     'footer.fullDayAdventures': 'Full-Day Adventures',
-    'footer.multiDayExpeditions': 'Multi-Day Expeditions',
+    'footer.multiDayExpeditions': 'Off Pist Guidning',
     'footer.privateGuiding': 'Private Guiding',
     'footer.copyright': '© 2024 Hemavan Adventure. All rights reserved.'
   },
@@ -118,8 +119,8 @@ const translations = {
     'services.halfDayDesc': 'Perfekt introduktion till skidturer med grundläggande teknikinstruktion och natursköna rutter.',
     'services.fullDay': 'Heldagsäventyr',
     'services.fullDayDesc': 'Omfattande skidturupplevelse med lunch i bergen och avancerad terräng.',
-    'services.multiDay': 'Flerdagsexpeditioner',
-    'services.multiDayDesc': 'Fördjupande vildmarksupplevelse med stug-till-stug-turer och camping i det vilda.',
+    'services.multiDay': 'Off Pist Guidning',
+    'services.multiDayDesc': 'Expert off-pist guidning i opulvrad snö och orörda fjällområden.',
     'services.duration': 'Varaktighet:',
     'services.groupSize': 'Gruppstorlek:',
     'services.difficulty': 'Svårighetsgrad:',
@@ -152,7 +153,7 @@ const translations = {
     'contact.namePlaceholder': 'Ditt namn',
     'contact.emailPlaceholder': 'din@epost.se',
     'contact.message': 'Meddelande',
-    'contact.messagePlaceholder': 'Berätta om din skidturexperens och vad du letar efter...',
+    'contact.messagePlaceholder': 'Berätta om din skidturexperiens och vad du letar efter...',
     'contact.sendButton': 'Skicka Meddelande',
 
     // Footer
@@ -161,7 +162,7 @@ const translations = {
     'footer.services': 'Tjänster',
     'footer.halfDayTours': 'Halvdagsturer',
     'footer.fullDayAdventures': 'Heldagsäventyr',
-    'footer.multiDayExpeditions': 'Flerdagsexpeditioner',
+    'footer.multiDayExpeditions': 'Off Pist Guidning',
     'footer.privateGuiding': 'Privat Guidning',
     'footer.copyright': '© 2024 Hemavan Adventure. Alla rättigheter förbehållna.'
   }
