@@ -1,9 +1,9 @@
-
 import { GraduationCap, Users, Clock, Award } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Navigation from "@/components/Navigation";
 
 const SkiSchool = () => {
   const { t } = useLanguage();
@@ -34,8 +34,10 @@ const SkiSchool = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+      <Navigation />
+      
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
+      <section className="relative py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 pt-32">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative z-10 container mx-auto px-4 max-w-4xl text-center text-white">
           <div className="flex items-center justify-center mb-6">
