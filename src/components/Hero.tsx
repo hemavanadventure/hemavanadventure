@@ -29,25 +29,27 @@ const Hero = () => {
           <MapPin className="h-5 w-5 mr-2" />
           <span>{t('hero.location')}</span>
         </div>
-        <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-6 max-w-3xl mx-auto">
           <button 
             onClick={() => scrollToSection('contact')}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-12 py-5 rounded-lg font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
             {t('hero.bookAdventure')}
           </button>
-          <button 
-            onClick={() => scrollToSection('about')}
-            className="border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 rounded-lg font-semibold transition-all duration-300"
-          >
-            {t('hero.aboutUs')}
-          </button>
-          <button 
-            onClick={() => scrollToSection('services')}
-            className="border-2 border-white text-white hover:bg-white hover:text-slate-900 px-8 py-4 rounded-lg font-semibold transition-all duration-300"
-          >
-            {t('hero.services')}
-          </button>
+          <div className="flex flex-col md:flex-row gap-4">
+            <button 
+              onClick={() => scrollToSection('about')}
+              className="border-2 border-white text-white hover:bg-white hover:text-slate-900 px-6 py-3 rounded-lg font-semibold transition-all duration-300"
+            >
+              {t('hero.aboutUs')}
+            </button>
+            <button 
+              onClick={() => scrollToSection('services')}
+              className="border-2 border-white text-white hover:bg-white hover:text-slate-900 px-6 py-3 rounded-lg font-semibold transition-all duration-300"
+            >
+              {t('hero.services')}
+            </button>
+          </div>
         </div>
       </div>
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
