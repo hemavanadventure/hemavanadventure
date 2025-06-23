@@ -31,13 +31,13 @@ const FullDayAdventures = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-slate-800 mb-6">
-                A Complete Mountain Experience
+                A complete mountain experience
               </h2>
               <p className="text-lg text-slate-600 mb-6">
-                Our full-day adventures offer the perfect balance of challenge and reward. You'll experience the best of Hemavan's terrain while learning advanced ski touring techniques from our certified guides.
+                Our private guide ski tour adventures offer the perfect balance of challenge and reward. You'll experience the best of Hemavan's terrain while learning advanced ski touring techniques from our certified guides.
               </p>
               <p className="text-lg text-slate-600">
-                Includes mountain lunch, safety equipment, and comprehensive avalanche safety instruction.
+                Includes a certified guide for a full day and avalanche equipment.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
@@ -57,7 +57,7 @@ const FullDayAdventures = () => {
                 </div>
                 <div className="flex items-center">
                   <Mountain className="h-6 w-6 text-blue-600 mr-3" />
-                  <span className="text-slate-700">Advanced Terrain</span>
+                  <span className="text-slate-700">Difficulty according to group</span>
                 </div>
               </div>
             </div>
@@ -69,10 +69,10 @@ const FullDayAdventures = () => {
       <section className="py-16 bg-slate-800 text-white">
         <div className="container mx-auto px-4 max-w-6xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready for Your Adventure?
+            Ready for your adventure?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Contact us today to book your full-day ski touring experience in Swedish Lapland.
+            Contact us today to book your private ski touring guide in Swedish Lapland.
           </p>
           <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
             {t('contact.sendMessage')}
