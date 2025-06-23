@@ -1,3 +1,4 @@
+
 import { Mountain, Phone, Mail, Facebook, Instagram } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -53,10 +54,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">{t('footer.services')}</h4>
             <ul className="space-y-2 text-slate-400">
-              <li>{t('footer.halfDayTours')}</li>
-              <li>{t('footer.fullDayAdventures')}</li>
-              <li>{t('footer.multiDayExpeditions')}</li>
-              <li>{t('footer.privateGuiding')}</li>
+              <li>{t('services.fullDay')}</li>
+              <li>{t('services.multiDay')}</li>
+              <li>{t('services.skiSchool')}</li>
             </ul>
           </div>
         </div>
