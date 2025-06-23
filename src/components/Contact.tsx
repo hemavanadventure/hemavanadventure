@@ -1,16 +1,19 @@
 
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Contact = () => {
+  const { t } = useLanguage();
+
   return (
     <section id="contact" className="py-20 bg-slate-800">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready for Your Adventure?
+            {t('contact.title')}
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
-            Get in touch to book your ski touring experience or ask any questions about our services.
+            {t('contact.description')}
           </p>
         </div>
 
@@ -21,9 +24,9 @@ const Contact = () => {
                 <Phone className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white mb-2">Phone</h3>
+                <h3 className="text-xl font-semibold text-white mb-2">{t('contact.phone')}</h3>
                 <p className="text-slate-300">+46 XXX XXX XXX</p>
-                <p className="text-sm text-slate-400">Available 8:00 - 18:00 (CET)</p>
+                <p className="text-sm text-slate-400">{t('contact.phoneAvailable')}</p>
               </div>
             </div>
 
@@ -32,9 +35,9 @@ const Contact = () => {
                 <Mail className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white mb-2">Email</h3>
+                <h3 className="text-xl font-semibold text-white mb-2">{t('contact.email')}</h3>
                 <p className="text-slate-300">info@hemavanadventure.se</p>
-                <p className="text-sm text-slate-400">We respond within 24 hours</p>
+                <p className="text-sm text-slate-400">{t('contact.emailResponse')}</p>
               </div>
             </div>
 
@@ -43,9 +46,8 @@ const Contact = () => {
                 <MapPin className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white mb-2">Location</h3>
-                <p className="text-slate-300">Hemavan, Västerbotten</p>
-                <p className="text-slate-300">Swedish Lapland</p>
+                <h3 className="text-xl font-semibold text-white mb-2">{t('contact.location')}</h3>
+                <p className="text-slate-300 whitespace-pre-line">{t('contact.locationDetails')}</p>
               </div>
             </div>
 
@@ -54,49 +56,49 @@ const Contact = () => {
                 <Clock className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white mb-2">Season</h3>
-                <p className="text-slate-300">December - May</p>
-                <p className="text-sm text-slate-400">Peak season: February - April</p>
+                <h3 className="text-xl font-semibold text-white mb-2">{t('contact.season')}</h3>
+                <p className="text-slate-300">{t('contact.seasonDates')}</p>
+                <p className="text-sm text-slate-400">{t('contact.peakSeason')}</p>
               </div>
             </div>
           </div>
 
           <div className="bg-slate-700 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-6">Send us a message</h3>
+            <h3 className="text-2xl font-bold text-white mb-6">{t('contact.sendMessage')}</h3>
             <form className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">
-                  Full Name
+                  {t('contact.fullName')}
                 </label>
                 <input
                   type="text"
                   id="name"
                   className="w-full px-4 py-3 bg-slate-600 border border-slate-500 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  placeholder="Your name"
+                  placeholder={t('contact.namePlaceholder')}
                 />
               </div>
 
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-slate-300 mb-2">
-                  Email
+                  {t('contact.email')}
                 </label>
                 <input
                   type="email"
                   id="email"
                   className="w-full px-4 py-3 bg-slate-600 border border-slate-500 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  placeholder="your@email.com"
+                  placeholder={t('contact.emailPlaceholder')}
                 />
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-slate-300 mb-2">
-                  Message
+                  {t('contact.message')}
                 </label>
                 <textarea
                   id="message"
                   rows={4}
                   className="w-full px-4 py-3 bg-slate-600 border border-slate-500 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
-                  placeholder="Tell us about your ski touring experience and what you're looking for..."
+                  placeholder={t('contact.messagePlaceholder')}
                 ></textarea>
               </div>
 
@@ -104,7 +106,7 @@ const Contact = () => {
                 type="submit"
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors duration-300"
               >
-                Send Message
+                {t('contact.sendButton')}
               </button>
             </form>
           </div>

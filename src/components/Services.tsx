@@ -1,30 +1,33 @@
 
 import { Clock, Users, Mountain } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Services = () => {
+  const { t } = useLanguage();
+
   const services = [
     {
-      title: "Half-Day Tours",
-      description: "Perfect introduction to ski touring with basic technique instruction and scenic routes.",
-      duration: "4-5 hours",
-      groupSize: "2-6 people",
-      difficulty: "Beginner to Intermediate",
+      title: t('services.halfDay'),
+      description: t('services.halfDayDesc'),
+      duration: t('services.halfDayDuration'),
+      groupSize: t('services.groupSizeSmall'),
+      difficulty: t('services.beginner'),
       icon: Clock
     },
     {
-      title: "Full-Day Adventures",
-      description: "Comprehensive ski touring experience with lunch in the mountains and advanced terrain.",
-      duration: "7-8 hours",
-      groupSize: "2-6 people", 
-      difficulty: "Intermediate to Advanced",
+      title: t('services.fullDay'),
+      description: t('services.fullDayDesc'),
+      duration: t('services.fullDayDuration'),
+      groupSize: t('services.groupSizeSmall'), 
+      difficulty: t('services.intermediate'),
       icon: Mountain
     },
     {
-      title: "Multi-Day Expeditions",
-      description: "Immersive wilderness experience with hut-to-hut touring and backcountry camping.",
-      duration: "2-5 days",
-      groupSize: "2-4 people",
-      difficulty: "Advanced",
+      title: t('services.multiDay'),
+      description: t('services.multiDayDesc'),
+      duration: t('services.multiDayDuration'),
+      groupSize: t('services.groupSizeTiny'),
+      difficulty: t('services.advanced'),
       icon: Users
     }
   ];
@@ -34,11 +37,10 @@ const Services = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
-            Our Ski Touring Services
+            {t('services.title')}
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Choose from our range of guided ski touring experiences, 
-            tailored to different skill levels and adventure preferences.
+            {t('services.description')}
           </p>
         </div>
 
@@ -54,21 +56,21 @@ const Services = () => {
               
               <div className="space-y-3 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-slate-500">Duration:</span>
+                  <span className="text-slate-500">{t('services.duration')}</span>
                   <span className="font-semibold text-slate-700">{service.duration}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-slate-500">Group Size:</span>
+                  <span className="text-slate-500">{t('services.groupSize')}</span>
                   <span className="font-semibold text-slate-700">{service.groupSize}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-slate-500">Difficulty:</span>
+                  <span className="text-slate-500">{t('services.difficulty')}</span>
                   <span className="font-semibold text-slate-700">{service.difficulty}</span>
                 </div>
               </div>
               
               <button className="w-full mt-6 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors duration-300">
-                Learn More
+                {t('services.learnMore')}
               </button>
             </div>
           ))}
@@ -76,13 +78,13 @@ const Services = () => {
 
         <div className="text-center mt-12">
           <p className="text-slate-600 mb-6">
-            All tours include professional guiding, safety equipment, and basic avalanche safety instruction.
+            {t('services.bottomDesc')}
           </p>
           <a 
             href="#contact" 
             className="inline-block bg-slate-800 hover:bg-slate-900 text-white px-8 py-4 rounded-lg font-semibold transition-colors duration-300"
           >
-            Book Your Adventure Today
+            {t('services.bookToday')}
           </a>
         </div>
       </div>
