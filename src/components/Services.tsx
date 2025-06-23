@@ -1,5 +1,7 @@
+
 import { Users, Mountain } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const { t } = useLanguage();
@@ -11,7 +13,8 @@ const Services = () => {
       duration: t('services.fullDayDuration'),
       groupSize: t('services.groupSizeSmall'), 
       difficulty: t('services.intermediate'),
-      icon: Mountain
+      icon: Mountain,
+      link: '/full-day-adventures'
     },
     {
       title: t('services.multiDay'),
@@ -19,7 +22,8 @@ const Services = () => {
       duration: t('services.multiDayDuration'),
       groupSize: t('services.groupSizeTiny'),
       difficulty: t('services.advanced'),
-      icon: Users
+      icon: Users,
+      link: '/off-pist-guiding'
     }
   ];
 
@@ -60,9 +64,11 @@ const Services = () => {
                 </div>
               </div>
               
-              <button className="w-full mt-6 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors duration-300">
-                {t('services.learnMore')}
-              </button>
+              <Link to={service.link}>
+                <button className="w-full mt-6 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors duration-300">
+                  {t('services.learnMore')}
+                </button>
+              </Link>
             </div>
           ))}
         </div>
