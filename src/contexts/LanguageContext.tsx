@@ -25,7 +25,7 @@ const translations = {
     'about.title': 'Your specialists for every mountain adventure',
     'about.description': 'Experience the pristine wilderness of Swedish Lapland with our expert ski touring guides. We offer unforgettable adventures in one of Europe\'s most spectacular mountain regions.',
     'about.expertGuides': 'Certified guides',
-    'about.expertGuidesDesc': 'Our certified mountain leaders have years of experience in the Hemavan region, ensuring your safety and maximizing your adventure experience.',
+    'about.expertGuidesDesc': 'Our certified mountain leaders have years of experience in the Hemavan region, ensuring your safety and maximizing your adventure.',
     'about.localKnowledge': 'Local knowledge',
     'about.localKnowledgeDesc': 'Deep local knowledge of the Hemavan area\'s best routes, weather patterns, and hidden gems that only locals know about.',
     'about.safetyFirst': 'Safety first',
