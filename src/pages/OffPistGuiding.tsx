@@ -36,10 +36,10 @@ const OffPistGuiding = () => {
                 Expert Off-Piste Guidance
               </h2>
               <p className="text-lg text-slate-600 mb-6">
-                Perfekt för den som vill ta nytta av liftsystement men ändå åka grym offpist i orörd snö.
+                Experience the ultimate freedom of off-piste skiing with our expert guides. We'll take you to untouched powder fields and pristine mountain terrain that few ever see.
               </p>
               <p className="text-lg text-slate-600">
-                Passar för alla nivåer. Vi skräddarsyr dagen enligt gruppens önskemål.
+                Perfect for advanced skiers looking for that next-level adventure in Swedish Lapland's backcountry.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
@@ -47,7 +47,7 @@ const OffPistGuiding = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Clock className="h-6 w-6 text-slate-600 mr-3" />
-                  <span className="text-slate-700">{t('services.multiDayDuration')}</span>
+                  <span className="text-slate-700">{t('services.fullDayDuration')}</span>
                 </div>
                 <div className="flex items-center">
                   <Users className="h-6 w-6 text-slate-600 mr-3" />
