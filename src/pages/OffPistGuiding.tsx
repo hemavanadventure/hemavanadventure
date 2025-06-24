@@ -36,10 +36,10 @@ const OffPistGuiding = () => {
                 Expert Off-Piste Guidance
               </h2>
               <p className="text-lg text-slate-600 mb-6">
-                Experience the ultimate freedom of off-piste skiing with our expert guides. We'll take you to untouched powder fields and pristine mountain terrain that few ever see.
+                Perfekt för den som vill ta nytta av liftsystement men ändå åka grym offpist i orörd snö.
               </p>
               <p className="text-lg text-slate-600">
-                Perfect for advanced skiers looking for that next-level adventure in Swedish Lapland's backcountry.
+                Passar för alla nivåer. Vi skräddarsyr dagen enligt gruppens önskemål.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
