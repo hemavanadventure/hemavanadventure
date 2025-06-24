@@ -33,13 +33,13 @@ const FullDayAdventures = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-slate-800 mb-6">
-                A complete mountain experience
+                En fullständig fjällupplevelse
               </h2>
               <p className="text-lg text-slate-600 mb-6">
-                Our private guide ski tour adventures offer the perfect balance of challenge and reward. You'll experience the best of Hemavan's terrain while learning advanced ski touring techniques from our certified guides.
+                Våra privata guideturer erbjuder en perfekt balans av utmaning och nöje. Du får uppleva Hemavans bästa terräng och snö samtidigt som vår professionella guide lär dig tips och tricks.
               </p>
               <p className="text-lg text-slate-600">
-                Includes a certified guide for a full day and avalanche equipment.
+                Inkluderar en certifierad guide för en heldag och lavinkitt.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
@@ -59,7 +59,7 @@ const FullDayAdventures = () => {
                 </div>
                 <div className="flex items-center">
                   <Mountain className="h-6 w-6 text-blue-600 mr-3" />
-                  <span className="text-slate-700">Difficulty according to group</span>
+                  <span className="text-slate-700">Utmaning enligt gruppen</span>
                 </div>
               </div>
             </div>
