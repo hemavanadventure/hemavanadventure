@@ -74,7 +74,7 @@ const OffPistGuiding = () => {
             Redo för skidåkning?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Join us for an unforgettable off-piste adventure in the heart of Swedish Lapland.
+            Häng med på grym skidåkning i hjärtat av svenska Lappland!
           </p>
           <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
             {t('contact.sendMessage')}
