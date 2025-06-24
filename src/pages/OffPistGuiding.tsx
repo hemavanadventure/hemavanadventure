@@ -33,13 +33,13 @@ const OffPistGuiding = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-slate-800 mb-6">
-                Liftburen Off-Piste Guidning
+                Placeholder.
               </h2>
               <p className="text-lg text-slate-600 mb-6">
-                Vi använder oss av Hemavans liftsystem för att komma åt bergets bästa åkning och våra egna smultronställen.
+               Placeholder.
               </p>
               <p className="text-lg text-slate-600">
-                Perfekt för den som vill åka utanför preparerade backar, men fortfarande utnyttja de bekvämligheter som liftburen skidåkning innefattar.
+                Placeholder.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
