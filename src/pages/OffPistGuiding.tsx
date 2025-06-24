@@ -33,13 +33,13 @@ const OffPistGuiding = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-slate-800 mb-6">
-                Expert Off-Piste Guidance
+                Liftburen Off-Piste Guidning
               </h2>
               <p className="text-lg text-slate-600 mb-6">
-                Experience the ultimate freedom of off-piste skiing with our expert guides. We'll take you to untouched powder fields and pristine mountain terrain that few ever see.
+                Vi använder oss av Hemavans liftsystem för att komma åt bergets bästa åkning och våra egna smultronställen.
               </p>
               <p className="text-lg text-slate-600">
-                Perfect for advanced skiers looking for that next-level adventure in Swedish Lapland's backcountry.
+                Perfekt för den som vill åka utanför preparerade backar, men fortfarande utnyttja de bekvämligheter som liftburen skidåkning innefattar.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
@@ -47,7 +47,7 @@ const OffPistGuiding = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Clock className="h-6 w-6 text-slate-600 mr-3" />
-                  <span className="text-slate-700">{t('services.fullDayDuration')}</span>
+                  <span className="text-slate-700">{t('services.multiDayDuration')}</span>
                 </div>
                 <div className="flex items-center">
                   <Users className="h-6 w-6 text-slate-600 mr-3" />
