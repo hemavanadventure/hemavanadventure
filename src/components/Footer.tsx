@@ -42,7 +42,7 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center text-slate-400">
                 <Phone className="h-4 w-4 mr-2" />
-                <span>+46 XXX XXX XXX</span>
+                <span>+46737001920</span>
               </div>
               <div className="flex items-center text-slate-400">
                 <Mail className="h-4 w-4 mr-2" />
@@ -59,7 +59,8 @@ const Footer = () => {
               <li>{t('services.skiSchool')}</li>
             </ul>
           </div>
-        </div>
+       </div>
+      
 
         <div className="border-t border-slate-700 pt-8 text-center">
           <p className="text-slate-400">
