@@ -43,7 +43,7 @@ const OffPistGuiding = () => {
               </p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-slate-800 mb-6">Tour Details</h3>
+              <h3 className="text-2xl font-bold text-slate-800 mb-6">Turdetaljer</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Clock className="h-6 w-6 text-slate-600 mr-3" />
@@ -59,7 +59,7 @@ const OffPistGuiding = () => {
                 </div>
                 <div className="flex items-center">
                   <Mountain className="h-6 w-6 text-slate-600 mr-3" />
-                  <span className="text-slate-700">Pristine Backcountry</span>
+                  <span className="text-slate-700">Orörd snö</span>
                 </div>
               </div>
             </div>
