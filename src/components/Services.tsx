@@ -1,4 +1,3 @@
-
 import { Users, Mountain, GraduationCap, Compass } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
@@ -13,7 +12,6 @@ const Services = () => {
       duration: 'Heldag',
       groupSize: '1-6 personer', 
       price: '6000sek',
-      difficulty: t('services.intermediate'),
       icon: Mountain,
       link: '/full-day-adventures'
     },
@@ -23,7 +21,6 @@ const Services = () => {
       duration: 'Heldag',
       groupSize: '1-6 personer',
       price: '6000sek',
-      difficulty: t('services.intermediate'),
       icon: Users,
       link: '/off-pist-guiding'
     },
@@ -33,7 +30,6 @@ const Services = () => {
       duration: '3 timmar',
       groupSize: '1-6 personer',
       price: '4000sek',
-      difficulty: t('services.beginner'),
       icon: GraduationCap,
       link: '/ski-school'
     },
@@ -42,8 +38,7 @@ const Services = () => {
       description: 'Topptur till Helgelandskusten',
       duration: 'Heldag',
       groupSize: '1-6 personer',
-      price: '',
-      difficulty: t('services.advanced'),
+      price: 'Kontakta oss',
       icon: Compass,
       link: '/topptur-helgeland'
     }
@@ -81,8 +76,8 @@ const Services = () => {
                   <span className="font-semibold text-slate-700">{service.groupSize}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-slate-500">{t('services.difficulty')}</span>
-                  <span className="font-semibold text-slate-700">{service.difficulty}</span>
+                  <span className="text-slate-500">{t('services.price')}</span>
+                  <span className="font-semibold text-slate-700">{service.price}</span>
                 </div>
               </div>
               
