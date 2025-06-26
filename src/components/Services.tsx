@@ -11,7 +11,7 @@ const Services = () => {
       description: 'En heldagstur med privat guide.',
       duration: 'Heldag',
       groupSize: '1-6 personer', 
-      pris: '6000sek',
+      price: '6000sek',
       icon: Mountain,
       link: '/full-day-adventures'
     },
@@ -20,7 +20,7 @@ const Services = () => {
       description: 'Liftburen offpist-åkning',
       duration: 'Heldag',
       groupSize: '1-6 personer',
-      pris: '6000sek',
+      price: '6000sek',
       icon: Users,
       link: '/off-pist-guiding'
     },
@@ -29,7 +29,7 @@ const Services = () => {
       description: t('services.skiSchoolDesc'),
       duration: '3 timmar',
       groupSize: '1-6 personer',
-      pris: '4000sek',
+      price: '4000sek',
       icon: GraduationCap,
       link: '/ski-school'
     },
@@ -38,7 +38,7 @@ const Services = () => {
       description: 'Topptur till Helgelandskusten',
       duration: 'Heldag',
       groupSize: '1-6 personer',
-      pris: '',
+      price: '',
       icon: Compass,
       link: '/topptur-helgeland'
     }
