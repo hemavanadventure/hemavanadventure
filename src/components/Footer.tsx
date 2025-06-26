@@ -51,17 +51,6 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
-            <h4 className="text-lg font-semibold text-white mb-4">{t('footer.services')}</h4>
-            <ul className="space-y-2 text-slate-400">
-              <li>{t('services.fullDay')}</li>
-              <li>{t('services.multiDay')}</li>
-              <li>{t('services.skiSchool')}</li>
-            </ul>
-          </div>
-       </div>
-      
-
         <div className="border-t border-slate-700 pt-8 text-center">
           <p className="text-slate-400">
             {t('footer.copyright')}
