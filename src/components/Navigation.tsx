@@ -1,5 +1,5 @@
 
-import { Mountain, Menu, X } from "lucide-react";
+import { Mountain, Menu } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -57,36 +57,42 @@ const Navigation = () => {
           </div>
 
           {/* Mobile Hamburger Menu */}
-          <div className="md:hidden">
+          <div className="block md:hidden">
             <Drawer open={isMenuOpen} onOpenChange={setIsMenuOpen}>
               <DrawerTrigger asChild>
-                <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
+                <Button 
+                  variant="ghost" 
+                  size="icon" 
+                  className="p-2 text-slate-600 hover:text-blue-600 hover:bg-slate-100"
+                >
                   <Menu className="h-6 w-6" />
                 </Button>
               </DrawerTrigger>
-              <DrawerContent>
+              <DrawerContent className="max-h-[80vh]">
                 <DrawerHeader>
-                  <DrawerTitle className="text-center">{t('hero.title')}</DrawerTitle>
+                  <DrawerTitle className="text-center text-xl font-bold">
+                    {t('hero.title')}
+                  </DrawerTitle>
                 </DrawerHeader>
-                <div className="px-4 pb-8">
+                <div className="px-6 pb-8">
                   <div className="flex flex-col space-y-4">
                     <Button
                       variant="ghost"
                       onClick={() => scrollToSection('about')}
-                      className="justify-start text-slate-600 hover:text-blue-600 font-medium h-12"
+                      className="justify-start text-left text-slate-600 hover:text-blue-600 font-medium h-12 text-lg"
                     >
                       {t('hero.aboutUs')}
                     </Button>
                     <Button
                       variant="ghost"
                       onClick={() => scrollToSection('services')}
-                      className="justify-start text-slate-600 hover:text-blue-600 font-medium h-12"
+                      className="justify-start text-left text-slate-600 hover:text-blue-600 font-medium h-12 text-lg"
                     >
                       {t('hero.services')}
                     </Button>
                     <Button
                       onClick={() => scrollToSection('contact')}
-                      className="bg-blue-600 hover:bg-blue-700 text-white font-semibold h-12 mt-4"
+                      className="bg-blue-600 hover:bg-blue-700 text-white font-semibold h-12 mt-4 text-lg"
                     >
                       {t('hero.bookAdventure')}
                     </Button>
