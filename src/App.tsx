@@ -22,9 +22,9 @@ const App = () => (
         <BrowserRouter basename="/hemavanadventure">
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/privatguide-topptur" element={<FullDayAdventures />} />
+            <Route path="/full-day-adventures" element={<FullDayAdventures />} />
             <Route path="/off-pist-guidning" element={<OffPistGuiding />} />
-            <Route path="/skidskola" element={<SkiSchool />} />
+            <Route path="/ski-school" element={<SkiSchool />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
