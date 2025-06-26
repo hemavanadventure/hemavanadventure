@@ -91,7 +91,7 @@ const translations = {
     'footer.fullDayAdventures': 'Full-Day Adventures',
     'footer.multiDayExpeditions': 'Off Pist Guidning',
     'footer.privateGuiding': 'Private Guiding',
-    'footer.copyright': '© 2024 Hemavan Adventure. All rights reserved.'
+    'footer.copyright': '© 2025 Hemavan Adventure. All rights reserved.'
   },
   se: {
     // Hero
