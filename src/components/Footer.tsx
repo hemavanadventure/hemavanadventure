@@ -50,6 +50,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
+        </div>
 
         <div className="border-t border-slate-700 pt-8 text-center">
           <p className="text-slate-400">
