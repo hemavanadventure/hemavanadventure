@@ -3,6 +3,14 @@ import { Mountain, Menu, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import {
+  Drawer,
+  DrawerContent,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
 
 const Navigation = () => {
   const { t } = useLanguage();
@@ -48,40 +56,46 @@ const Navigation = () => {
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-slate-600 hover:text-blue-600"
-          >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
-        </div>
-
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-slate-200">
-            <div className="flex flex-col space-y-4">
-              <button
-                onClick={() => scrollToSection('about')}
-                className="text-left text-slate-600 hover:text-blue-600 font-medium transition-colors"
-              >
-                {t('hero.aboutUs')}
-              </button>
-              <button
-                onClick={() => scrollToSection('services')}
-                className="text-left text-slate-600 hover:text-blue-600 font-medium transition-colors"
-              >
-                {t('hero.services')}
-              </button>
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="text-left bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors w-fit"
-              >
-                {t('hero.bookAdventure')}
-              </button>
-            </div>
+          {/* Mobile Hamburger Menu */}
+          <div className="md:hidden">
+            <Drawer open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+              <DrawerTrigger asChild>
+                <Button variant="ghost" size="icon" className="text-slate-600 hover:text-blue-600">
+                  <Menu className="h-6 w-6" />
+                </Button>
+              </DrawerTrigger>
+              <DrawerContent>
+                <DrawerHeader>
+                  <DrawerTitle className="text-center">{t('hero.title')}</DrawerTitle>
+                </DrawerHeader>
+                <div className="px-4 pb-8">
+                  <div className="flex flex-col space-y-4">
+                    <Button
+                      variant="ghost"
+                      onClick={() => scrollToSection('about')}
+                      className="justify-start text-slate-600 hover:text-blue-600 font-medium h-12"
+                    >
+                      {t('hero.aboutUs')}
+                    </Button>
+                    <Button
+                      variant="ghost"
+                      onClick={() => scrollToSection('services')}
+                      className="justify-start text-slate-600 hover:text-blue-600 font-medium h-12"
+                    >
+                      {t('hero.services')}
+                    </Button>
+                    <Button
+                      onClick={() => scrollToSection('contact')}
+                      className="bg-blue-600 hover:bg-blue-700 text-white font-semibold h-12 mt-4"
+                    >
+                      {t('hero.bookAdventure')}
+                    </Button>
+                  </div>
+                </div>
+              </DrawerContent>
+            </Drawer>
           </div>
-        )}
+        </div>
       </div>
     </nav>
   );
