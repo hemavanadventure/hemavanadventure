@@ -71,7 +71,7 @@ const FullDayAdventures = () => {
       <section className="py-16 bg-slate-800 text-white">
         <div className="container mx-auto px-4 max-w-6xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready for your adventure?
+            Redo för ett äventyr?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Contact us today to book your private ski touring guide in Swedish Lapland.
