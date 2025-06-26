@@ -7,29 +7,29 @@ const Services = () => {
 
   const services = [
     {
-      title: t('services.fullDay'),
-      description: t('services.fullDayDesc'),
+      title: 'Topptur med privatguide',
+      description: 'En heldagstur med privat guide.',
       duration: 'Heldag',
-      groupSize: t('services.groupSizeSmall'), 
-      difficulty: t('services.intermediate'),
+      groupSize: '1-6 personer', 
+      difficulty: '6000sek',
       icon: Mountain,
       link: '/full-day-adventures'
     },
     {
-      title: t('services.multiDay'),
-      description: t('services.multiDayDesc'),
-      duration: t('services.multiDayDuration'),
-      groupSize: t('services.groupSizeTiny'),
-      difficulty: t('services.advanced'),
+      title: 'Offpist med privatguide',
+      description: 'Liftburen offpist-åkning',
+      duration: 'Heldag',
+      groupSize: '1-6 personer',
+      difficulty: '6000sek',
       icon: Users,
       link: '/off-pist-guiding'
     },
     {
       title: t('services.skiSchool'),
       description: t('services.skiSchoolDesc'),
-      duration: t('services.skiSchoolDuration'),
-      groupSize: t('services.groupSizeMedium'),
-      difficulty: t('services.beginner'),
+      duration: '3 timmar',
+      groupSize: '1-6 personer',
+      difficulty: '4000sek',
       icon: GraduationCap,
       link: '/ski-school'
     },
@@ -37,8 +37,8 @@ const Services = () => {
       title: 'Topptur i Helgeland',
       description: 'Upptäck Helgelands spektakulära toppturer med expertguide',
       duration: 'Heldag',
-      groupSize: 'Max 4 personer',
-      difficulty: 'Medel - Avancerad',
+      groupSize: '1-6 personer',
+      difficulty: 'Fråga efter offert',
       icon: Compass,
       link: '/topptur-helgeland'
     }
