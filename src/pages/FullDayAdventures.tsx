@@ -74,7 +74,7 @@ const FullDayAdventures = () => {
             Redo för ett äventyr?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Contact us today to book your private ski touring guide in Swedish Lapland.
+            Kontakta oss så bokar vi en guide åt er!
           </p>
           <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
             {t('contact.sendMessage')}
