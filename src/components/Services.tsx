@@ -1,5 +1,4 @@
-
-import { Users, Mountain, GraduationCap } from "lucide-react";
+import { Users, Mountain, GraduationCap, Compass } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
 
@@ -33,6 +32,15 @@ const Services = () => {
       difficulty: t('services.beginner'),
       icon: GraduationCap,
       link: '/ski-school'
+    },
+    {
+      title: 'Topptur i Helgeland',
+      description: 'Upptäck Helgelands spektakulära toppturer med expertguide',
+      duration: 'Heldag',
+      groupSize: 'Max 4 personer',
+      difficulty: 'Medel - Avancerad',
+      icon: Compass,
+      link: '/topptur-helgeland'
     }
   ];
 
@@ -48,7 +56,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
