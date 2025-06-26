@@ -9,7 +9,7 @@ const Services = () => {
     {
       title: t('services.fullDay'),
       description: t('services.fullDayDesc'),
-      duration: t('services.fullDayDuration'),
+      duration: 'Heldag',
       groupSize: t('services.groupSizeSmall'), 
       difficulty: t('services.intermediate'),
       icon: Mountain,
