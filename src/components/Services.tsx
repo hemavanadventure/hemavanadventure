@@ -1,3 +1,4 @@
+
 import { Users, Mountain, GraduationCap, Compass } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
@@ -12,6 +13,7 @@ const Services = () => {
       duration: 'Heldag',
       groupSize: '1-6 personer', 
       price: '6000sek',
+      difficulty: t('services.intermediate'),
       icon: Mountain,
       link: '/full-day-adventures'
     },
@@ -21,6 +23,7 @@ const Services = () => {
       duration: 'Heldag',
       groupSize: '1-6 personer',
       price: '6000sek',
+      difficulty: t('services.intermediate'),
       icon: Users,
       link: '/off-pist-guiding'
     },
@@ -30,6 +33,7 @@ const Services = () => {
       duration: '3 timmar',
       groupSize: '1-6 personer',
       price: '4000sek',
+      difficulty: t('services.beginner'),
       icon: GraduationCap,
       link: '/ski-school'
     },
@@ -39,6 +43,7 @@ const Services = () => {
       duration: 'Heldag',
       groupSize: '1-6 personer',
       price: '',
+      difficulty: t('services.advanced'),
       icon: Compass,
       link: '/topptur-helgeland'
     }
