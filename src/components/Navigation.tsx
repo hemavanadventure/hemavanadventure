@@ -25,7 +25,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-sm border-b border-slate-200">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -33,7 +33,7 @@ const Navigation = () => {
             <img 
               src="/hemavanadventure/lovable-uploads/3d276c1b-70b8-4d02-9e51-afc3db0426f7.png" 
               alt="Hemavan Adventure Logo" 
-              className="h-12 w-auto"
+              className="h-14 w-auto"
             />
           </Link>
 
