@@ -1,14 +1,12 @@
-
 import { Mountain, Clock, Users, Award } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
-
 const FullDayAdventures = () => {
-  const { t } = useLanguage();
-
-  return (
-    <div className="min-h-screen bg-slate-50">
+  const {
+    t
+  } = useLanguage();
+  return <div className="min-h-screen bg-slate-50">
       <Navigation />
       
       {/* Hero Section */}
@@ -36,9 +34,7 @@ const FullDayAdventures = () => {
               <h2 className="text-4xl font-bold text-slate-800 mb-6">
                 En fullständig fjällupplevelse
               </h2>
-              <p className="text-lg text-slate-600 mb-6">
-                Våra privata guideturer erbjuder en perfekt balans av utmaning och nöje. Du får uppleva Hemavans bästa terräng och snö samtidigt som vår erfarna guide lär dig tips och tricks.
-              </p>
+              <p className="text-lg text-slate-600 mb-6">Våra privata guideturer erbjuder en perfekt balans av utmaning och nöje. Du får uppleva Hemavans bästa terräng och snö samtidigt som vår erfarna guide lär dig </p>
               <p className="text-lg text-slate-600">
                 Inkluderar en certifierad guide för en heldag och lavinkitt.
               </p>
@@ -82,8 +78,6 @@ const FullDayAdventures = () => {
           </Button>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default FullDayAdventures;
