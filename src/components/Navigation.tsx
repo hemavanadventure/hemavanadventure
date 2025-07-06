@@ -31,7 +31,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img 
-              src="/lovable-uploads/3d276c1b-70b8-4d02-9e51-afc3db0426f7.png" 
+              src="/hemavanadventure/lovable-uploads/3d276c1b-70b8-4d02-9e51-afc3db0426f7.png" 
               alt="Hemavan Adventure Logo" 
               className="h-10 w-auto"
             />
@@ -98,7 +98,7 @@ const Navigation = () => {
                 <DrawerHeader>
                   <DrawerTitle className="text-center text-xl font-bold">
                     <img 
-                      src="/lovable-uploads/3d276c1b-70b8-4d02-9e51-afc3db0426f7.png" 
+                      src="/hemavanadventure/lovable-uploads/3d276c1b-70b8-4d02-9e51-afc3db0426f7.png" 
                       alt="Hemavan Adventure Logo" 
                       className="h-8 w-auto mx-auto"
                     />
