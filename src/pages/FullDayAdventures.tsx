@@ -54,7 +54,7 @@ const FullDayAdventures = () => {
                 </div>
                 <div className="flex items-center">
                   <Mountain className="h-6 w-6 text-blue-600 mr-3" />
-                  <span className="text-slate-700">Utmaning enligt gruppen</span>
+                  <span className="text-slate-700">Inga förkunskapskraver</span>
                 </div>
               </div>
             </div>
