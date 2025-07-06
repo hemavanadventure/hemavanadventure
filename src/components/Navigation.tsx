@@ -37,7 +37,29 @@ const Navigation = () => {
             />
           </Link>
 
-          {/* Language Toggle - Always visible */}
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center space-x-8">
+            <button
+              onClick={() => scrollToSection('about')}
+              className="text-slate-600 hover:text-blue-600 font-medium transition-colors"
+            >
+              {t('hero.aboutUs')}
+            </button>
+            <button
+              onClick={() => scrollToSection('services')}
+              className="text-slate-600 hover:text-blue-600 font-medium transition-colors"
+            >
+              {t('hero.services')}
+            </button>
+            <button
+              onClick={() => scrollToSection('contact')}
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors"
+            >
+              {t('hero.bookAdventure')}
+            </button>
+          </div>
+
+          {/* Language Toggle and Hamburger Menu */}
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-2">
               <Globe className="h-4 w-4 text-slate-600" />
@@ -63,7 +85,7 @@ const Navigation = () => {
               </button>
             </div>
 
-            {/* Hamburger Menu - Now for all screen sizes */}
+            {/* Hamburger Menu - Available on all screen sizes */}
             <Drawer open={isMenuOpen} onOpenChange={setIsMenuOpen}>
               <DrawerTrigger asChild>
                 <Button 
