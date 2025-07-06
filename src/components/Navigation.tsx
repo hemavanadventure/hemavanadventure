@@ -1,5 +1,5 @@
 
-import { Mountain, Menu } from "lucide-react";
+import { Mountain, Menu, Globe } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/drawer";
 
 const Navigation = () => {
-  const { t } = useLanguage();
+  const { t, language, setLanguage } = useLanguage();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
@@ -48,6 +48,29 @@ const Navigation = () => {
             >
               {t('hero.services')}
             </button>
+            <div className="flex items-center space-x-2">
+              <Globe className="h-4 w-4 text-slate-600" />
+              <button
+                onClick={() => setLanguage('en')}
+                className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
+                  language === 'en'
+                    ? 'bg-blue-600 text-white'
+                    : 'text-slate-600 hover:bg-slate-100'
+                }`}
+              >
+                EN
+              </button>
+              <button
+                onClick={() => setLanguage('se')}
+                className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
+                  language === 'se'
+                    ? 'bg-blue-600 text-white'
+                    : 'text-slate-600 hover:bg-slate-100'
+                }`}
+              >
+                SE
+              </button>
+            </div>
             <button
               onClick={() => scrollToSection('contact')}
               className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors"
@@ -90,6 +113,29 @@ const Navigation = () => {
                     >
                       {t('hero.services')}
                     </Button>
+                    <div className="flex items-center justify-center space-x-2 py-2">
+                      <Globe className="h-4 w-4 text-slate-600" />
+                      <button
+                        onClick={() => setLanguage('en')}
+                        className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
+                          language === 'en'
+                            ? 'bg-blue-600 text-white'
+                            : 'text-slate-600 hover:bg-slate-100'
+                        }`}
+                      >
+                        EN
+                      </button>
+                      <button
+                        onClick={() => setLanguage('se')}
+                        className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
+                          language === 'se'
+                            ? 'bg-blue-600 text-white'
+                            : 'text-slate-600 hover:bg-slate-100'
+                        }`}
+                      >
+                        SE
+                      </button>
+                    </div>
                     <Button
                       onClick={() => scrollToSection('contact')}
                       className="bg-blue-600 hover:bg-blue-700 text-white font-semibold h-12 mt-4 text-lg"
