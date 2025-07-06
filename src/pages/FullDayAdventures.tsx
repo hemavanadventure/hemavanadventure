@@ -34,7 +34,7 @@ const FullDayAdventures = () => {
               <h2 className="text-4xl font-bold text-slate-800 mb-6">
                 En fullständig fjällupplevelse
               </h2>
-              <p className="text-lg text-slate-600 mb-6">Våra privata guideturer erbjuder en perfekt balans av utmaning och nöje. Du får uppleva Hemavans bästa terräng och snö samtidigt som vår erfarna guide utvecklar dina kunskaper inom top</p>
+              <p className="text-lg text-slate-600 mb-6">Våra privata guideturer erbjuder en perfekt balans av utmaning och nöje. Du får uppleva Hemavans bästa terräng och snö samtidigt som vår erfarna guide utvecklar dina kunskaper inom topptur och friåkning.</p>
               <p className="text-lg text-slate-600">Bokningenkluderar en certifierad guide för en heldag och lavinkitt.</p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
