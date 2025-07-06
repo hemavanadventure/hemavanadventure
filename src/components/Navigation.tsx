@@ -51,16 +51,6 @@ const Navigation = () => {
             <div className="flex items-center space-x-2">
               <Globe className="h-4 w-4 text-slate-600" />
               <button
-                onClick={() => setLanguage('en')}
-                className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
-                  language === 'en'
-                    ? 'bg-blue-600 text-white'
-                    : 'text-slate-600 hover:bg-slate-100'
-                }`}
-              >
-                EN
-              </button>
-              <button
                 onClick={() => setLanguage('se')}
                 className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
                   language === 'se'
@@ -69,6 +59,16 @@ const Navigation = () => {
                 }`}
               >
                 SE
+              </button>
+              <button
+                onClick={() => setLanguage('en')}
+                className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
+                  language === 'en'
+                    ? 'bg-blue-600 text-white'
+                    : 'text-slate-600 hover:bg-slate-100'
+                }`}
+              >
+                EN
               </button>
             </div>
             <button
@@ -116,16 +116,6 @@ const Navigation = () => {
                     <div className="flex items-center justify-center space-x-2 py-2">
                       <Globe className="h-4 w-4 text-slate-600" />
                       <button
-                        onClick={() => setLanguage('en')}
-                        className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
-                          language === 'en'
-                            ? 'bg-blue-600 text-white'
-                            : 'text-slate-600 hover:bg-slate-100'
-                        }`}
-                      >
-                        EN
-                      </button>
-                      <button
                         onClick={() => setLanguage('se')}
                         className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
                           language === 'se'
@@ -134,6 +124,16 @@ const Navigation = () => {
                         }`}
                       >
                         SE
+                      </button>
+                      <button
+                        onClick={() => setLanguage('en')}
+                        className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
+                          language === 'en'
+                            ? 'bg-blue-600 text-white'
+                            : 'text-slate-600 hover:bg-slate-100'
+                        }`}
+                      >
+                        EN
                       </button>
                     </div>
                     <Button
