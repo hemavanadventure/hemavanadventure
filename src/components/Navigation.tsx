@@ -48,6 +48,12 @@ const Navigation = () => {
             >
               {t('hero.services')}
             </button>
+            <button
+              onClick={() => scrollToSection('contact')}
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors"
+            >
+              {t('hero.bookAdventure')}
+            </button>
             <div className="flex items-center space-x-2">
               <Globe className="h-4 w-4 text-slate-600" />
               <button
@@ -71,12 +77,6 @@ const Navigation = () => {
                 EN
               </button>
             </div>
-            <button
-              onClick={() => scrollToSection('contact')}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors"
-            >
-              {t('hero.bookAdventure')}
-            </button>
           </div>
 
           {/* Mobile Hamburger Menu */}
@@ -113,6 +113,12 @@ const Navigation = () => {
                     >
                       {t('hero.services')}
                     </Button>
+                    <Button
+                      onClick={() => scrollToSection('contact')}
+                      className="bg-blue-600 hover:bg-blue-700 text-white font-semibold h-12 mt-4 text-lg"
+                    >
+                      {t('hero.bookAdventure')}
+                    </Button>
                     <div className="flex items-center justify-center space-x-2 py-2">
                       <Globe className="h-4 w-4 text-slate-600" />
                       <button
@@ -136,12 +142,6 @@ const Navigation = () => {
                         EN
                       </button>
                     </div>
-                    <Button
-                      onClick={() => scrollToSection('contact')}
-                      className="bg-blue-600 hover:bg-blue-700 text-white font-semibold h-12 mt-4 text-lg"
-                    >
-                      {t('hero.bookAdventure')}
-                    </Button>
                   </div>
                 </div>
               </DrawerContent>
