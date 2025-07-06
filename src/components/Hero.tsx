@@ -20,7 +20,7 @@ const Hero = () => {
           <img 
             src="/hemavanadventure/lovable-uploads/3d276c1b-70b8-4d02-9e51-afc3db0426f7.png" 
             alt="Hemavan Adventure Logo" 
-            className="h-20 md:h-20 w-auto mb-4"
+            className="h-32 md:h-40 w-auto mb-4"
           />
         </div>
         <p className="text-xl md:text-2xl mb-8 text-blue-100 font-light">
