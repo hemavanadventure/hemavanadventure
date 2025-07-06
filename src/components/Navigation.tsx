@@ -1,5 +1,6 @@
 
-import { Menu, Globe, ChevronRight } from "lucide-react";
+
+import { Menu, Globe, ChevronDown } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -105,15 +106,20 @@ const Navigation = () => {
                 </DropdownMenuItem>
                 
                 <DropdownMenuSub>
-                  <DropdownMenuSubTrigger className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50">
-                    {t('hero.services')}
-                    <ChevronRight className="ml-auto h-4 w-4" />
+                  <DropdownMenuSubTrigger className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 flex items-center justify-between">
+                    <span>{t('hero.services')}</span>
+                    <ChevronDown className="h-4 w-4" />
                   </DropdownMenuSubTrigger>
-                  <DropdownMenuSubContent className="bg-white border shadow-lg">
+                  <DropdownMenuSubContent 
+                    className="bg-white border shadow-lg ml-0 mt-1" 
+                    side="bottom"
+                    align="start"
+                    sideOffset={0}
+                  >
                     <DropdownMenuItem asChild>
                       <Link 
                         to="/full-day-adventures" 
-                        className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full"
+                        className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block px-2 py-1.5"
                       >
                         Topptur med privatguide
                       </Link>
@@ -121,7 +127,7 @@ const Navigation = () => {
                     <DropdownMenuItem asChild>
                       <Link 
                         to="/off-pist-guiding" 
-                        className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full"
+                        className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block px-2 py-1.5"
                       >
                         Offpist med privatguide
                       </Link>
@@ -129,7 +135,7 @@ const Navigation = () => {
                     <DropdownMenuItem asChild>
                       <Link 
                         to="/ski-school" 
-                        className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full"
+                        className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block px-2 py-1.5"
                       >
                         {t('services.skiSchool')}
                       </Link>
@@ -137,7 +143,7 @@ const Navigation = () => {
                     <DropdownMenuItem asChild>
                       <Link 
                         to="/topptur-helgeland" 
-                        className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full"
+                        className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block px-2 py-1.5"
                       >
                         Topptur i Helgeland
                       </Link>
@@ -161,3 +167,4 @@ const Navigation = () => {
 };
 
 export default Navigation;
+
