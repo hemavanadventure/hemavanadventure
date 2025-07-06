@@ -89,22 +89,22 @@ const Navigation = () => {
                 <Button 
                   variant="ghost" 
                   size="icon" 
-                  className="p-2 text-slate-600 hover:text-blue-600 hover:bg-slate-100"
+                  className="p-3 text-slate-600 hover:text-blue-600 hover:bg-slate-100"
                 >
-                  <Menu className="h-6 w-6" />
+                  <Menu className="h-7 w-7" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-56 bg-white border shadow-lg">
+              <DropdownMenuContent align="end" className="w-72 md:w-64 bg-white border shadow-lg">
                 <DropdownMenuItem 
                   onClick={() => scrollToSection('about')}
-                  className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50"
+                  className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 py-3 px-4 text-base"
                 >
                   {t('hero.aboutUs')}
                 </DropdownMenuItem>
                 
                 <DropdownMenuItem 
                   onClick={() => scrollToSection('services')}
-                  className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50"
+                  className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 py-3 px-4 text-base font-medium"
                 >
                   {t('hero.services')}
                 </DropdownMenuItem>
@@ -114,7 +114,7 @@ const Navigation = () => {
                 <DropdownMenuItem asChild>
                   <Link 
                     to="/full-day-adventures" 
-                    className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block px-2 py-1.5"
+                    className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block py-3 px-4 text-base"
                   >
                     Topptur med privatguide
                   </Link>
@@ -122,7 +122,7 @@ const Navigation = () => {
                 <DropdownMenuItem asChild>
                   <Link 
                     to="/off-pist-guiding" 
-                    className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block px-2 py-1.5"
+                    className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block py-3 px-4 text-base"
                   >
                     Offpist med privatguide
                   </Link>
@@ -130,7 +130,7 @@ const Navigation = () => {
                 <DropdownMenuItem asChild>
                   <Link 
                     to="/ski-school" 
-                    className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block px-2 py-1.5"
+                    className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block py-3 px-4 text-base"
                   >
                     {t('services.skiSchool')}
                   </Link>
@@ -138,7 +138,7 @@ const Navigation = () => {
                 <DropdownMenuItem asChild>
                   <Link 
                     to="/topptur-helgeland" 
-                    className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block px-2 py-1.5"
+                    className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block py-3 px-4 text-base"
                   >
                     Topptur i Helgeland
                   </Link>
@@ -148,7 +148,7 @@ const Navigation = () => {
 
                 <DropdownMenuItem 
                   onClick={() => scrollToSection('contact')}
-                  className="cursor-pointer text-blue-600 hover:text-blue-700 hover:bg-blue-50 font-semibold"
+                  className="cursor-pointer text-blue-600 hover:text-blue-700 hover:bg-blue-50 font-semibold py-3 px-4 text-base"
                 >
                   {t('hero.bookAdventure')}
                 </DropdownMenuItem>
