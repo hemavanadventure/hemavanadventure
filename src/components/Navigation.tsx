@@ -5,23 +5,20 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
-  Drawer,
-  DrawerContent,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Navigation = () => {
   const { t, language, setLanguage } = useLanguage();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-    setIsMenuOpen(false);
   };
 
   return (
@@ -85,9 +82,9 @@ const Navigation = () => {
               </button>
             </div>
 
-            {/* Hamburger Menu - Available on all screen sizes */}
-            <Drawer open={isMenuOpen} onOpenChange={setIsMenuOpen}>
-              <DrawerTrigger asChild>
+            {/* Dropdown Menu - Available on all screen sizes */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
                 <Button 
                   variant="ghost" 
                   size="icon" 
@@ -95,43 +92,28 @@ const Navigation = () => {
                 >
                   <Menu className="h-6 w-6" />
                 </Button>
-              </DrawerTrigger>
-              <DrawerContent className="max-h-[80vh]">
-                <DrawerHeader>
-                  <DrawerTitle className="text-center text-xl font-bold">
-                    <img 
-                      src="/hemavanadventure/lovable-uploads/3d276c1b-70b8-4d02-9e51-afc3db0426f7.png" 
-                      alt="Hemavan Adventure Logo" 
-                      className="h-8 w-auto mx-auto"
-                    />
-                  </DrawerTitle>
-                </DrawerHeader>
-                <div className="px-6 pb-8">
-                  <div className="flex flex-col space-y-4">
-                    <Button
-                      variant="ghost"
-                      onClick={() => scrollToSection('about')}
-                      className="justify-start text-left text-slate-600 hover:text-blue-600 font-medium h-12 text-lg"
-                    >
-                      {t('hero.aboutUs')}
-                    </Button>
-                    <Button
-                      variant="ghost"
-                      onClick={() => scrollToSection('services')}
-                      className="justify-start text-left text-slate-600 hover:text-blue-600 font-medium h-12 text-lg"
-                    >
-                      {t('hero.services')}
-                    </Button>
-                    <Button
-                      onClick={() => scrollToSection('contact')}
-                      className="bg-blue-600 hover:bg-blue-700 text-white font-semibold h-12 mt-4 text-lg"
-                    >
-                      {t('hero.bookAdventure')}
-                    </Button>
-                  </div>
-                </div>
-              </DrawerContent>
-            </Drawer>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-48 bg-white border shadow-lg">
+                <DropdownMenuItem 
+                  onClick={() => scrollToSection('about')}
+                  className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50"
+                >
+                  {t('hero.aboutUs')}
+                </DropdownMenuItem>
+                <DropdownMenuItem 
+                  onClick={() => scrollToSection('services')}
+                  className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50"
+                >
+                  {t('hero.services')}
+                </DropdownMenuItem>
+                <DropdownMenuItem 
+                  onClick={() => scrollToSection('contact')}
+                  className="cursor-pointer text-blue-600 hover:text-blue-700 hover:bg-blue-50 font-semibold"
+                >
+                  {t('hero.bookAdventure')}
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
       </div>
