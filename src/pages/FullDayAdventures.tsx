@@ -34,9 +34,14 @@ const FullDayAdventures = () => {
               <h2 className="text-4xl font-bold text-slate-800 mb-6">
                 En fullständig fjällupplevelse
               </h2>
-              <p className="text-lg text-slate-600 mb-6">Våra fjällguider tar med er på en oförglömlig topptur. Vi färdas uppför fjället  med stighudar under skidorna och belönas sedan med ett underbart åk utför. 
-Guiden bestämmer vart turen går för dagen utgående från väder-, vind- och snöförhållanden, men naturligtvis tas gruppens önskemål också i beaktan   
-Våra privata guideturer erbjuder en perfekt balans av utmaning och nöje. Du får uppleva Hemavans bästa terräng och snö samtidigt som vår erfarna guide utvecklar dina kunskaper inom topptur och friåkning. Vi rekommenderar att ni bokar flera dagar i f</p>
+              <p className="text-lg text-slate-600 mb-6">Våra fjällguider tar med er på en oförglömlig topptur. Vi färdas uppför fjället  med stighudar under skidorna och belönas sedan med ett underbart åk utför.   Guiden bestämmer vart turen går för dagen utgående från väder-, vind- och snöförhållanden, men naturligtvis tas gruppens önskemål också i beaktan.     
+Toppturer kan anpassas utifrån deltagarnas skidvana och ingen tidigare erfarenhet av toppturs-åkning krävs. Våra guider introducerar er gärna i grunderna. Men alla behöver behärska åkning i röd pist i varierande förhållanden.
+
+
+
+
+Våra privata guideturer erbjuder en perfekt balans av utmaning och nöje. Du får uppleva Hemavans bästa terräng och snö samtidigt som vår erfarna guide utvecklar dina kunskaper inom topptur och friåkning. Vi rekommenderar att ni bokar flera dagar i f
+            </p>
               <p className="text-lg text-slate-600">Bokningenkluderar en certifierad guide för en heldag och lavinkitt.</p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
