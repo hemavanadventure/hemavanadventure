@@ -1,5 +1,4 @@
 
-
 import { Menu, Globe, ChevronDown } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useState } from "react";
@@ -110,12 +109,7 @@ const Navigation = () => {
                     <span>{t('hero.services')}</span>
                     <ChevronDown className="h-4 w-4" />
                   </DropdownMenuSubTrigger>
-                  <DropdownMenuSubContent 
-                    className="bg-white border shadow-lg ml-0 mt-1" 
-                    side="bottom"
-                    align="start"
-                    sideOffset={0}
-                  >
+                  <DropdownMenuSubContent className="bg-white border shadow-lg">
                     <DropdownMenuItem asChild>
                       <Link 
                         to="/full-day-adventures" 
@@ -167,4 +161,3 @@ const Navigation = () => {
 };
 
 export default Navigation;
-
