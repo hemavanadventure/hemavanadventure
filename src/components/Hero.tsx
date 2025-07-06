@@ -1,5 +1,5 @@
 
-import { Mountain, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Hero = () => {
@@ -17,10 +17,11 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/20"></div>
       <div className="relative z-10 text-center text-white px-4 max-w-4xl">
         <div className="flex items-center justify-center mb-6">
-          <Mountain className="h-12 w-12 mr-3 text-blue-300" />
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-            {t('hero.title')}
-          </h1>
+          <img 
+            src="/lovable-uploads/3d276c1b-70b8-4d02-9e51-afc3db0426f7.png" 
+            alt="Hemavan Adventure Logo" 
+            className="h-16 md:h-20 w-auto mb-4"
+          />
         </div>
         <p className="text-xl md:text-2xl mb-8 text-blue-100 font-light">
           {t('hero.subtitle')}

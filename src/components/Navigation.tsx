@@ -1,5 +1,5 @@
 
-import { Mountain, Menu, Globe } from "lucide-react";
+import { Menu, Globe } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -30,8 +30,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <Mountain className="h-8 w-8 text-blue-600" />
-            <span className="text-xl font-bold text-slate-800">{t('hero.title')}</span>
+            <img 
+              src="/lovable-uploads/3d276c1b-70b8-4d02-9e51-afc3db0426f7.png" 
+              alt="Hemavan Adventure Logo" 
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -94,7 +97,11 @@ const Navigation = () => {
               <DrawerContent className="max-h-[80vh]">
                 <DrawerHeader>
                   <DrawerTitle className="text-center text-xl font-bold">
-                    {t('hero.title')}
+                    <img 
+                      src="/lovable-uploads/3d276c1b-70b8-4d02-9e51-afc3db0426f7.png" 
+                      alt="Hemavan Adventure Logo" 
+                      className="h-8 w-auto mx-auto"
+                    />
                   </DrawerTitle>
                 </DrawerHeader>
                 <div className="px-6 pb-8">
