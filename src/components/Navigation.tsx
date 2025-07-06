@@ -37,26 +37,8 @@ const Navigation = () => {
             />
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <button
-              onClick={() => scrollToSection('about')}
-              className="text-slate-600 hover:text-blue-600 font-medium transition-colors"
-            >
-              {t('hero.aboutUs')}
-            </button>
-            <button
-              onClick={() => scrollToSection('services')}
-              className="text-slate-600 hover:text-blue-600 font-medium transition-colors"
-            >
-              {t('hero.services')}
-            </button>
-            <button
-              onClick={() => scrollToSection('contact')}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors"
-            >
-              {t('hero.bookAdventure')}
-            </button>
+          {/* Language Toggle - Always visible */}
+          <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-2">
               <Globe className="h-4 w-4 text-slate-600" />
               <button
@@ -80,10 +62,8 @@ const Navigation = () => {
                 EN
               </button>
             </div>
-          </div>
 
-          {/* Mobile Hamburger Menu */}
-          <div className="block md:hidden">
+            {/* Hamburger Menu - Now for all screen sizes */}
             <Drawer open={isMenuOpen} onOpenChange={setIsMenuOpen}>
               <DrawerTrigger asChild>
                 <Button 
@@ -126,29 +106,6 @@ const Navigation = () => {
                     >
                       {t('hero.bookAdventure')}
                     </Button>
-                    <div className="flex items-center justify-center space-x-2 py-2">
-                      <Globe className="h-4 w-4 text-slate-600" />
-                      <button
-                        onClick={() => setLanguage('se')}
-                        className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
-                          language === 'se'
-                            ? 'bg-blue-600 text-white'
-                            : 'text-slate-600 hover:bg-slate-100'
-                        }`}
-                      >
-                        SE
-                      </button>
-                      <button
-                        onClick={() => setLanguage('en')}
-                        className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
-                          language === 'en'
-                            ? 'bg-blue-600 text-white'
-                            : 'text-slate-600 hover:bg-slate-100'
-                        }`}
-                      >
-                        EN
-                      </button>
-                    </div>
                   </div>
                 </div>
               </DrawerContent>
