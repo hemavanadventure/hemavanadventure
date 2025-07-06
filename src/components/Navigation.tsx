@@ -33,7 +33,7 @@ const Navigation = () => {
             <img 
               src="/hemavanadventure/lovable-uploads/3d276c1b-70b8-4d02-9e51-afc3db0426f7.png" 
               alt="Hemavan Adventure Logo" 
-              className="h-10 w-auto"
+              className="h-12 w-auto"
             />
           </Link>
 
