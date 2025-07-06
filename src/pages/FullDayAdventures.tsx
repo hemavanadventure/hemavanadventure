@@ -1,3 +1,4 @@
+
 import { Mountain, Clock, Users, Award } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
@@ -36,7 +37,7 @@ const FullDayAdventures = () => {
                 En fullständig fjällupplevelse
               </h2>
               <p className="text-lg text-slate-600 mb-6">
-                Våra privata guideturer erbjuder en perfekt balans av utmaning och nöje. Du får uppleva Hemavans bästa terräng och snö samtidigt som vår professionella guide lär dig tips och tricks.
+                Våra privata guideturer erbjuder en perfekt balans av utmaning och nöje. Du får uppleva Hemavans bästa terräng och snö samtidigt som vår erfarna guide lär dig tips och tricks.
               </p>
               <p className="text-lg text-slate-600">
                 Inkluderar en certifierad guide för en heldag och lavinkitt.
