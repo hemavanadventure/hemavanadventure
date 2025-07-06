@@ -1,5 +1,5 @@
 
-import { Menu, Globe } from "lucide-react";
+import { Menu, Globe, ChevronRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -8,6 +8,9 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
@@ -100,12 +103,48 @@ const Navigation = () => {
                 >
                   {t('hero.aboutUs')}
                 </DropdownMenuItem>
-                <DropdownMenuItem 
-                  onClick={() => scrollToSection('services')}
-                  className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50"
-                >
-                  {t('hero.services')}
-                </DropdownMenuItem>
+                
+                <DropdownMenuSub>
+                  <DropdownMenuSubTrigger className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50">
+                    {t('hero.services')}
+                    <ChevronRight className="ml-auto h-4 w-4" />
+                  </DropdownMenuSubTrigger>
+                  <DropdownMenuSubContent className="bg-white border shadow-lg">
+                    <DropdownMenuItem asChild>
+                      <Link 
+                        to="/full-day-adventures" 
+                        className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full"
+                      >
+                        Topptur med privatguide
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link 
+                        to="/off-pist-guiding" 
+                        className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full"
+                      >
+                        Offpist med privatguide
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link 
+                        to="/ski-school" 
+                        className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full"
+                      >
+                        {t('services.skiSchool')}
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild>
+                      <Link 
+                        to="/topptur-helgeland" 
+                        className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full"
+                      >
+                        Topptur i Helgeland
+                      </Link>
+                    </DropdownMenuItem>
+                  </DropdownMenuSubContent>
+                </DropdownMenuSub>
+
                 <DropdownMenuItem 
                   onClick={() => scrollToSection('contact')}
                   className="cursor-pointer text-blue-600 hover:text-blue-700 hover:bg-blue-50 font-semibold"
