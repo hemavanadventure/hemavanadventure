@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, ReactNode } from 'react';
 
 type Language = 'en' | 'se';
@@ -163,7 +162,7 @@ const translations = {
     'contact.namePlaceholder': 'Ditt namn',
     'contact.emailPlaceholder': 'din@epost.se',
     'contact.message': 'Meddelande',
-    'contact.messagePlaceholder': 'Berätta om din skidturexperiens och vad du letar efter...',
+    'contact.messagePlaceholder': 'Vad kan vi hjälpa dig med?',
     'contact.sendButton': 'Skicka Meddelande',
 
     'footer.description': 'Din pålitliga partner för äventyr i Hemavan.',
