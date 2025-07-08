@@ -1,12 +1,14 @@
+
 import { Mountain, Clock, Users, Award } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
+
 const FullDayAdventures = () => {
-  const {
-    t
-  } = useLanguage();
-  return <div className="min-h-screen bg-slate-50">
+  const { t } = useLanguage();
+  
+  return (
+    <div className="min-h-screen bg-slate-50">
       <Navigation />
       
       {/* Hero Section */}
@@ -34,10 +36,12 @@ const FullDayAdventures = () => {
               <h2 className="text-4xl font-bold text-slate-800 mb-6">
                 En fullständig fjällupplevelse
               </h2>
-              <p className="text-lg text-slate-600 mb-6 text-left">Våra fjällguider tar med er på en oförglömlig topptur. Vi färdas uppför fjället  med stighudar under skidorna och belönas sedan med ett underbart åk utför.<br> 
-Guiden bestämmer vart turen går för dagen utgående från väder-, vind- och snöförhållanden, men naturligtvis tas gruppens önskemål också i beaktan.<br>
-Toppturer kan anpassas utifrån deltagarnas skidvana och ingen tidigare erfarenhet av toppturs-åkning krävs. Våra guider introducerar er gärna i grunderna. Men alla behöver behärska åkning i röd pist i varierande förhållanden. <br>
-  Ni behöver ha egen skidutrustning för toppturer (finns att hyra vid skiduthyrningen vid Centrumliften eller Solkatten). Vi rekommenderar att ni bokar flera dagar i följd för bästa möjliga upplevelse</p>
+              <p className="text-lg text-slate-600 mb-6 text-left">
+                Våra fjällguider tar med er på en oförglömlig topptur. Vi färdas uppför fjället med stighudar under skidorna och belönas sedan med ett underbart åk utför.<br /> 
+                Guiden bestämmer vart turen går för dagen utgående från väder-, vind- och snöförhållanden, men naturligtvis tas gruppens önskemål också i beaktan.<br />
+                Toppturer kan anpassas utifrån deltagarnas skidvana och ingen tidigare erfarenhet av toppturs-åkning krävs. Våra guider introducerar er gärna i grunderna. Men alla behöver behärska åkning i röd pist i varierande förhållanden. <br />
+                Ni behöver ha egen skidutrustning för toppturer (finns att hyra vid skiduthyrningen vid Centrumliften eller Solkatten). Vi rekommenderar att ni bokar flera dagar i följd för bästa möjliga upplevelse
+              </p>
               <p className="text-lg text-slate-600">Bokningen inkluderar en certifierad guide för en heldag och lavinkitt.</p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
@@ -79,6 +83,8 @@ Toppturer kan anpassas utifrån deltagarnas skidvana och ingen tidigare erfarenh
           </Button>
         </div>
       </section>
-    </div>;
+    </div>
+  );
 };
+
 export default FullDayAdventures;
