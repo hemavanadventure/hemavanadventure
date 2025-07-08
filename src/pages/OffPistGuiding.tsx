@@ -65,7 +65,7 @@ Tack!`);
               <div className="space-y-4">
                 <div>
                   <span className="text-slate-600 font-semibold">Tid</span>
-                  <span className="text-slate-700"> - {t('services.fullDayDuration')}</span>
+                  <span className="text-slate-700"> - Heldag</span>
                 </div>
                 <div>
                   <span className="text-slate-600 font-semibold">Gruppstorlek</span>
@@ -76,8 +76,8 @@ Tack!`);
                   <span className="text-slate-700"> - {t('services.advanced')}</span>
                 </div>
                 <div>
-                  <span className="text-slate-600 font-semibold">Snö</span>
-                  <span className="text-slate-700"> - Orörd snö</span>
+                  <span className="text-slate-600 font-semibold">Pris</span>
+                  <span className="text-slate-700"> - 6000 sek</span>
                 </div>
               </div>
             </div>
