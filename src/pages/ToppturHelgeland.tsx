@@ -1,14 +1,12 @@
-
 import { Mountain, Clock, Users, Award, MapPin } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
-
 const ToppturHelgeland = () => {
-  const { t } = useLanguage();
-
-  return (
-    <div className="min-h-screen bg-slate-50">
+  const {
+    t
+  } = useLanguage();
+  return <div className="min-h-screen bg-slate-50">
       <Navigation />
       
       {/* Hero Section */}
@@ -18,9 +16,7 @@ const ToppturHelgeland = () => {
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Topptur i Helgeland
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Upplev Helgelands spektakulära toppturer med vår expertguide
-            </p>
+            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Upplev Helgelands spektakulära toppturer </p>
             <Button size="lg" className="bg-white text-green-700 hover:bg-gray-100">
               Boka din topptur
             </Button>
@@ -51,15 +47,15 @@ const ToppturHelgeland = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Clock className="h-6 w-6 text-green-600 mr-3" />
-                  <span className="text-slate-700">Heldag (6-8 timmar)</span>
+                  <span className="text-slate-700">Heldag</span>
                 </div>
                 <div className="flex items-center">
                   <Users className="h-6 w-6 text-green-600 mr-3" />
-                  <span className="text-slate-700">Max 4 personer</span>
+                  <span className="text-slate-700">1-6 personer</span>
                 </div>
                 <div className="flex items-center">
                   <Award className="h-6 w-6 text-green-600 mr-3" />
-                  <span className="text-slate-700">Medel - Avancerad nivå</span>
+                  <span className="text-slate-700">Anpassas enligt grupp</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="h-6 w-6 text-green-600 mr-3" />
@@ -126,8 +122,6 @@ const ToppturHelgeland = () => {
           </Button>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default ToppturHelgeland;
