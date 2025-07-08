@@ -59,7 +59,7 @@ const FullDayAdventures = () => {
                   <span className="text-slate-700">{t('services.intermediate')}</span>
                 </div>
                 <div className="flex items-center">
-                  <span className="h-6 w-6 text-blue-600 mr-3 font-semibold">Gruppstorlek</span>
+                  <span className="h-6 w-6 text-blue-600 mr-3 font-semibold">Pris</span>
                   <span className="text-slate-700">Inga förkunskapskraver</span>
                 </div>
               </div>
