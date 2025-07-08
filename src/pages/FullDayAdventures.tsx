@@ -41,7 +41,7 @@ const FullDayAdventures = () => {
                 Toppturer kan anpassas utifrån deltagarnas skidvana och ingen tidigare erfarenhet av toppturs-åkning krävs. Våra guider introducerar er gärna i grunderna. Men alla behöver behärska åkning i röd pist i varierande förhållanden. <br />
                 Ni behöver ha egen skidutrustning för toppturer (finns att hyra vid skiduthyrningen vid Centrumliften eller Solkatten). Vi rekommenderar att ni bokar flera dagar i följd för bästa möjliga upplevelse.
               </p>
-              <p className="text-lg text-slate-600">Bokningen inkluderar en certifierad guide för en heldag och lavinkitt.</p>
+              <p className="text-lg text-slate-600">Bokningen inkluderar en certifierad guide för en heldag och lavinkitt. Eventuellt liftkort tillkommer</p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-slate-800 mb-6">Turdetaljer</h3>
