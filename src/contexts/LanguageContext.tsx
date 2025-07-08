@@ -118,7 +118,7 @@ const translations = {
 
     // Services
     'services.title': 'Våra guidetjänster',
-    'services.description': 'Välj från vårt utbud av guidade skidåkningsupplevelser, skräddarsydda för olika färdighetsnivåer och äventyrspreferenser.',
+    'services.description': 'Välj från vårt utbud av guidade upplevelser, skräddarsydda för olika färdighetsnivåer och äventyrspreferenser.',
     'services.halfDay': 'Halvdagsturer',
     'services.halfDayDesc': 'Perfekt introduktion till skidturer med grundläggande teknikinstruktion och natursköna rutter.',
     'services.fullDay': 'Topptur med privatguide',
