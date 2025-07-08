@@ -36,7 +36,7 @@ const FullDayAdventures = () => {
                 En fullständig fjällupplevelse
               </h2>
               <p className="text-lg text-slate-600 mb-6 text-left">
-                Våra fjällguider tar med er på en oförglömlig topptur. Vi färdas uppför fjället med stighudar under skidorna och belönas sedan med ett underbart åk utför.<br /> 
+                Våra fjällguider tar med er på en oförglömlig topptur. Vi färdas uppför fjället med stighudar under skidorna och belönas sedan med ett eller flera underbara åk utför.<br /> 
                 Guiden bestämmer vart turen går för dagen utgående från väder-, vind- och snöförhållanden, men naturligtvis tas gruppens önskemål också i beaktan.<br />
                 Toppturer kan anpassas utifrån deltagarnas skidvana och ingen tidigare erfarenhet av toppturs-åkning krävs. Våra guider introducerar er gärna i grunderna. Men alla behöver behärska åkning i röd pist i varierande förhållanden. <br />
                 Ni behöver ha egen skidutrustning för toppturer (finns att hyra vid skiduthyrningen vid Centrumliften eller Solkatten). Vi rekommenderar att ni bokar flera dagar i följd för bästa möjliga upplevelse.
