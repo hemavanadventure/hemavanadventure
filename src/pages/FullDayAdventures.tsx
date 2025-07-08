@@ -44,7 +44,7 @@ const FullDayAdventures = () => {
               <p className="text-lg text-slate-600">Bokningen inkluderar en certifierad guide för en heldag och lavinkitt.</p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-slate-800 mb-6">Tour Details</h3>
+              <h3 className="text-2xl font-bold text-slate-800 mb-6">Turdetaljer</h3>
               <div className="space-y-4">
                 <div>
                   <span className="text-blue-600 font-semibold">Tid</span>
