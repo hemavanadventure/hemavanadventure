@@ -1,5 +1,6 @@
 
-import { Mountain, Users, Award } from "lucide-react";
+
+import { Users, Award } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
@@ -60,7 +61,7 @@ const FullDayAdventures = () => {
                   <span className="text-slate-700">{t('services.intermediate')}</span>
                 </div>
                 <div className="flex items-center">
-                  <Mountain className="h-6 w-6 text-blue-600 mr-3" />
+                  <span className="h-6 w-6 text-blue-600 mr-3 font-semibold">Gruppstorlek</span>
                   <span className="text-slate-700">Inga förkunskapskraver</span>
                 </div>
               </div>
@@ -88,3 +89,4 @@ const FullDayAdventures = () => {
 };
 
 export default FullDayAdventures;
+
