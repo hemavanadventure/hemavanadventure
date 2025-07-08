@@ -1,5 +1,4 @@
 
-import { Award } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
@@ -56,7 +55,7 @@ const FullDayAdventures = () => {
                   <span className="text-slate-700">{t('services.groupSizeSmall')}</span>
                 </div>
                 <div className="flex items-center">
-                  <Award className="h-6 w-6 text-blue-600 mr-3" />
+                  <span className="h-6 w-6 text-blue-600 mr-3 font-semibold">Nivå</span>
                   <span className="text-slate-700">{t('services.intermediate')}</span>
                 </div>
                 <div className="flex items-center">
