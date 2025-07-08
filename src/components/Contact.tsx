@@ -55,7 +55,7 @@ ${message}`);
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-white mb-2">{t('contact.phone')}</h3>
-                <p className="text-slate-300">+46 XXX XXX XXX</p>
+                <p className="text-slate-300">+46737001920</p>
               </div>
             </div>
 
