@@ -59,7 +59,8 @@ const Navigation = () => {
 
           {/* Language Toggle and Hamburger Menu */}
           <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-2">
+            {/* Language toggle temporarily hidden */}
+            {/* <div className="flex items-center space-x-2">
               <Globe className="h-4 w-4 text-slate-600" />
               <button
                 onClick={() => setLanguage('se')}
@@ -81,7 +82,7 @@ const Navigation = () => {
               >
                 EN
               </button>
-            </div>
+            </div> */}
 
             {/* Dropdown Menu - Available on all screen sizes */}
             <DropdownMenu>
