@@ -1,9 +1,23 @@
+
 import { Users, Mountain, GraduationCap, Compass } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
 
 const Services = () => {
   const { t } = useLanguage();
+
+  const handleBookingEmail = (serviceName: string) => {
+    const subject = encodeURIComponent(`Bokning - ${serviceName}`);
+    const body = encodeURIComponent(`Hej!
+
+Jag skulle vilja boka: ${serviceName}
+
+Vänligen kontakta mig för mer information om priser och tillgänglighet.
+
+Tack!`);
+    
+    window.location.href = `mailto:rasmus@hemavanadventure.se?subject=${subject}&body=${body}`;
+  };
 
   const services = [
     {
@@ -66,7 +80,7 @@ const Services = () => {
               <h3 className="text-2xl font-bold text-slate-800 mb-4">{service.title}</h3>
               <p className="text-slate-600 mb-6 leading-relaxed">{service.description}</p>
               
-              <div className="space-y-3 text-sm">
+              <div className="space-y-3 text-sm mb-6">
                 <div className="flex justify-between">
                   <span className="text-slate-500">{t('services.duration')}</span>
                   <span className="font-semibold text-slate-700">{service.duration}</span>
@@ -81,11 +95,20 @@ const Services = () => {
                 </div>
               </div>
               
-              <Link to={service.link}>
-                <button className="w-full mt-6 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors duration-300">
-                  {t('services.learnMore')}
+              <div className="space-y-3">
+                <Link to={service.link}>
+                  <button className="w-full bg-slate-200 hover:bg-slate-300 text-slate-800 py-3 rounded-lg font-semibold transition-colors duration-300">
+                    {t('services.learnMore')}
+                  </button>
+                </Link>
+                
+                <button 
+                  onClick={() => handleBookingEmail(service.title)}
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors duration-300"
+                >
+                  Boka nu
                 </button>
-              </Link>
+              </div>
             </div>
           ))}
         </div>
@@ -94,12 +117,12 @@ const Services = () => {
           <p className="text-slate-600 mb-6">
             {t('services.bottomDesc')}
           </p>
-          <a 
-            href="#contact" 
+          <button 
+            onClick={() => handleBookingEmail('Allmän förfrågan')}
             className="inline-block bg-slate-800 hover:bg-slate-900 text-white px-8 py-4 rounded-lg font-semibold transition-colors duration-300"
           >
             {t('services.bookToday')}
-          </a>
+          </button>
         </div>
       </div>
     </section>
