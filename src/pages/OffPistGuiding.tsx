@@ -36,10 +36,12 @@ const OffPistGuiding = () => {
                 Expert Off-Piste Guidance
               </h2>
               <p className="text-lg text-slate-600 mb-6">
-                Experience the ultimate freedom of off-piste skiing with our expert guides. We'll take you to untouched powder fields and pristine mountain terrain that few ever see.
+                Upplev friheten av Hemavans offpist utan att behöva gå en enda höjdmeter, samtidigt som vår erfarna guide utvecklar dina kunskaper inom offpist och friåkning. . Vi tar er med till våra smultronställen som få vet om och åker den bästa möjliga snön. Ni slipper lägga på stighudar och bära på tunga ryggsäckar. Lunch kan intas i ett av liftsystemets restauranger. 
+                Guidningen anpassas utifrån deltagarnas skidvana och ingen tidigare erfarenhet av offpist-åkning krävs. Våra guider introducerar er gärna i grunderna. 
+                Ni behöver ha egen skidutrustning för toppturer (finns att hyra vid skiduthyrningen vid Centrumliften eller Solkatten) 
               </p>
               <p className="text-lg text-slate-600">
-                Perfect for advanced skiers looking for that next-level adventure in Swedish Lapland's backcountry.
+                Bokningen inkluderar en guide för heldag och säkerhetsutrustning. Liftkort tillkommer.
               </p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
@@ -74,7 +76,7 @@ const OffPistGuiding = () => {
             Redo för skidåkning?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Häng med på grym skidåkning i Hemavan!
+            Häng med på grym skidåkning i hjärtat av svenska Lappland!
           </p>
           <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
             {t('contact.sendMessage')}
