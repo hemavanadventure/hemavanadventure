@@ -31,7 +31,7 @@ const OffPistGuiding = () => {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-slate-800 mb-6">Offpistguidning </h2>
+              <h2 className="text-4xl font-bold text-slate-800 mb-6">Upplev friheten av Hemavans offpist utan att behöva gå en ända höjdmeter. Vi tar er med till våra smultronställen som få vet om</h2>
               <p className="text-lg text-slate-600 mb-6">Upplev friheten av Hemavans offpist utan att behöva gå en enda höjdmeter, samtidigt som vår erfarna guide utvecklar dina kunskaper inom offpist och friåkning.
 Vi tar er med till våra smultronställen som få vet om och åker den bästa möjliga snön. Ni slipper lägga på stighudar och bära på tunga ryggsäckar. Lunch kan intas i ett av liftsystemets restauranger. 
 Guidningen anpassas utifrån deltagarnas skidvana och ingen tidigare erfarenhet av offpist-åkning krävs. Våra guider introducerar er gärna i grunderna. Ni behöver ha egen skidutrustning för toppturer (finns att hyra vid skiduthyrningen vid Centrumliften eller Solkatten)</p>
