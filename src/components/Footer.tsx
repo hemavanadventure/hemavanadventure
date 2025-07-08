@@ -1,5 +1,5 @@
 
-import { Mountain, Phone, Mail, Facebook, Instagram } from "lucide-react";
+import { Phone, Mail, Facebook, Instagram } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Footer = () => {
@@ -11,7 +11,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <div className="flex items-center mb-4">
-              <Mountain className="h-8 w-8 mr-2 text-blue-400" />
+              <img 
+                src="/hemavanadventure/lovable-uploads/3d276c1b-70b8-4d02-9e51-afc3db0426f7.png" 
+                alt="Hemavan Adventure Logo" 
+                className="h-14 w-auto mr-2"
+              />
               <span className="text-xl font-bold text-white">{t('hero.title')}</span>
             </div>
             <p className="text-slate-400 leading-relaxed mb-4">
