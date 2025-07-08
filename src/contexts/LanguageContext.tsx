@@ -103,7 +103,7 @@ const translations = {
 
     // About
     'about.title': 'Dina specialister på fjälläventyr',
-    'about.description': 'Upplev vildmarken i svenska Lappland med våra certifierade fjälledare. Vi erbjuder oförglömliga äventyr i en av Europas mest spektakulära fjällkedjor.',
+    'about.description': 'Upplev vildmarken i den Skandinaviska fjällkedjan med våra certifierade fjälledare. Vi erbjuder oförglömliga äventyr i en av Europas mest spektakulära fjällkedjor.',
     'about.expertGuides': 'Fjälledare',
     'about.expertGuidesDesc': 'Våra certifierade fjälledare har många års erfarenhet av området runt Hemavan och säkerställer din säkerhet samtidigt som de maximerar din äventyrsupplevelse.',
     'about.localKnowledge': 'Lokalkännedom',
@@ -111,7 +111,7 @@ const translations = {
     'about.safetyFirst': 'Säkerhet först',
     'about.safetyFirstDesc': 'Alla våra turer prioriterar säkerhet med rätt utrustning och utbildning.',
     'about.discoverTitle': 'Upptäck Hemavans vildmark',
-    'about.discoverDesc1': 'Beläget i hjärtat av svenska Lappland erbjuder Hemavan några av Europas mest orörda topptursområden. Från snälla sluttningar perfekta för nybörjare till utmanande toppar för de mera erfarna, vi har äventyr för alla färdighetsnivåer.',
+    'about.discoverDesc1': 'Beläget i hjärtat av den Skandinaviska fjällkedjan erbjuder Hemavan några av Europas mest orörda topptursområden. Från snälla sluttningar perfekta för nybörjare till utmanande toppar för de mera erfarna, vi har äventyr för alla färdighetsnivåer.',
     'about.discoverDesc2': 'Våra små gruppstorlekar säkerställer personlig uppmärksamhet och en intim kontakt med det fantastiska arktiska landskapet som omger oss.',
     'about.imagePlaceholder': '[Bergslandskap bildplatshållare]',
     'about.imageCaption': 'Fantastisk utsikt över Hemavans toppar',
