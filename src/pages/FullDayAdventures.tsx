@@ -51,7 +51,7 @@ const FullDayAdventures = () => {
                   <span className="text-slate-700"> - Heldag</span>
                 </div>
                 <div>
-                  <span className="text-blue-600 font-semibold">Pris</span>
+                  <span className="text-blue-600 font-semibold">Gruppstorlek</span>
                   <span className="text-slate-700"> - {t('services.groupSizeSmall')}</span>
                 </div>
                 <div>
@@ -60,7 +60,7 @@ const FullDayAdventures = () => {
                 </div>
                 <div>
                   <span className="text-blue-600 font-semibold">Pris</span>
-                  <span className="text-slate-700"> - Inga förkunskapskraver</span>
+                  <span className="text-slate-700"> - 6000sek</span>
                 </div>
               </div>
             </div>
