@@ -40,12 +40,9 @@ const SkiSchool = () => {
           </div>
           <p className="text-xl md:text-2xl mb-8 text-blue-100">Utveckla din åkning i offpist tillsammans med en erfaren instruktör</p>
           <Link to="/#contact">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg">Lär dig från de bästa
-
-Känner du dig osäker när det kommer till skidåkning i offpist, eller vill du helt enkelt ta din teknik till följande nivå? Våra erfarna instruktörer kan lösa detta. 
-
-[Ski instruction image placeholder]
-Instructor teaching students on snowy slopes</Button>
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg">
+              Book Your Lesson
+            </Button>
           </Link>
         </div>
       </section>
@@ -55,8 +52,13 @@ Instructor teaching students on snowy slopes</Button>
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              
-              
+              <h2 className="text-4xl font-bold text-slate-800 mb-6">Lär dig från de bästa</h2>
+              <p className="text-lg text-slate-600 mb-6">
+                Our ski school offers comprehensive instruction for all skill levels in the breathtaking 
+                environment of Hemavan. Whether you're taking your first steps on skis or looking to 
+                refine advanced techniques, our certified instructors provide personalized guidance 
+                in small groups.
+              </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
                   <Users className="h-8 w-8 text-blue-600 mx-auto mb-2" />
