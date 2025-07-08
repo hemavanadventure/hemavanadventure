@@ -42,7 +42,7 @@ const FullDayAdventures = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Clock className="h-6 w-6 text-blue-600 mr-3" />
-                  <span className="text-slate-700">Bokningen inkluderar en certifierad guide för en heldag och lavinkitt.</span>
+                  <span className="text-slate-700">Heldag</span>
                 </div>
                 <div className="flex items-center">
                   <Users className="h-6 w-6 text-blue-600 mr-3" />
