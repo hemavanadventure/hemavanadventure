@@ -4,36 +4,30 @@ import { Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
-
 const SkiSchool = () => {
-  const { t } = useLanguage();
-
-  const programs = [
-    {
-      title: "Beginner Basics",
-      duration: "2 hours",
-      maxParticipants: "6-8 people",
-      description: "Perfect for first-time skiers learning fundamental techniques and safety basics.",
-      includes: ["Equipment introduction", "Basic turning techniques", "Safe falling and getting up", "Equipment fitting"]
-    },
-    {
-      title: "Intermediate Development", 
-      duration: "3 hours",
-      maxParticipants: "4-6 people",
-      description: "Develop your skills with advanced turning, terrain navigation, and touring preparation.",
-      includes: ["Parallel turns", "Terrain reading", "Basic touring skills", "Route planning basics"]
-    },
-    {
-      title: "Advanced Techniques",
-      duration: "3 hours", 
-      maxParticipants: "4 people",
-      description: "Master challenging terrain, advanced techniques, and backcountry safety protocols.",
-      includes: ["Off-piste skiing", "Avalanche awareness", "Emergency procedures", "Advanced touring"]
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+  const {
+    t
+  } = useLanguage();
+  const programs = [{
+    title: "Beginner Basics",
+    duration: "2 hours",
+    maxParticipants: "6-8 people",
+    description: "Perfect for first-time skiers learning fundamental techniques and safety basics.",
+    includes: ["Equipment introduction", "Basic turning techniques", "Safe falling and getting up", "Equipment fitting"]
+  }, {
+    title: "Intermediate Development",
+    duration: "3 hours",
+    maxParticipants: "4-6 people",
+    description: "Develop your skills with advanced turning, terrain navigation, and touring preparation.",
+    includes: ["Parallel turns", "Terrain reading", "Basic touring skills", "Route planning basics"]
+  }, {
+    title: "Advanced Techniques",
+    duration: "3 hours",
+    maxParticipants: "4 people",
+    description: "Master challenging terrain, advanced techniques, and backcountry safety protocols.",
+    includes: ["Off-piste skiing", "Avalanche awareness", "Emergency procedures", "Advanced touring"]
+  }];
+  return <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <Navigation />
       
       {/* Hero Section */}
@@ -42,11 +36,9 @@ const SkiSchool = () => {
         <div className="relative z-10 container mx-auto px-4 max-w-4xl text-center text-white">
           <div className="flex items-center justify-center mb-6">
             <GraduationCap className="h-16 w-16 mr-4 text-blue-300" />
-            <h1 className="text-5xl md:text-6xl font-bold">Ski School</h1>
+            <h1 className="text-5xl md:text-6xl font-bold">Skidskola i offpist </h1>
           </div>
-          <p className="text-xl md:text-2xl mb-8 text-blue-100">
-            Learn to ski with confidence in the stunning Swedish Lapland wilderness
-          </p>
+          <p className="text-xl md:text-2xl mb-8 text-blue-100">Utveckla din åkning i offpist tillsammans med en erfaren instruktör</p>
           <Link to="/#contact">
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg">
               Book Your Lesson
@@ -60,9 +52,7 @@ const SkiSchool = () => {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <h2 className="text-4xl font-bold text-slate-800 mb-6">
-                Learn from the Best
-              </h2>
+              <h2 className="text-4xl font-bold text-slate-800 mb-6">Lär dig från de bästa</h2>
               <p className="text-lg text-slate-600 mb-6">
                 Our ski school offers comprehensive instruction for all skill levels in the breathtaking 
                 environment of Hemavan. Whether you're taking your first steps on skis or looking to 
@@ -84,7 +74,7 @@ const SkiSchool = () => {
             </div>
             <div className="bg-slate-200 rounded-2xl h-80 flex items-center justify-center">
               <p className="text-slate-500 text-center">
-                [Ski instruction image placeholder]<br/>
+                [Ski instruction image placeholder]<br />
                 Instructor teaching students on snowy slopes
               </p>
             </div>
@@ -105,8 +95,7 @@ const SkiSchool = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {programs.map((program, index) => (
-              <Card key={index} className="h-full">
+            {programs.map((program, index) => <Card key={index} className="h-full">
                 <CardHeader>
                   <CardTitle className="text-2xl text-slate-800">{program.title}</CardTitle>
                   <CardDescription className="text-slate-600">
@@ -128,12 +117,10 @@ const SkiSchool = () => {
                   <div className="mb-6">
                     <h4 className="font-semibold text-slate-800 mb-3">What's included:</h4>
                     <ul className="space-y-2">
-                      {program.includes.map((item, itemIndex) => (
-                        <li key={itemIndex} className="text-sm text-slate-600 flex items-start">
+                      {program.includes.map((item, itemIndex) => <li key={itemIndex} className="text-sm text-slate-600 flex items-start">
                           <span className="text-blue-600 mr-2">•</span>
                           {item}
-                        </li>
-                      ))}
+                        </li>)}
                     </ul>
                   </div>
                   
@@ -143,8 +130,7 @@ const SkiSchool = () => {
                     </Button>
                   </Link>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -223,8 +209,6 @@ const SkiSchool = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default SkiSchool;
