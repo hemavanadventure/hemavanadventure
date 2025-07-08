@@ -31,9 +31,10 @@ const OffPistGuiding = () => {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-slate-800 mb-6">Upplev friheten av Hemavans offpist utan att behöva gå en ända höjdmeter. Vi tar er med till våra smultronställen som få vet om 
-Experience the ultimate freedom of off-piste skiing with our expert guides. We'll take you to untouched powder fields and pristine mountain terrain that few ever see.</h2>
-              <p className="text-lg text-slate-600 mb-6"></p>
+              <h2 className="text-4xl font-bold text-slate-800 mb-6">Maximerad åkning </h2>
+              <p className="text-lg text-slate-600 mb-6">
+                Experience the ultimate freedom of off-piste skiing with our expert guides. We'll take you to untouched powder fields and pristine mountain terrain that few ever see.
+              </p>
               <p className="text-lg text-slate-600">
                 Perfect for advanced skiers looking for that next-level adventure in Swedish Lapland's backcountry.
               </p>
