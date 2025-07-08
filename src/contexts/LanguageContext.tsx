@@ -117,7 +117,7 @@ const translations = {
     'about.imageCaption': 'Fantastisk utsikt över Hemavans toppar',
 
     // Services
-    'services.title': 'Våra skidåkningstjänster',
+    'services.title': 'Våra guidetjänster',
     'services.description': 'Välj från vårt utbud av guidade skidåkningsupplevelser, skräddarsydda för olika färdighetsnivåer och äventyrspreferenser.',
     'services.halfDay': 'Halvdagsturer',
     'services.halfDayDesc': 'Perfekt introduktion till skidturer med grundläggande teknikinstruktion och natursköna rutter.',
