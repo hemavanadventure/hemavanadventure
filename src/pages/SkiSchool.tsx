@@ -1,33 +1,53 @@
+
 import { GraduationCap, Users, Clock, Award } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
+
 const SkiSchool = () => {
-  const {
-    t
-  } = useLanguage();
-  const programs = [{
-    title: "Beginner Basics",
-    duration: "2 hours",
-    maxParticipants: "6-8 people",
-    description: "Perfect for first-time skiers learning fundamental techniques and safety basics.",
-    includes: ["Equipment introduction", "Basic turning techniques", "Safe falling and getting up", "Equipment fitting"]
-  }, {
-    title: "Intermediate Development",
-    duration: "3 hours",
-    maxParticipants: "4-6 people",
-    description: "Develop your skills with advanced turning, terrain navigation, and touring preparation.",
-    includes: ["Parallel turns", "Terrain reading", "Basic touring skills", "Route planning basics"]
-  }, {
-    title: "Advanced Techniques",
-    duration: "3 hours",
-    maxParticipants: "4 people",
-    description: "Master challenging terrain, advanced techniques, and backcountry safety protocols.",
-    includes: ["Off-piste skiing", "Avalanche awareness", "Emergency procedures", "Advanced touring"]
-  }];
-  return <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+  const { t } = useLanguage();
+
+  const handleBookingEmail = (programName: string) => {
+    const subject = encodeURIComponent(`Bokning - ${programName}`);
+    const body = encodeURIComponent(`Hej!
+
+Jag skulle vilja boka: ${programName}
+
+Vänligen kontakta mig för mer information om priser och tillgänglighet.
+
+Tack!`);
+    
+    window.location.href = `mailto:rasmus@hemavanadventure.se?subject=${subject}&body=${body}`;
+  };
+
+  const programs = [
+    {
+      title: "Beginner Basics",
+      duration: "2 hours",
+      maxParticipants: "6-8 people",
+      description: "Perfect for first-time skiers learning fundamental techniques and safety basics.",
+      includes: ["Equipment introduction", "Basic turning techniques", "Safe falling and getting up", "Equipment fitting"]
+    },
+    {
+      title: "Intermediate Development", 
+      duration: "3 hours",
+      maxParticipants: "4-6 people",
+      description: "Develop your skills with advanced turning, terrain navigation, and touring preparation.",
+      includes: ["Parallel turns", "Terrain reading", "Basic touring skills", "Route planning basics"]
+    },
+    {
+      title: "Advanced Techniques",
+      duration: "3 hours", 
+      maxParticipants: "4 people",
+      description: "Master challenging terrain, advanced techniques, and backcountry safety protocols.",
+      includes: ["Off-piste skiing", "Avalanche awareness", "Emergency procedures", "Advanced touring"]
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <Navigation />
       
       {/* Hero Section */}
@@ -36,14 +56,16 @@ const SkiSchool = () => {
         <div className="relative z-10 container mx-auto px-4 max-w-4xl text-center text-white">
           <div className="flex items-center justify-center mb-6">
             <GraduationCap className="h-16 w-16 mr-4 text-blue-300" />
-            <h1 className="text-5xl md:text-6xl font-bold">Skidskola i offpist </h1>
+            <h1 className="text-5xl md:text-6xl font-bold">Skidskola i offpist</h1>
           </div>
           <p className="text-xl md:text-2xl mb-8 text-blue-100">Utveckla din åkning i offpist tillsammans med en erfaren instruktör</p>
-          <Link to="/#contact">
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg">
-              Book Your Lesson
-            </Button>
-          </Link>
+          <Button 
+            size="lg" 
+            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg"
+            onClick={() => handleBookingEmail('Skidskola i offpist')}
+          >
+            Book Your Lesson
+          </Button>
         </div>
       </section>
 
@@ -95,7 +117,8 @@ const SkiSchool = () => {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {programs.map((program, index) => <Card key={index} className="h-full">
+            {programs.map((program, index) => (
+              <Card key={index} className="h-full">
                 <CardHeader>
                   <CardTitle className="text-2xl text-slate-800">{program.title}</CardTitle>
                   <CardDescription className="text-slate-600">
@@ -117,20 +140,24 @@ const SkiSchool = () => {
                   <div className="mb-6">
                     <h4 className="font-semibold text-slate-800 mb-3">What's included:</h4>
                     <ul className="space-y-2">
-                      {program.includes.map((item, itemIndex) => <li key={itemIndex} className="text-sm text-slate-600 flex items-start">
+                      {program.includes.map((item, itemIndex) => (
+                        <li key={itemIndex} className="text-sm text-slate-600 flex items-start">
                           <span className="text-blue-600 mr-2">•</span>
                           {item}
-                        </li>)}
+                        </li>
+                      ))}
                     </ul>
                   </div>
                   
-                  <Link to="/#contact">
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700">
-                      Book This Program
-                    </Button>
-                  </Link>
+                  <Button 
+                    className="w-full bg-blue-600 hover:bg-blue-700"
+                    onClick={() => handleBookingEmail(program.title)}
+                  >
+                    Book This Program
+                  </Button>
                 </CardContent>
-              </Card>)}
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -196,11 +223,13 @@ const SkiSchool = () => {
             Join our ski school and discover the joy of skiing in one of the world's most beautiful locations.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <Link to="/#contact">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4">
-                Book Your Lesson
-              </Button>
-            </Link>
+            <Button 
+              size="lg" 
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4"
+              onClick={() => handleBookingEmail('Skidskola i offpist')}
+            >
+              Book Your Lesson
+            </Button>
             <Link to="/">
               <Button variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white hover:text-slate-800 px-8 py-4">
                 Back to Home
@@ -209,6 +238,8 @@ const SkiSchool = () => {
           </div>
         </div>
       </section>
-    </div>;
+    </div>
+  );
 };
+
 export default SkiSchool;
