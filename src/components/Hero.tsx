@@ -24,7 +24,7 @@ const Hero = () => {
           />
         </div>
         <p className="text-xl md:text-2xl mb-8 text-blue-100 font-light">
-          {t('hero.subtitle')}
+          för äventyr i den Skandinaviska fjällkedjan
         </p>
         <div className="flex items-center justify-center text-lg text-blue-200 mb-12">
           <MapPin className="h-5 w-5 mr-2" />
