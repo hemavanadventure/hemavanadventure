@@ -46,21 +46,21 @@ const FullDayAdventures = () => {
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-slate-800 mb-6">Tour Details</h3>
               <div className="space-y-4">
-                <div className="flex items-center justify-between">
+                <div>
                   <span className="text-blue-600 font-semibold">Tid</span>
-                  <span className="text-slate-700">Heldag</span>
+                  <span className="text-slate-700"> - Heldag</span>
                 </div>
-                <div className="flex items-center justify-between">
+                <div>
                   <span className="text-blue-600 font-semibold">Pris</span>
-                  <span className="text-slate-700">{t('services.groupSizeSmall')}</span>
+                  <span className="text-slate-700"> - {t('services.groupSizeSmall')}</span>
                 </div>
-                <div className="flex items-center justify-between">
+                <div>
                   <span className="text-blue-600 font-semibold">Nivå</span>
-                  <span className="text-slate-700">{t('services.intermediate')}</span>
+                  <span className="text-slate-700"> - {t('services.intermediate')}</span>
                 </div>
-                <div className="flex items-center justify-between">
+                <div>
                   <span className="text-blue-600 font-semibold">Pris</span>
-                  <span className="text-slate-700">Inga förkunskapskraver</span>
+                  <span className="text-slate-700"> - Inga förkunskapskraver</span>
                 </div>
               </div>
             </div>
