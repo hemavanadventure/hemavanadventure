@@ -31,7 +31,7 @@ const OffPistGuiding = () => {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-slate-800 mb-6">Upplev friheten av Hemavans offpist utan att behöva gå en ända höjdmeter. Vi tar er med till våra smultronställen som få vet om</h2>
+              <h2 className="text-4xl font-bold text-slate-800 mb-6">Maximerad åkning </h2>
               <p className="text-lg text-slate-600 mb-6">
                 Experience the ultimate freedom of off-piste skiing with our expert guides. We'll take you to untouched powder fields and pristine mountain terrain that few ever see.
               </p>
@@ -67,9 +67,7 @@ const OffPistGuiding = () => {
       {/* CTA Section */}
       <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4 max-w-6xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Redo för skidåkning?
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Häng med på grym skidåkning i Hemavan</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Häng med på grym skidåkning i hjärtat av svenska Lappland!
           </p>
