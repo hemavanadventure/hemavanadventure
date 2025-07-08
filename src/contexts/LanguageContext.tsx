@@ -163,7 +163,7 @@ const translations = {
     'contact.emailPlaceholder': 'din@epost.se',
     'contact.message': 'Meddelande',
     'contact.messagePlaceholder': 'Vad kan vi hjälpa dig med?',
-    'contact.sendButton': 'Skicka Meddelande',
+    'contact.sendButton': 'Skicka',
 
     'footer.description': 'Din pålitliga partner för äventyr i Hemavan.',
     'footer.quickContact': 'Snabbkontakt',
