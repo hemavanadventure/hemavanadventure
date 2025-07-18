@@ -27,7 +27,7 @@ Tack!`);
       groupSize: '1-6 personer', 
       price: '6000sek',
       icon: Mountain,
-      link: '/full-day-adventures'
+      link: '/topptur-privatguide'
     },
     {
       title: 'Offpist med privatguide',

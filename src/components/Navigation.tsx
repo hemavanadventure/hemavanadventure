@@ -114,7 +114,7 @@ const Navigation = () => {
 
                 <DropdownMenuItem asChild>
                   <Link 
-                    to="/full-day-adventures" 
+                    to="/topptur-privatguide" 
                     className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block py-3 px-4 text-base"
                   >
                     Topptur med privatguide
