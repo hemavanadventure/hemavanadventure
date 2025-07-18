@@ -145,7 +145,7 @@ const Navigation = () => {
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link 
-                    to="/ski-school" 
+                    to="/offpist-skidskola" 
                     className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block py-3 px-4 text-base"
                   >
                     {t('services.skiSchool')}
