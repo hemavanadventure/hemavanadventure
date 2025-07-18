@@ -39,8 +39,8 @@ const About = () => {
           </div>
 
           <div className="text-center">
-            <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Award className="h-8 w-8 text-blue-600" />
+            <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
+              <img src="/lovable-uploads/d256443d-e7cd-4387-af10-f04b903fd30e.png" alt="Svelav" className="w-full h-full object-contain" />
             </div>
             <h3 className="text-2xl font-semibold text-slate-800 mb-4">{t('about.safetyFirst')}</h3>
             <p className="text-slate-600 leading-relaxed">
