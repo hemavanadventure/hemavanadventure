@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="relative z-10 text-center text-white px-4 max-w-4xl">
         <div className="flex items-center justify-center mb-6">
           <img 
-            src="/hemavanadventure/lovable-uploads/3d276c1b-70b8-4d02-9e51-afc3db0426f7.png" 
+            src="/hemavanadventure/assets/logo.png" 
             alt="Hemavan Adventure Logo" 
             className="h-32 md:h-40 w-auto mb-4"
           />

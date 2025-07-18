@@ -29,7 +29,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img 
-              src="/hemavanadventure/lovable-uploads/3d276c1b-70b8-4d02-9e51-afc3db0426f7.png" 
+              src="/hemavanadventure/assets/logo.png" 
               alt="Hemavan Adventure Logo" 
               className="h-14 w-auto"
             />
