@@ -18,8 +18,8 @@ const About = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-12 mb-16">
-          <div className="text-center">
-            <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
+          <div className="text-center flex flex-col items-center">
+            <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
               <img src="/hemavanadventure/assets/fjallguide-logo.png" alt="Svenska Fjälledarorganisationen" className="w-full h-full object-contain" />
             </div>
             <h3 className="text-2xl font-semibold text-slate-800 mb-4">{t('about.expertGuides')}</h3>
@@ -28,9 +28,9 @@ const About = () => {
             </p>
           </div>
 
-          <div className="text-center">
-            <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-              <MapPin className="h-8 w-8 text-blue-600" />
+          <div className="text-center flex flex-col items-center">
+            <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
+              <MapPin className="h-12 w-12 text-blue-600" />
             </div>
             <h3 className="text-2xl font-semibold text-slate-800 mb-4">{t('about.localKnowledge')}</h3>
             <p className="text-slate-600 leading-relaxed">
@@ -38,8 +38,8 @@ const About = () => {
             </p>
           </div>
 
-          <div className="text-center">
-            <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
+          <div className="text-center flex flex-col items-center">
+            <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
               <img src="/hemavanadventure/assets/svelav-logo.png" alt="Svelav" className="w-full h-full object-contain" />
             </div>
             <h3 className="text-2xl font-semibold text-slate-800 mb-4">{t('about.safetyFirst')}</h3>
