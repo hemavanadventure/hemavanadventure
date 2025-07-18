@@ -29,22 +29,22 @@ const About = () => {
           </div>
 
           <div className="text-center flex flex-col items-center">
-            <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-              <MapPin className="h-12 w-12 text-blue-600" />
-            </div>
-            <h3 className="text-2xl font-semibold text-slate-800 mb-4">{t('about.localKnowledge')}</h3>
-            <p className="text-slate-600 leading-relaxed">
-              {t('about.localKnowledgeDesc')}
-            </p>
-          </div>
-
-          <div className="text-center flex flex-col items-center">
             <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
               <img src="/hemavanadventure/assets/svelav-logo.png" alt="Svelav" className="w-full h-full object-contain" />
             </div>
             <h3 className="text-2xl font-semibold text-slate-800 mb-4">{t('about.safetyFirst')}</h3>
             <p className="text-slate-600 leading-relaxed">
               {t('about.safetyFirstDesc')} Våra guider har alla gått relevanta lavinutbildningar hos Sveriges Lavinutbildningar.
+            </p>
+          </div>
+
+          <div className="text-center flex flex-col items-center">
+            <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
+              <MapPin className="h-12 w-12 text-blue-600" />
+            </div>
+            <h3 className="text-2xl font-semibold text-slate-800 mb-4">{t('about.localKnowledge')}</h3>
+            <p className="text-slate-600 leading-relaxed">
+              {t('about.localKnowledgeDesc')}
             </p>
           </div>
         </div>
