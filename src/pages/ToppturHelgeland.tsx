@@ -3,9 +3,20 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 const ToppturHelgeland = () => {
-  const {
-    t
-  } = useLanguage();
+  const { t } = useLanguage();
+  
+  const handleBookingEmail = (serviceName: string) => {
+    const subject = encodeURIComponent(`Bokning - ${serviceName}`);
+    const body = encodeURIComponent(`Hej!
+
+Jag skulle vilja boka: ${serviceName}
+
+Vänligen kontakta mig för mer information om priser och tillgänglighet.
+
+Tack!`);
+    
+    window.location.href = `mailto:rasmus@hemavanadventure.se?subject=${subject}&body=${body}`;
+  };
   return <div className="min-h-screen bg-slate-50">
       <Navigation />
       
@@ -17,7 +28,11 @@ const ToppturHelgeland = () => {
               Topptur i Helgeland
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Upplev Helgelands spektakulära toppturer </p>
-            <Button size="lg" className="bg-white text-green-700 hover:bg-gray-100">
+            <Button 
+              size="lg" 
+              className="bg-white text-green-700 hover:bg-gray-100"
+              onClick={() => handleBookingEmail('Topptur i Helgeland')}
+            >
               Boka din topptur
             </Button>
           </div>
@@ -117,7 +132,11 @@ const ToppturHelgeland = () => {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Kontakta oss idag för att boka din topptur i detta fantastiska område!
           </p>
-          <Button size="lg" className="bg-white text-green-800 hover:bg-gray-100">
+          <Button 
+            size="lg" 
+            className="bg-white text-green-800 hover:bg-gray-100"
+            onClick={() => handleBookingEmail('Topptur i Helgeland')}
+          >
             Kontakta oss nu
           </Button>
         </div>
