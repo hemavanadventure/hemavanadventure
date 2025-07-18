@@ -1,10 +1,10 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
-
 const SkiSchool = () => {
-  const { t } = useLanguage();
-  
+  const {
+    t
+  } = useLanguage();
   const handleBookingEmail = (serviceName: string) => {
     const subject = encodeURIComponent(`Bokning - ${serviceName}`);
     const body = encodeURIComponent(`Hej!
@@ -14,12 +14,9 @@ Jag skulle vilja boka: ${serviceName}
 Vänligen kontakta mig för mer information om priser och tillgänglighet.
 
 Tack!`);
-    
     window.location.href = `mailto:rasmus@hemavanadventure.se?subject=${subject}&body=${body}`;
   };
-  
-  return (
-    <div className="min-h-screen bg-slate-50">
+  return <div className="min-h-screen bg-slate-50">
       <Navigation />
       
       {/* Hero Section */}
@@ -32,11 +29,7 @@ Tack!`);
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
               Utveckla din åkning i offpist tillsammans med en erfaren instruktör
             </p>
-            <Button 
-              size="lg" 
-              className="bg-white text-blue-600 hover:bg-gray-100"
-              onClick={() => handleBookingEmail('Skidskola i offpist')}
-            >
+            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100" onClick={() => handleBookingEmail('Skidskola i offpist')}>
               {t('services.bookToday')}
             </Button>
           </div>
@@ -56,18 +49,18 @@ Tack!`);
                 Vi erbjuder program för alla nivåer - från nybörjare som lär sig grundläggande tekniker till avancerade åkare som vill bemästra utmanande terräng. Våra instruktörer introducerar er gärna i grunderna för offpist-åkning och säkerhet.<br />
                 Alla deltagare behöver behärska åkning i röd pist i varierande förhållanden. Egen skidutrustning krävs (finns att hyra vid skiduthyrningen vid Centrumliften eller Solkatten). Vi rekommenderar att ni bokar flera lektioner för bästa möjliga utveckling.
               </p>
-              <p className="text-lg text-slate-600">Bokningen inkluderar en certifierad instruktör och personlig vägledning i små grupper. Skidpass tillkommer.</p>
+              <p className="text-lg text-slate-600">Bokningen inkluderar en skidinstruktör för tre timmar. Liftkort tillkommer.</p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-slate-800 mb-6">Turdetaljer</h3>
               <div className="space-y-4">
                 <div>
                   <span className="text-blue-600 font-semibold">Tid</span>
-                  <span className="text-slate-700"> - 2-3 timmar</span>
+                  <span className="text-slate-700"> - 3 timmar</span>
                 </div>
                 <div>
                   <span className="text-blue-600 font-semibold">Gruppstorlek</span>
-                  <span className="text-slate-700"> - Max 8 personer</span>
+                  <span className="text-slate-700"> - 1-6 personer</span>
                 </div>
                 <div>
                   <span className="text-blue-600 font-semibold">Nivå</span>
@@ -75,7 +68,7 @@ Tack!`);
                 </div>
                 <div>
                   <span className="text-blue-600 font-semibold">Pris</span>
-                  <span className="text-slate-700"> - Från 1500 sek</span>
+                  <span className="text-slate-700"> - 4000 kr</span>
                 </div>
               </div>
             </div>
@@ -92,17 +85,11 @@ Tack!`);
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Kontakta oss så bokar vi en skidlektion åt er!
           </p>
-          <Button 
-            size="lg" 
-            className="bg-blue-600 hover:bg-blue-700"
-            onClick={() => handleBookingEmail('Skidskola i offpist')}
-          >
+          <Button size="lg" className="bg-blue-600 hover:bg-blue-700" onClick={() => handleBookingEmail('Skidskola i offpist')}>
             {t('contact.sendMessage')}
           </Button>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default SkiSchool;
