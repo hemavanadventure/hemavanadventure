@@ -44,7 +44,7 @@ const About = () => {
             </div>
             <h3 className="text-2xl font-semibold text-slate-800 mb-4">{t('about.safetyFirst')}</h3>
             <p className="text-slate-600 leading-relaxed">
-              {t('about.safetyFirstDesc')}
+              {t('about.safetyFirstDesc')} Våra guider har alla gått relevanta lavinutbildningar hos Sveriges Lavinutbildningar.
             </p>
           </div>
         </div>
