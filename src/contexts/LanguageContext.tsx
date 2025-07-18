@@ -123,10 +123,10 @@ const translations = {
     'services.halfDayDesc': 'Perfekt introduktion till skidturer med grundläggande teknikinstruktion och natursköna rutter.',
     'services.fullDay': 'Topptur med privatguide',
     'services.fullDayDesc': 'En heldagstur med privat guide.',
-    'services.multiDay': 'Off-pist guidning',
-    'services.multiDayDesc': 'Guidning i Hemavans off-pist där vi utnyttjar liftsystemet.',
-    'services.skiSchool': 'Off-pist skidskola',
-    'services.skiSchoolDesc': 'Vi erbjuder skidskola till er som vill utveckla sin teknik inom off-pist.',
+    'services.multiDay': 'Offpist guidning',
+    'services.multiDayDesc': 'Guidning i Hemavans offpist där vi utnyttjar liftsystemet.',
+    'services.skiSchool': 'Offpist skidskola',
+    'services.skiSchoolDesc': 'Vi erbjuder skidskola till er som vill utveckla sin teknik inom offpist.',
     'services.duration': 'Varaktighet:',
     'services.groupSize': 'Gruppstorlek:',
     'services.difficulty': 'Svårighetsgrad:',
@@ -170,7 +170,7 @@ const translations = {
     'footer.services': 'Tjänster',
     'footer.halfDayTours': 'Halvdagsturer',
     'footer.fullDayAdventures': 'Heldagsäventyr',
-    'footer.multiDayExpeditions': 'Off-pist guidning',
+    'footer.multiDayExpeditions': 'Offpist guidning',
     'footer.privateGuiding': 'Privat guidning',
     'footer.copyright': '© 2024 Hemavan Adventure. Alla rättigheter förbehållna.'
   }

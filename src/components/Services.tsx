@@ -45,7 +45,7 @@ Tack!`);
       groupSize: '1-6 personer',
       price: '4000sek',
       icon: GraduationCap,
-      link: '/ski-school'
+      link: '/offpist-skidskola'
     },
     {
       title: 'Topptur i Helgeland',
