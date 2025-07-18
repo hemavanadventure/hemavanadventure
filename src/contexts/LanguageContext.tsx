@@ -141,7 +141,7 @@ const translations = {
     'services.beginner': 'Anpassas enligt grupp',
     'services.intermediate': 'Anpassas enligt grupp',
     'services.advanced': 'Anpassas enligt grupp',
-    'services.learnMore': 'Läs Mer',
+    'services.learnMore': 'Läs mer',
     'services.bottomDesc': 'Alla turer inkluderar professionell guidning och säkerhetsutrustning.',
     'services.bookToday': 'Boka ditt äventyr idag',
 
