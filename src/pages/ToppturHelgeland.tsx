@@ -74,7 +74,7 @@ Tack!`);
                   <span className="text-slate-700"> - Anpassas enligt grupp</span>
                 </div>
                 <div>
-                  <span className="text-green-600 font-semibold">Plats</span>
+                  <span className="text-green-600 font-semibold">Pris</span>
                   <span className="text-slate-700"> - Helgeland, Norge</span>
                 </div>
               </div>
