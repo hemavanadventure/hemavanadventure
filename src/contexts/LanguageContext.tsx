@@ -103,7 +103,7 @@ const translations = {
 
     // About
     'about.title': 'Dina specialister på fjälläventyr',
-    'about.description': 'Upplev vildmarken i den Skandinaviska fjällkedjan med våra certifierade fjälledare. Vi erbjuder oförglömliga äventyr i en av Europas mest spektakulära fjällkedjor.',
+    'about.description': 'Upplev vildmarken i den Skandinaviska fjällkedjan med våra certifierade fjälledare. Vi erbjuder oförglömliga äventyr i ett av Europas mest spektakulära fjällkedjor.',
     'about.expertGuides': 'Fjälledare',
     'about.expertGuidesDesc': 'Våra certifierade fjälledare har många års erfarenhet av området runt Hemavan och säkerställer din säkerhet samtidigt som de maximerar din äventyrsupplevelse.',
     'about.localKnowledge': 'Lokalkännedom',
