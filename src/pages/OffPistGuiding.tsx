@@ -1,12 +1,11 @@
-
 import { Mountain, Clock, Users, Award } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
-
 const OffPistGuiding = () => {
-  const { t } = useLanguage();
-
+  const {
+    t
+  } = useLanguage();
   const handleBookingEmail = () => {
     const subject = encodeURIComponent("Bokning - Offpist med privatguide");
     const body = encodeURIComponent(`Hej!
@@ -16,12 +15,9 @@ Jag skulle vilja boka: Offpist med privatguide
 Vänligen kontakta mig för mer information om priser och tillgänglighet.
 
 Tack!`);
-    
     window.location.href = `mailto:rasmus@hemavanadventure.se?subject=${subject}&body=${body}`;
   };
-
-  return (
-    <div className="min-h-screen bg-slate-50">
+  return <div className="min-h-screen bg-slate-50">
       <Navigation />
       
       {/* Hero Section */}
@@ -34,11 +30,7 @@ Tack!`);
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
               Upplev friheten av Hemavans offpist utan att behöva gå en enda höjdmeter
             </p>
-            <Button 
-              size="lg" 
-              className="bg-white text-slate-800 hover:bg-gray-100"
-              onClick={handleBookingEmail}
-            >
+            <Button size="lg" className="bg-white text-slate-800 hover:bg-gray-100" onClick={handleBookingEmail}>
               Boka idag
             </Button>
           </div>
@@ -51,14 +43,8 @@ Tack!`);
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-slate-800 mb-6">Offpistguidning</h2>
-              <p className="text-lg text-slate-600 mb-6">
-                Upplev friheten av Hemavans offpist utan att behöva gå en enda höjdmeter, samtidigt som vår erfarna guide utvecklar dina kunskaper inom offpist och friåkning.
-                Vi tar er med till våra smultronställen som få vet om och åker den bästa möjliga snön. Ni slipper lägga på stighudar och bära på tunga ryggsäckar. Lunch kan intas i ett av liftsystemets restauranger. 
-                Guidningen anpassas utifrån deltagarnas skidvana och ingen tidigare erfarenhet av offpist-åkning krävs. Våra guider introducerar er gärna i grunderna. Ni behöver ha egen skidutrustning för toppturer (finns att hyra vid skiduthyrningen vid Centrumliften eller Solkatten)
-              </p>
-              <p className="text-lg text-slate-600">
-                Perfect for advanced skiers looking for that next-level adventure in Swedish Lapland's backcountry.
-              </p>
+              <p className="text-lg text-slate-600 mb-6">Upplev friheten av Hemavans offpist utan att behöva gå en enda höjdmeter, samtidigt som vår erfarna guide utvecklar dina kunskaper inom offpist och friåkning. Vi tar er med till våra smultronställen som få vet om och åker den bästa möjliga snön. Ni slipper lägga på stighudar och bära på tunga ryggsäckar. Lunch kan intas i ett av liftsystemets restauranger. Guidningen anpassas utifrån deltagarnas skidvana och ingen tidigare erfarenhet av offpist-åkning krävs. Våra guider introducerar er gärna i grunderna. Ni behöver ha egen skidutrustning för toppturer (finns att hyra vid skiduthyrningen vid Centrumliften eller Solkatten). Liftkort tillkommer.</p>
+              
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-slate-800 mb-6">Turdetaljer</h3>
@@ -77,7 +63,7 @@ Tack!`);
                 </div>
                 <div>
                   <span className="text-slate-600 font-semibold">Pris</span>
-                  <span className="text-slate-700"> - 6000 sek</span>
+                  <span className="text-slate-700"> - 6000 kr</span>
                 </div>
               </div>
             </div>
@@ -91,20 +77,12 @@ Tack!`);
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Redo för skidåkning?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Häng med på grym skidåkning i hjärtat av svenska Lappland!
-          </p>
-          <Button 
-            size="lg" 
-            className="bg-white text-blue-600 hover:bg-gray-100"
-            onClick={handleBookingEmail}
-          >
+          <p className="text-xl mb-8 max-w-2xl mx-auto">Häng med på grym skidåkning med Skandinaviens bästa snö!</p>
+          <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100" onClick={handleBookingEmail}>
             Skicka meddelande
           </Button>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default OffPistGuiding;
