@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import FullDayAdventures from "./pages/FullDayAdventures";
+import ToppturPrivatguide from "./pages/ToppturPrivatguide";
 import OffPistGuiding from "./pages/OffPistGuiding";
 import SkiSchool from "./pages/SkiSchool";
 import ToppturHelgeland from "./pages/ToppturHelgeland";
@@ -23,7 +23,7 @@ const App = () => (
         <BrowserRouter basename="/hemavanadventure">
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/full-day-adventures" element={<FullDayAdventures />} />
+            <Route path="/topptur-privatguide" element={<ToppturPrivatguide />} />
             <Route path="/off-pist-guiding" element={<OffPistGuiding />} />
             <Route path="/ski-school" element={<SkiSchool />} />
             <Route path="/topptur-helgeland" element={<ToppturHelgeland />} />

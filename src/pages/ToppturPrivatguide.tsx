@@ -1,9 +1,8 @@
-
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 
-const FullDayAdventures = () => {
+const ToppturPrivatguide = () => {
   const { t } = useLanguage();
   
   return (
@@ -86,4 +85,4 @@ const FullDayAdventures = () => {
   );
 };
 
-export default FullDayAdventures;
+export default ToppturPrivatguide;
