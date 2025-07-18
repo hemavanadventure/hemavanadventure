@@ -24,7 +24,7 @@ const About = () => {
             </div>
             <h3 className="text-2xl font-semibold text-slate-800 mb-4">{t('about.expertGuides')}</h3>
             <p className="text-slate-600 leading-relaxed">
-              {t('about.expertGuidesDesc')}
+              Våra guider är alla certifierade fjälledare av den Svenska Fjälledarorganisationen och har många års erfarenhet av området runt Hemavan.
             </p>
           </div>
 
