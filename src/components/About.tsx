@@ -1,6 +1,7 @@
 
 import { Users, Award, MapPin } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import fjallguideBadge from "@/assets/fjallguide-badge.png";
 
 const About = () => {
   const { t } = useLanguage();
@@ -20,7 +21,7 @@ const About = () => {
         <div className="grid md:grid-cols-3 gap-12 mb-16">
           <div className="text-center">
             <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
-              <img src="./lovable-uploads/6afa2322-58b1-46db-9a69-717e1a3f4381.png" alt="Svenska Fjälledarorganisationen" className="w-full h-full object-cover" />
+              <img src={fjallguideBadge} alt="Svenska Fjälledarorganisationen" className="w-full h-full object-cover" />
             </div>
             <h3 className="text-2xl font-semibold text-slate-800 mb-4">{t('about.expertGuides')}</h3>
             <p className="text-slate-600 leading-relaxed">
