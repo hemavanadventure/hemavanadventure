@@ -49,7 +49,7 @@ Tack!`);
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-slate-800 mb-6">
-                Helgelands vackraste toppar
+                Skidåkning med havsutsikt
               </h2>
               <p className="text-lg text-slate-600 mb-6 text-left">
                 Helgeland erbjuder några av Norges mest spektakulära toppturer med fantastiska vyer över kust och fjäll. Våra erfarna guider tar dig säkert till de bästa topparna i området.<br />
