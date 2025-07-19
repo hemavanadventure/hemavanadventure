@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">{t('footer.quickContact')}</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">Kontakt</h4>
             <div className="space-y-2">
               <div className="flex items-center text-slate-400">
                 <Phone className="h-4 w-4 mr-2" />
