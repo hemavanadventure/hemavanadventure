@@ -75,7 +75,7 @@ Tack!`);
                 </div>
                 <div>
                   <span className="text-green-600 font-semibold">Pris</span>
-                  <span className="text-slate-700"> - Helgeland, Norge</span>
+                  <span className="text-slate-700"> - Fråga oss</span>
                 </div>
               </div>
             </div>
