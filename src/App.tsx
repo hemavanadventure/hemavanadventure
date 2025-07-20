@@ -20,7 +20,7 @@ const App = () => (
       <LanguageProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter basename="/hemavanadventure">
+        <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/topptur-privatguide" element={<ToppturPrivatguide />} />
