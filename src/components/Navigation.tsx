@@ -44,7 +44,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img 
-              src="/hemavanadventure/assets/logo.png" 
+              src="/assets/logo.png" 
               alt="Hemavan Adventure Logo" 
               className="h-14 w-auto"
             />

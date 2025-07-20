@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center mb-4">
               <img 
-                src="/hemavanadventure/assets/logo.png" 
+                src="/assets/logo.png" 
                 alt="Hemavan Adventure Logo" 
                 className="h-14 w-auto mr-2"
               />
