@@ -52,7 +52,7 @@ Tack!`);
                 Skidåkning med havsutsikt
               </h2>
               <p className="text-lg text-slate-600 mb-6 text-left">
-                Helgeland erbjuder några av Norges mest spektakulära toppturer med fantastiska vyer över kust och fjäll. Våra erfarna guider tar dig säkert till de bästa topparna i området.<br />
+                Helgeland erbjuder några av Norges finaste toppturer med fantastiska vyer över kust och fjäll. Våra erfarna guider tar dig säkert till de bästa topparna i området.<br />
                 Toppturer kan anpassas utifrån deltagarnas skidvana och ingen tidigare erfarenhet av toppturåkning krävs. Våra guider introducerar er gärna i grunderna.<br />
                 Ni behöver ha egen skidutrustning för toppturer (finns att hyra vid lokala skiduthyrningar). Vi rekommenderar att ni bokar flera dagar i följd för bästa möjliga upplevelse.
               </p>
