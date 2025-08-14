@@ -81,7 +81,7 @@ Tack!`);
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Redo för skidåkning?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">Häng med på grym skidåkning med Skandinaviens bästa snö!</p>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">Kontakta oss för att boka din guide!</p>
           <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100" onClick={handleBookingEmail}>
             Skicka meddelande
           </Button>
