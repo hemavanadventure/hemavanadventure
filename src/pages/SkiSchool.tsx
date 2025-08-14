@@ -80,9 +80,7 @@ Tack!`);
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Redo att utveckla din åkning?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Kontakta oss så bokar vi en skidlektion åt er!
-          </p>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">Kontakta oss!</p>
           <Button size="lg" className="bg-blue-600 hover:bg-blue-700" onClick={() => handleBookingEmail('Skidskola i offpist')}>
             {t('contact.sendMessage')}
           </Button>
