@@ -41,9 +41,7 @@ Tack!`);
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-slate-800 mb-6">
-                Lär dig från de bästa
-              </h2>
+              <h2 className="text-4xl font-bold text-slate-800 mb-6">Privatlektioner</h2>
               <p className="text-lg text-slate-600 mb-6 text-left">
                 Vår skidskola erbjuder omfattande undervisning för alla nivåer. Oavsett om du tar dina första steg i offipist eller vill förfina avancerade tekniker, ger våra instruktörer personlig vägledning i små grupper.<br /> 
                 Vi erbjuder något för alla nivåer - från nybörjare som lär sig grundläggande tekniker till avancerade åkare som vill bemästra utmanande terräng. Våra instruktörer introducerar er gärna i grunderna för offpist-åkning och säkerhet.<br />
@@ -52,7 +50,7 @@ Tack!`);
               <p className="text-lg text-slate-600">Bokningen inkluderar en skidinstruktör för tre timmar. Liftkort tillkommer.</p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-slate-800 mb-6">Turdetaljer</h3>
+              <h3 className="text-2xl font-bold text-slate-800 mb-6">Detaljer</h3>
               <div className="space-y-4">
                 <div>
                   <span className="text-blue-600 font-semibold">Tid</span>
