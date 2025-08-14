@@ -1,10 +1,10 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
-
 const ToppturHelgeland = () => {
-  const { t } = useLanguage();
-  
+  const {
+    t
+  } = useLanguage();
   const handleBookingEmail = (serviceName: string) => {
     const subject = encodeURIComponent(`Bokning - ${serviceName}`);
     const body = encodeURIComponent(`Hej!
@@ -14,12 +14,9 @@ Jag skulle vilja boka: ${serviceName}
 Vänligen kontakta mig för mer information om priser och tillgänglighet.
 
 Tack!`);
-    
     window.location.href = `mailto:rasmus@hemavanadventure.se?subject=${subject}&body=${body}`;
   };
-  
-  return (
-    <div className="min-h-screen bg-slate-50">
+  return <div className="min-h-screen bg-slate-50">
       <Navigation />
       
       {/* Hero Section */}
@@ -32,11 +29,7 @@ Tack!`);
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
               Upplev Helgelands spektakulära toppturer med fantastiska vyer över kust och fjäll
             </p>
-            <Button 
-              size="lg" 
-              className="bg-white text-green-600 hover:bg-gray-100"
-              onClick={() => handleBookingEmail('Topptur i Helgeland')}
-            >
+            <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100" onClick={() => handleBookingEmail('Topptur i Helgeland')}>
               Boka idag
             </Button>
           </div>
@@ -56,7 +49,7 @@ Tack!`);
                 Toppturer kan anpassas utifrån deltagarnas skidvana och ingen tidigare erfarenhet av toppturåkning krävs. Våra guider introducerar er gärna i grunderna.<br />
                 Ni behöver ha egen skidutrustning för toppturer (finns att hyra vid lokala skiduthyrningar). Vi rekommenderar att ni bokar flera dagar i följd för bästa möjliga upplevelse.
               </p>
-              <p className="text-lg text-slate-600">Bokningen inkluderar en certifierad guide för en heldag och lavinkitt. Transport och utrustning tillkommer.</p>
+              <p className="text-lg text-slate-600">Bokningen inkluderar en certifierad guide för en heldag och lavinkitt. Transport och eventuell logi tillkommer.</p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-slate-800 mb-6">Turdetaljer</h3>
@@ -92,17 +85,11 @@ Tack!`);
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Kontakta oss så bokar vi en guide åt er!
           </p>
-          <Button 
-            size="lg" 
-            className="bg-green-600 hover:bg-green-700"
-            onClick={() => handleBookingEmail('Topptur i Helgeland')}
-          >
+          <Button size="lg" className="bg-green-600 hover:bg-green-700" onClick={() => handleBookingEmail('Topptur i Helgeland')}>
             Skicka meddelande
           </Button>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default ToppturHelgeland;
