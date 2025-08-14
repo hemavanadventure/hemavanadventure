@@ -45,7 +45,7 @@ Tack!`);
                 Lär dig från de bästa
               </h2>
               <p className="text-lg text-slate-600 mb-6 text-left">
-                Vår skidskola erbjuder omfattande undervisning för alla nivåer. Oavsett om du tar dina första steg i offipist eller vill förfina avancerade tekniker, ger våra certifierade instruktörer personlig vägledning i små grupper.<br /> 
+                Vår skidskola erbjuder omfattande undervisning för alla nivåer. Oavsett om du tar dina första steg i offipist eller vill förfina avancerade tekniker, ger våra instruktörer personlig vägledning i små grupper.<br /> 
                 Vi erbjuder något för alla nivåer - från nybörjare som lär sig grundläggande tekniker till avancerade åkare som vill bemästra utmanande terräng. Våra instruktörer introducerar er gärna i grunderna för offpist-åkning och säkerhet.<br />
                 Alla deltagare behöver behärska åkning i röd pist i varierande förhållanden. Egen skidutrustning krävs (finns att hyra vid skiduthyrningen vid Centrumliften eller Solkatten).
               </p>
