@@ -33,7 +33,7 @@ Tack!`);
               Topptur i Helgeland
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Upplev Helgelands spektakulära toppturer med fantastiska vyer över kust och fjäll
+              Upplev Helgelands vackra toppturer med fantastiska vyer över kust och fjäll
             </p>
             <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100" onClick={() => handleBookingEmail('Topptur i Helgeland')}>
               Boka idag
