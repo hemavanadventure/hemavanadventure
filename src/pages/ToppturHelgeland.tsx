@@ -24,7 +24,7 @@ Tack!`);
         className="py-20 text-white pt-32 bg-no-repeat relative"
         style={{
           backgroundImage: `url('/lovable-uploads/59174919-58e0-4b84-8673-95c95b72b166.png')`,
-          backgroundSize: '120%',
+          backgroundSize: '80%',
           backgroundPosition: 'center center'
         }}
       >
