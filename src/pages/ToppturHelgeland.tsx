@@ -20,8 +20,14 @@ Tack!`);
       <Navigation />
       
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-green-600 to-green-800 text-white pt-32">
-        <div className="container mx-auto px-4 max-w-6xl">
+      <section 
+        className="py-20 text-white pt-32 bg-cover bg-center bg-no-repeat relative"
+        style={{
+          backgroundImage: `url('/lovable-uploads/59174919-58e0-4b84-8673-95c95b72b166.png')`
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="container mx-auto px-4 max-w-6xl relative z-10">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Topptur i Helgeland
