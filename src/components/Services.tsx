@@ -58,7 +58,7 @@ Tack!`);
       price: 'Kontakta oss',
       icon: Compass,
       link: '/topptur-helgeland',
-      image: '/lovable-uploads/ff3be564-15c6-4644-ae90-53eed59ad7bc.png'
+      image: '/lovable-uploads/dc18bc61-e75a-4817-830f-0c0878d744e6.png'
     }
   ];
 
