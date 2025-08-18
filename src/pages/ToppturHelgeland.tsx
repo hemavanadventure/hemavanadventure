@@ -24,7 +24,7 @@ Tack!`);
         className="py-20 text-white pt-32 bg-cover bg-no-repeat relative"
         style={{
           backgroundImage: `url('/lovable-uploads/ce27e18a-f51c-4d51-b7c5-e1b4a2783894.png')`,
-          backgroundPosition: 'center bottom'
+          backgroundPosition: 'center 80%'
         }}
       >
         <div className="absolute inset-0 bg-black/40"></div>
