@@ -21,8 +21,14 @@ Tack!`);
       <Navigation />
       
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-800 to-slate-900 text-white pt-32">
-        <div className="container mx-auto px-4 max-w-6xl">
+      <section 
+        className="py-20 text-white pt-32 bg-cover bg-center bg-no-repeat relative"
+        style={{
+          backgroundImage: `url('/lovable-uploads/6f874705-a0cd-4316-a57d-60fdf6451a6f.png')`
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="container mx-auto px-4 max-w-6xl relative z-10">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Offpist med privatguide
