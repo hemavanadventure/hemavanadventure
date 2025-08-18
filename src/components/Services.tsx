@@ -72,10 +72,12 @@ Tack!`);
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                <service.icon className="h-8 w-8 text-blue-600" />
+            <div key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+              <div className="h-48 bg-cover bg-center" 
+                   style={{backgroundImage: `url('/lovable-uploads/ff3be564-15c6-4644-ae90-53eed59ad7bc.png')`}}>
               </div>
+              
+              <div className="p-8">
               
               <h3 className="text-2xl font-bold text-slate-800 mb-4">{service.title}</h3>
               <p className="text-slate-600 mb-6 leading-relaxed">{service.description}</p>
@@ -108,6 +110,7 @@ Tack!`);
                 >
                   Boka nu
                 </button>
+              </div>
               </div>
             </div>
           ))}
