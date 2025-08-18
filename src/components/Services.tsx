@@ -27,7 +27,8 @@ Tack!`);
       groupSize: '1-6 personer', 
       price: '6000sek',
       icon: Mountain,
-      link: '/topptur-privatguide'
+      link: '/topptur-privatguide',
+      image: '/lovable-uploads/ff3be564-15c6-4644-ae90-53eed59ad7bc.png'
     },
     {
       title: 'Offpist med privatguide',
@@ -36,7 +37,8 @@ Tack!`);
       groupSize: '1-6 personer',
       price: '6000sek',
       icon: Users,
-      link: '/off-pist-guiding'
+      link: '/off-pist-guiding',
+      image: '/lovable-uploads/6cd4dde1-cd38-4b06-93a0-a3d5fdaabdea.png'
     },
     {
       title: t('services.skiSchool'),
@@ -45,7 +47,8 @@ Tack!`);
       groupSize: '1-6 personer',
       price: '4000sek',
       icon: GraduationCap,
-      link: '/offpist-skidskola'
+      link: '/offpist-skidskola',
+      image: '/lovable-uploads/ff3be564-15c6-4644-ae90-53eed59ad7bc.png'
     },
     {
       title: 'Topptur i Helgeland',
@@ -54,7 +57,8 @@ Tack!`);
       groupSize: '1-6 personer',
       price: 'Kontakta oss',
       icon: Compass,
-      link: '/topptur-helgeland'
+      link: '/topptur-helgeland',
+      image: '/lovable-uploads/ff3be564-15c6-4644-ae90-53eed59ad7bc.png'
     }
   ];
 
@@ -74,7 +78,7 @@ Tack!`);
           {services.map((service, index) => (
             <div key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
               <div className="h-48 bg-cover bg-center" 
-                   style={{backgroundImage: `url('/lovable-uploads/ff3be564-15c6-4644-ae90-53eed59ad7bc.png')`}}>
+                   style={{backgroundImage: `url('${service.image}')`}}>
               </div>
               
               <div className="p-8">
