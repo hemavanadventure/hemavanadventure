@@ -82,7 +82,7 @@ Tack!`);
                 </div>
                 <div>
                   <span className="text-blue-600 font-semibold">Pris</span>
-                  <span className="text-slate-700"> - 6000 sek</span>
+                  <span className="text-slate-700"> - 6000 kr</span>
                 </div>
               </div>
             </div>

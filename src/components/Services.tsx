@@ -25,7 +25,7 @@ Tack!`);
       description: 'En heldagstur med privat guide.',
       duration: 'Heldag',
       groupSize: '1-6 personer', 
-      price: '6000 sek',
+      price: '6000 kr',
       icon: Mountain,
       link: '/topptur-privatguide',
       image: '/lovable-uploads/ff3be564-15c6-4644-ae90-53eed59ad7bc.png'
@@ -35,7 +35,7 @@ Tack!`);
       description: 'Liftburen offpist-åkning',
       duration: 'Heldag',
       groupSize: '1-6 personer',
-      price: '6000 sek',
+      price: '6000 kr',
       icon: Users,
       link: '/off-pist-guiding',
       image: '/lovable-uploads/6cd4dde1-cd38-4b06-93a0-a3d5fdaabdea.png'
@@ -45,7 +45,7 @@ Tack!`);
       description: t('services.skiSchoolDesc'),
       duration: '3 timmar',
       groupSize: '1-6 personer',
-      price: '4000 sek',
+      price: '4000 kr',
       icon: GraduationCap,
       link: '/offpist-skidskola',
       image: '/lovable-uploads/6c37259e-9a62-4b1e-978f-5785c2490b3a.png'
