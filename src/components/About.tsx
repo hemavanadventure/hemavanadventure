@@ -62,13 +62,12 @@ const About = () => {
                 {t('about.discoverDesc2')}
               </p>
             </div>
-            <div className="bg-gradient-to-br from-blue-600 to-slate-700 rounded-xl h-64 flex items-center justify-center">
-              <p className="text-white text-center px-6">
-                {t('about.imagePlaceholder')}
-                <br />
-                <span className="text-sm text-blue-200">{t('about.imageCaption')}</span>
-              </p>
-            </div>
+            <div 
+              className="rounded-xl h-64 bg-cover bg-center bg-no-repeat"
+              style={{
+                backgroundImage: `url('/lovable-uploads/337c4cba-b3f2-4478-b8b3-b7729ff3c07b.png')`
+              }}
+            ></div>
           </div>
         </div>
       </div>
