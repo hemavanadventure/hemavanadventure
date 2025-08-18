@@ -22,9 +22,10 @@ Tack!`);
       
       {/* Hero Section */}
       <section 
-        className="py-20 text-white pt-32 bg-cover bg-center bg-no-repeat relative"
+        className="py-20 text-white pt-32 bg-cover bg-no-repeat relative"
         style={{
-          backgroundImage: `url('/lovable-uploads/6f874705-a0cd-4316-a57d-60fdf6451a6f.png')`
+          backgroundImage: `url('/lovable-uploads/6f874705-a0cd-4316-a57d-60fdf6451a6f.png')`,
+          backgroundPosition: 'center bottom'
         }}
       >
         <div className="absolute inset-0 bg-black/40"></div>
