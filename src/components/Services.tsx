@@ -48,7 +48,7 @@ Tack!`);
       price: '4000sek',
       icon: GraduationCap,
       link: '/offpist-skidskola',
-      image: '/lovable-uploads/ff3be564-15c6-4644-ae90-53eed59ad7bc.png'
+      image: '/lovable-uploads/6c37259e-9a62-4b1e-978f-5785c2490b3a.png'
     },
     {
       title: 'Topptur i Helgeland',
