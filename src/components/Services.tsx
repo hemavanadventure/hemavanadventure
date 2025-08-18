@@ -87,15 +87,15 @@ Tack!`);
               <p className="text-slate-600 mb-6 leading-relaxed">{service.description}</p>
               
               <div className="space-y-3 text-sm mb-6">
-                <div className="flex justify-start gap-4">
+                <div className="flex justify-between">
                   <span className="text-slate-500">{t('services.duration')}</span>
                   <span className="font-semibold text-slate-700">{service.duration}</span>
                 </div>
-                <div className="flex justify-start gap-4">
+                <div className="flex justify-between">
                   <span className="text-slate-500">{t('services.groupSize')}</span>
                   <span className="font-semibold text-slate-700">{service.groupSize}</span>
                 </div>
-                <div className="flex justify-start gap-4">
+                <div className="flex justify-between">
                   <span className="text-slate-500">{t('services.price')}</span>
                   <span className="font-semibold text-slate-700">{service.price}</span>
                 </div>
