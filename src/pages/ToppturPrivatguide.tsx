@@ -57,16 +57,12 @@ Tack!`);
               <h2 className="text-4xl font-bold text-slate-800 mb-6">
                 En fullständig fjällupplevelse
               </h2>
-              <p className="text-lg text-slate-600 mb-6 text-left">
-                <p>Följ med oss på en oförglömlig topptur i Hemavans vackra fjällvärld. Vi tar oss uppför med stighudar under skidorna och belönas sedan med ett eller flera härliga åk i orörd terräng.</p>
-
-                <p>Vår certifierade guide väljer dagens rutt utifrån väder, vind och snöförhållanden – men självklart lyssnar vi också på gruppens önskemål. Toppturen anpassas efter deltagarnas skidvana och ingen tidigare erfarenhet av toppturer krävs. Vill du prova för första gången? Då introducerar vi dig gärna till grunderna. Det viktiga är att alla i gruppen kan åka säkert i röd pist under varierande förhållanden.</p>
-
-                <p>För toppturer behöver du egen utrustning (kan hyras vid Centrumliften eller Solkatten). För att få ut det mesta av upplevelsen rekommenderar vi att du bokar flera dagar i följd.</p>
-
-                <p>I bokningen ingår en certifierad guide för en heldag samt komplett lavinutrustning. Liftkort tillkommer vid behov.</p>
-
-              <p className="text-lg text-slate-600">Bokningen inkluderar en certifierad guide för en heldag och lavinkitt. Eventuellt liftkort tillkommer.</p>
+              <div className="text-lg text-slate-600 mb-6 text-left">
+                <p>Följ med oss på en oförglömlig topptur i Hemavans vackra fjällvärld. Vi tar oss uppför med stighudar under skidorna och belönas sedan med ett eller flera härliga åk i orörd terräng.</p> 
+                <p>Vår certifierade guide väljer dagens rutt utifrån väder, vind och snöförhållanden – men självklart lyssnar vi också på gruppens önskemål. Toppturen anpassas efter deltagarnas skidvana och ingen tidigare erfarenhet av toppturer krävs. Vill du prova för första gången? Då introducerar vi dig gärna till grunderna. Det viktiga är att alla i gruppen kan åka säkert i röd pist under varierande förhållanden.</p> 
+                <p>För toppturer behöver du egen utrustning (kan hyras vid Centrumliften eller Solkatten). För att få ut det mesta av upplevelsen rekommenderar vi att du bokar flera dagar i följd.</p> 
+              </div>
+              <p className="text-lg text-slate-600">I bokningen ingår en certifierad guide för en heldag samt komplett lavinutrustning. Liftkort tillkommer vid behov.</p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-slate-800 mb-6">Turdetaljer</h3>
