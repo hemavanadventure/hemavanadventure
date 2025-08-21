@@ -51,7 +51,7 @@ const About = () => {
               <h3 className="text-3xl font-bold text-slate-800 mb-6">
                 {t('about.discoverTitle')}
               </h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
+              <p className="text-slate-600 mb-3 leading-relaxed">
                 {t('about.discoverDesc1')}
               </p>
               <p className="text-slate-600 leading-relaxed">
