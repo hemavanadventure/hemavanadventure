@@ -15,6 +15,7 @@ const translations = {
     // Hero
     'hero.title': 'Hemavan Adventure',
     'hero.subtitle': 'Certified mountain guides for ski touring in Swedish Lapland',
+    'hero.subtitle2': 'Swedish Mountain Leaders for adventures in the Scandinavian mountain range',
     'hero.location': 'Hemavan, Sweden',
     'hero.bookAdventure': 'Book your adventure',
     'hero.aboutUs': 'About us',
@@ -96,6 +97,7 @@ const translations = {
     // Hero
     'hero.title': 'Hemavan Adventure',
     'hero.subtitle': 'Certifierade fjälledare för toppturer i svenska Lappland',
+    'hero.subtitle2': 'Fjälledare för äventyr i den Skandinaviska fjällkedjan',
     'hero.location': 'Hemavan, Sverige',
     'hero.bookAdventure': 'Boka ditt äventyr',
     'hero.aboutUs': 'Om oss',
