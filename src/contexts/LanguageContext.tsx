@@ -107,7 +107,7 @@ const translations = {
     'about.expertGuides': 'Fjälledare',
     'about.expertGuidesDesc': 'Våra certifierade fjälledare har många års erfarenhet av området runt Hemavan och säkerställer din säkerhet samtidigt som de maximerar din äventyrsupplevelse.',
     'about.localKnowledge': 'Lokalkännedom',
-    'about.localKnowledgeDesc': 'Djup lokalkännedom om områdets bästa rutter, vädermönster och dolda pärlor som bara lokalbefolkningen känner till.',
+    'about.localKnowledgeDesc': 'Vi känner Hemavan som vår egen ficka – från de bästa åken och rutterna till vädermönster och dolda pärlor som bara lokalborna känner till.',
     'about.safetyFirst': 'Säkerhet först',
     'about.safetyFirstDesc': 'På alla våra turer står säkerheten i fokus. Med rätt utrustning, utbildning och erfarenhet ser vi till att du kan njuta av fjället på ett tryggt sätt. Alla våra guider har genomgått Sveriges Lavinutbildningar.',
     'about.discoverTitle': 'Upptäck Hemavans vildmark',
