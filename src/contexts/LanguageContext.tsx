@@ -24,7 +24,7 @@ const translations = {
     // About
     'about.title': 'Your specialists for every mountain adventure',
     'about.description': 'Experience the arctic wilderness with our experienced guides. We offer memorable adventures in one of Europe\'s most pristine mountain ranges.',
-    'about.expertGuides': 'Mountain guides',
+    'about.expertGuides': 'Swedish Mountain Leaders',
     'about.expertGuidesDesc': 'Our guides are certified by the Swedish Mountain Guide Organization and have many years of experience in the Hemavan area.',
     'about.localKnowledge': 'Local knowledge',
     'about.localKnowledgeDesc': 'We know Hemavan like our own pocket – from the best skiing and routes to weather patterns and hidden gems that only locals know about.',
