@@ -111,8 +111,8 @@ const translations = {
     'about.safetyFirst': 'Säkerhet först',
     'about.safetyFirstDesc': 'På alla våra turer står säkerheten i fokus. Med rätt utrustning, utbildning och erfarenhet ser vi till att du kan njuta av fjället på ett tryggt sätt. Alla våra guider har genomgått Sveriges Lavinutbildningar.',
     'about.discoverTitle': 'Upptäck Hemavans vildmark',
-    'about.discoverDesc1': 'Beläget i hjärtat av den Skandinaviska fjällkedjan erbjuder Hemavan ett unikt område för skidåkning. Från snälla sluttningar perfekta för nybörjare till utmanande toppar för de mera erfarna, vi har äventyr för alla färdighetsnivåer.',
-    'about.discoverDesc2': 'Våra små gruppstorlekar säkerställer personlig uppmärksamhet och en nära kontakt med det fantastiska landskapet som omger oss.',
+    'about.discoverDesc1': 'Beläget mitt i den Skandinaviska fjällkedjan bjuder Hemavan på ett unikt skidområde. Här finns allt från snälla sluttningar som passar nybörjare till utmanande toppar för den mer erfarne – äventyr för alla nivåer.',
+    'about.discoverDesc2': 'Våra små gruppstorlekar ger dig personlig uppmärksamhet och en nära kontakt med både guiden och det storslagna landskapet runt omkring.',
     'about.imagePlaceholder': '[Bergslandskap bildplatshållare]',
     'about.imageCaption': 'Fantastisk utsikt över Hemavans toppar',
 
