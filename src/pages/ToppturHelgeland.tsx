@@ -45,7 +45,7 @@ Tack!`);
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-slate-800 mb-6">Skidåkning med havsutsikt – toppturer i Helgeland</h2>
+              <h2 className="text-4xl font-bold text-slate-800 mb-6">Skidåkning med havsutsikt</h2>
               <p className="text-lg text-slate-600 mb-6 text-left">
                 Helgeland bjuder på några av Norges mest spektakulära toppturer, där fjäll möter hav och vyerna sträcker sig mil efter mil. Våra erfarna guider leder dig säkert till de bästa topparna och ser till att du får en minnesvärd upplevelse.
               </p>
