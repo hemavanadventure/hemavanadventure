@@ -69,6 +69,19 @@ const translations = {
     'services.learnMore': 'Learn More',
     'services.bottomDesc': 'All tours include professional guiding and safety equipment.',
     'services.bookToday': 'Book your adventure today',
+    'services.bookNow': 'Book now',
+    'services.contactUs': 'Contact us',
+
+    // Service descriptions
+    'services.toppturPrivateTitle': 'Ski touring with private guide',
+    'services.toppturPrivateDesc': 'A full day tour with private guide.',
+    'services.offpistPrivateTitle': 'Off-piste with private guide',
+    'services.offpistPrivateDesc': 'Lift-accessed off-piste skiing',
+    'services.helgelandTitle': 'Ski touring in Helgeland',
+    'services.helgelandDesc': 'Ski touring to the Helgeland coast',
+    'services.serviceDuration': 'Full day',
+    'services.threeHours': '3 hours',
+    'services.oneToSixPeople': '1-6 people',
 
     // Contact
     'contact.title': 'Ready for your adventure?',
@@ -203,6 +216,19 @@ const translations = {
     'services.learnMore': 'Läs mer',
     'services.bottomDesc': 'Alla turer inkluderar professionell guidning och säkerhetsutrustning.',
     'services.bookToday': 'Boka ditt äventyr idag',
+    'services.bookNow': 'Boka nu',
+    'services.contactUs': 'Kontakta oss',
+
+    // Service descriptions
+    'services.toppturPrivateTitle': 'Topptur med privatguide',
+    'services.toppturPrivateDesc': 'En heldagstur med privat guide.',
+    'services.offpistPrivateTitle': 'Offpist med privatguide',
+    'services.offpistPrivateDesc': 'Liftburen offpist-åkning',
+    'services.helgelandTitle': 'Topptur i Helgeland',
+    'services.helgelandDesc': 'Topptur till Helgelandskusten',
+    'services.serviceDuration': 'Heldag',
+    'services.threeHours': '3 timmar',
+    'services.oneToSixPeople': '1-6 personer',
 
     // Contact
     'contact.title': 'Redo för ditt äventyr?',

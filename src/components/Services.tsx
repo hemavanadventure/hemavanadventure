@@ -21,20 +21,20 @@ Tack!`);
 
   const services = [
     {
-      title: 'Topptur med privatguide',
-      description: 'En heldagstur med privat guide.',
-      duration: 'Heldag',
-      groupSize: '1-6 personer', 
+      title: t('services.toppturPrivateTitle'),
+      description: t('services.toppturPrivateDesc'),
+      duration: t('services.serviceDuration'),
+      groupSize: t('services.oneToSixPeople'), 
       price: '6000 kr',
       icon: Mountain,
       link: '/topptur-privatguide',
       image: '/lovable-uploads/ff3be564-15c6-4644-ae90-53eed59ad7bc.png'
     },
     {
-      title: 'Offpist med privatguide',
-      description: 'Liftburen offpist-åkning',
-      duration: 'Heldag',
-      groupSize: '1-6 personer',
+      title: t('services.offpistPrivateTitle'),
+      description: t('services.offpistPrivateDesc'),
+      duration: t('services.serviceDuration'),
+      groupSize: t('services.oneToSixPeople'),
       price: '6000 kr',
       icon: Users,
       link: '/off-pist-guiding',
@@ -43,19 +43,19 @@ Tack!`);
     {
       title: t('services.skiSchool'),
       description: t('services.skiSchoolDesc'),
-      duration: '3 timmar',
-      groupSize: '1-6 personer',
+      duration: t('services.threeHours'),
+      groupSize: t('services.oneToSixPeople'),
       price: '4000 kr',
       icon: GraduationCap,
       link: '/offpist-skidskola',
       image: '/lovable-uploads/6c37259e-9a62-4b1e-978f-5785c2490b3a.png'
     },
     {
-      title: 'Topptur i Helgeland',
-      description: 'Topptur till Helgelandskusten',
-      duration: 'Heldag',
-      groupSize: '1-6 personer',
-      price: 'Kontakta oss',
+      title: t('services.helgelandTitle'),
+      description: t('services.helgelandDesc'),
+      duration: t('services.serviceDuration'),
+      groupSize: t('services.oneToSixPeople'),
+      price: t('services.contactUs'),
       icon: Compass,
       link: '/topptur-helgeland',
       image: '/lovable-uploads/859f3432-d877-4ada-971d-bf3dfeef2fa0.png'
@@ -112,7 +112,7 @@ Tack!`);
                   onClick={() => handleBookingEmail(service.title)}
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors duration-300"
                 >
-                  Boka nu
+                  {t('services.bookNow')}
                 </button>
               </div>
               </div>
