@@ -45,36 +45,36 @@ Tack!`);
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-slate-800 mb-6">
-                En fullständig fjällupplevelse
+                {t('topptur.fullExperience')}
               </h2>
               <p className="text-lg text-slate-600 mb-3 text-left">
-                Följ med oss på en oförglömlig topptur i Hemavans vackra fjällvärld. Vi tar oss uppför med stighudar under skidorna och belönas sedan med ett eller flera härliga åk i orörd terräng.
+                {t('topptur.description1')}
               </p>
               <p className="text-lg text-slate-600 mb-3 text-left">
-                Vår certifierade guide väljer dagens rutt utifrån väder, vind och snöförhållanden – men självklart lyssnar vi också på gruppens önskemål. Toppturen anpassas efter deltagarnas skidvana och ingen tidigare erfarenhet av toppturer krävs. Vill du prova för första gången? Då introducerar vi dig gärna till grunderna. Det viktiga är att alla i gruppen kan åka säkert i röd pist under varierande förhållanden.
+                {t('topptur.description2')}
               </p>
               <p className="text-lg text-slate-600 mb-3 text-left">
-                För toppturer behöver du egen utrustning (kan hyras vid Centrumliften eller Solkatten). För att få ut det mesta av upplevelsen rekommenderar vi att du bokar flera dagar i följd.
+                {t('topptur.description3')}
               </p>
-              <p className="text-lg text-slate-600">I bokningen ingår en certifierad guide för en heldag samt komplett lavinutrustning. Liftkort tillkommer vid behov.</p>
+              <p className="text-lg text-slate-600">{t('topptur.description4')}</p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-slate-800 mb-6">Turdetaljer</h3>
+              <h3 className="text-2xl font-bold text-slate-800 mb-6">{t('topptur.tourDetails')}</h3>
               <div className="space-y-4">
                 <div>
-                  <span className="text-blue-600 font-semibold">Tid</span>
-                  <span className="text-slate-700"> - Heldag</span>
+                  <span className="text-blue-600 font-semibold">{t('topptur.time')}</span>
+                  <span className="text-slate-700"> - {t('topptur.fullDay')}</span>
                 </div>
                 <div>
-                  <span className="text-blue-600 font-semibold">Gruppstorlek</span>
+                  <span className="text-blue-600 font-semibold">{t('topptur.groupSize')}</span>
                   <span className="text-slate-700"> - {t('services.groupSizeSmall')}</span>
                 </div>
                 <div>
-                  <span className="text-blue-600 font-semibold">Nivå</span>
+                  <span className="text-blue-600 font-semibold">{t('topptur.level')}</span>
                   <span className="text-slate-700"> - {t('services.intermediate')}</span>
                 </div>
                 <div>
-                  <span className="text-blue-600 font-semibold">Pris</span>
+                  <span className="text-blue-600 font-semibold">{t('topptur.price')}</span>
                   <span className="text-slate-700"> - 6000 kr</span>
                 </div>
               </div>
@@ -87,10 +87,10 @@ Tack!`);
       <section className="py-16 bg-slate-800 text-white">
         <div className="container mx-auto px-4 max-w-6xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Redo för ett äventyr?
+            {t('topptur.readyForAdventure')}
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Kontakta oss så bokar vi en guide åt er!
+            {t('topptur.contactUs')}
           </p>
           <Button size="lg" className="bg-blue-600 hover:bg-blue-700" onClick={() => handleBookingEmail('Topptur med privatguide')}>
             {t('contact.sendMessage')}

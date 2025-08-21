@@ -84,6 +84,21 @@ const translations = {
     'contact.messagePlaceholder': 'Tell us about your ski touring experience and what you\'re looking for...',
     'contact.sendButton': 'Send Message',
 
+    // Topptur Privatguide page
+    'topptur.fullExperience': 'A complete mountain experience',
+    'topptur.description1': 'Join us for an unforgettable ski tour in Hemavan\'s beautiful mountain world. We ascend with climbing skins under our skis and are then rewarded with one or more wonderful runs in untouched terrain.',
+    'topptur.description2': 'Our certified guide selects the day\'s route based on weather, wind and snow conditions – but we also listen to the group\'s wishes. The ski tour is adapted to the participants\' skiing experience and no previous ski touring experience is required. Want to try for the first time? Then we\'ll gladly introduce you to the basics. What\'s important is that everyone in the group can ski safely on red runs under varying conditions.',
+    'topptur.description3': 'For ski touring you need your own equipment (can be rented at Centrumliften or Solkatten). To get the most out of the experience, we recommend booking several consecutive days.',
+    'topptur.description4': 'The booking includes a certified guide for a full day and complete avalanche equipment. Lift tickets are added if needed.',
+    'topptur.tourDetails': 'Tour Details',
+    'topptur.time': 'Time',
+    'topptur.fullDay': 'Full day',
+    'topptur.groupSize': 'Group Size',
+    'topptur.level': 'Level',
+    'topptur.price': 'Price',
+    'topptur.readyForAdventure': 'Ready for an adventure?',
+    'topptur.contactUs': 'Contact us and we\'ll book a guide for you!',
+
     'footer.description': 'Your trusted partner for adventures in Hemavan.',
     'footer.quickContact': 'Quick Contact',
     'footer.services': 'Services',
@@ -166,6 +181,21 @@ const translations = {
     'contact.message': 'Meddelande',
     'contact.messagePlaceholder': 'Vad kan vi hjälpa dig med?',
     'contact.sendButton': 'Skicka',
+
+    // Topptur Privatguide page
+    'topptur.fullExperience': 'En fullständig fjällupplevelse',
+    'topptur.description1': 'Följ med oss på en oförglömlig topptur i Hemavans vackra fjällvärld. Vi tar oss uppför med stighudar under skidorna och belönas sedan med ett eller flera härliga åk i orörd terräng.',
+    'topptur.description2': 'Vår certifierade guide väljer dagens rutt utifrån väder, vind och snöförhållanden – men självklart lyssnar vi också på gruppens önskemål. Toppturen anpassas efter deltagarnas skidvana och ingen tidigare erfarenhet av toppturer krävs. Vill du prova för första gången? Då introducerar vi dig gärna till grunderna. Det viktiga är att alla i gruppen kan åka säkert i röd pist under varierande förhållanden.',
+    'topptur.description3': 'För toppturer behöver du egen utrustning (kan hyras vid Centrumliften eller Solkatten). För att få ut det mesta av upplevelsen rekommenderar vi att du bokar flera dagar i följd.',
+    'topptur.description4': 'I bokningen ingår en certifierad guide för en heldag samt komplett lavinutrustning. Liftkort tillkommer vid behov.',
+    'topptur.tourDetails': 'Turdetaljer',
+    'topptur.time': 'Tid',
+    'topptur.fullDay': 'Heldag',
+    'topptur.groupSize': 'Gruppstorlek',
+    'topptur.level': 'Nivå',
+    'topptur.price': 'Pris',
+    'topptur.readyForAdventure': 'Redo för ett äventyr?',
+    'topptur.contactUs': 'Kontakta oss så bokar vi en guide åt er!',
 
     'footer.description': 'Din pålitliga partner för äventyr i Hemavan.',
     'footer.quickContact': 'Snabbkontakt',
