@@ -132,7 +132,7 @@ const Navigation = () => {
                     to="/topptur-privatguide" 
                     className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block py-3 px-4 text-base"
                   >
-                    Topptur med privatguide
+                    {t('nav.toppturPrivate')}
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
@@ -140,7 +140,7 @@ const Navigation = () => {
                     to="/off-pist-guiding" 
                     className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block py-3 px-4 text-base"
                   >
-                    Offpist med privatguide
+                    {t('nav.offpistPrivate')}
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
@@ -156,7 +156,7 @@ const Navigation = () => {
                     to="/topptur-helgeland" 
                     className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block py-3 px-4 text-base"
                   >
-                    Topptur i Helgeland
+                    {t('nav.toppturHelgeland')}
                   </Link>
                 </DropdownMenuItem>
 

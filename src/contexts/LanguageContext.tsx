@@ -21,6 +21,11 @@ const translations = {
     'hero.aboutUs': 'About us',
     'hero.services': 'Services',
 
+    // Navigation menu items
+    'nav.toppturPrivate': 'Ski touring with private guide',
+    'nav.offpistPrivate': 'Off-piste with private guide',
+    'nav.toppturHelgeland': 'Ski touring in Helgeland',
+
     // About
     'about.title': 'Your specialists for every mountain adventure',
     'about.description': 'Experience the arctic wilderness with our experienced guides. We offer memorable adventures in one of Europe\'s most pristine mountain ranges.',
@@ -149,6 +154,11 @@ const translations = {
     'hero.bookAdventure': 'Boka ditt äventyr',
     'hero.aboutUs': 'Om oss',
     'hero.services': 'Tjänster',
+
+    // Navigation menu items
+    'nav.toppturPrivate': 'Topptur med privatguide',
+    'nav.offpistPrivate': 'Offpist med privatguide',
+    'nav.toppturHelgeland': 'Topptur i Helgeland',
 
     // About
     'about.title': 'Dina specialister på fjälläventyr',
