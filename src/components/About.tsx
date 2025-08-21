@@ -30,7 +30,7 @@ const About = () => {
             </div>
             <h3 className="text-2xl font-semibold text-slate-800 mb-4">{t('about.safetyFirst')}</h3>
             <p className="text-slate-600 leading-relaxed">
-              {t('about.safetyFirstDesc')}
+              {t('about.safetyFirstDesc')} Våra guider har alla gått relevanta lavinutbildningar hos Sveriges Lavinutbildningar.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ const About = () => {
               <h3 className="text-3xl font-bold text-slate-800 mb-6">
                 {t('about.discoverTitle')}
               </h3>
-              <p className="text-slate-600 mb-3 leading-relaxed">
+              <p className="text-slate-600 mb-6 leading-relaxed">
                 {t('about.discoverDesc1')}
               </p>
               <p className="text-slate-600 leading-relaxed">
