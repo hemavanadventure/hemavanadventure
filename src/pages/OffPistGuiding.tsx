@@ -50,10 +50,11 @@ Tack!`);
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-slate-800 mb-6">Offpistguidning</h2>
-              <p className="text-lg text-slate-600 mb-6">Upplev friheten av Hemavans offpist utan att behöva gå en enda höjdmeter, samtidigt som vår erfarna guide utvecklar dina kunskaper inom offpist och friåkning.<br /> 
-                Vi tar er med till våra smultronställen som få vet om och åker den bästa möjliga snön. Ni slipper lägga på stighudar och bära på tunga ryggsäckar. Lunch kan intas i ett av liftsystemets restauranger.<br /> 
-                Guidningen anpassas utifrån deltagarnas skidvana och ingen tidigare erfarenhet av offpist-åkning krävs. Våra guider introducerar er gärna i grunderna.<br /> 
-                Ni behöver ha egen skidutrustning för toppturer (finns att hyra vid skiduthyrningen vid Centrumliften eller Solkatten). Liftkort tillkommer.
+              <p className="text-lg text-slate-600 mb-6">
+                Vår erfarna guide tar dig med till hemliga smultronställen och ser till att du får åka i den bästa snön för dagen. Under turen får du även tips och personlig coachning för att utveckla din friåkning.<br /><br />
+                Här slipper du stighudar och tunga ryggsäckar – fokus ligger på själva åkningen. När hungern smyger sig på finns flera restauranger i liftsystemet att välja mellan för en välförtjänt lunchpaus.<br /><br />
+                Guidningen anpassas alltid efter gruppens skidvana och ingen tidigare erfarenhet av offpist krävs. Vill du prova för första gången hjälper vi dig gärna in i grunderna.<br /><br />
+                Egen skidutrustning behövs (kan hyras vid Centrumliften eller Solkatten). Liftkort köps separat.
               </p>
               
             </div>
