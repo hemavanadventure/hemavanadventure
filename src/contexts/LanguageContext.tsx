@@ -120,6 +120,17 @@ const translations = {
     'skiSchool.readyToDevelop': 'Ready to develop your skiing?',
     'skiSchool.contactUs': 'Contact us!',
 
+    // Topptur Helgeland page
+    'helgeland.title': 'Ski touring in Helgeland',
+    'helgeland.subtitle': 'Experience Helgeland\'s beautiful ski tours with fantastic views over coast and mountains',
+    'helgeland.bookToday': 'Book today',
+    'helgeland.skiingWithOceanView': 'Skiing with ocean view',
+    'helgeland.description1': 'Helgeland offers some of Norway\'s most spectacular ski tours, where mountains meet sea and views stretch for miles. Our experienced guides lead you safely to the best peaks and ensure you have a memorable experience.',
+    'helgeland.description2': 'The ski tours are always adapted to the participants\' skiing ability, and no previous experience is required. Want to try for the first time? Then we\'ll gladly introduce you to the basics.',
+    'helgeland.description3': 'Own ski equipment is needed (can be rented from local ski rental shops). To really experience the area\'s diversity, we recommend booking several consecutive days.',
+    'helgeland.description4': 'The booking includes a certified guide for a full day and complete avalanche equipment. Transport and possible accommodation are additional.',
+    'helgeland.askUs': 'Ask us',
+
     'footer.description': 'Your trusted partner for adventures in Hemavan.',
     'footer.quickContact': 'Quick Contact',
     'footer.services': 'Services',
@@ -238,6 +249,17 @@ const translations = {
     'skiSchool.allLevels': 'Alla nivåer',
     'skiSchool.readyToDevelop': 'Redo att utveckla din åkning?',
     'skiSchool.contactUs': 'Kontakta oss!',
+
+    // Topptur Helgeland page
+    'helgeland.title': 'Topptur i Helgeland',
+    'helgeland.subtitle': 'Upplev Helgelands vackra toppturer med fantastiska vyer över kust och fjäll',
+    'helgeland.bookToday': 'Boka idag',
+    'helgeland.skiingWithOceanView': 'Skidåkning med havsutsikt',
+    'helgeland.description1': 'Helgeland bjuder på några av Norges mest spektakulära toppturer, där fjäll möter hav och vyerna sträcker sig mil efter mil. Våra erfarna guider leder dig säkert till de bästa topparna och ser till att du får en minnesvärd upplevelse.',
+    'helgeland.description2': 'Toppturerna anpassas alltid efter deltagarnas skidvana, och ingen tidigare erfarenhet krävs. Vill du prova för första gången? Då introducerar vi dig gärna till grunderna.',
+    'helgeland.description3': 'Egen skidutrustning behövs (kan hyras hos lokala skiduthyrningar). För att verkligen uppleva områdets mångfald rekommenderar vi att boka flera dagar i följd.',
+    'helgeland.description4': 'I bokningen ingår en certifierad guide för en heldag samt komplett lavinutrustning. Transport och eventuell logi tillkommer.',
+    'helgeland.askUs': 'Fråga oss',
 
     'footer.description': 'Din pålitliga partner för äventyr i Hemavan.',
     'footer.quickContact': 'Snabbkontakt',

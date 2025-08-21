@@ -28,13 +28,13 @@ Tack!`);
         <div className="container mx-auto px-4 max-w-6xl relative z-10">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Topptur i Helgeland
+              {t('helgeland.title')}
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Upplev Helgelands vackra toppturer med fantastiska vyer över kust och fjäll
+              {t('helgeland.subtitle')}
             </p>
             <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100" onClick={() => handleBookingEmail('Topptur i Helgeland')}>
-              Boka idag
+              {t('helgeland.bookToday')}
             </Button>
           </div>
         </div>
@@ -45,36 +45,36 @@ Tack!`);
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-slate-800 mb-6">Skidåkning med havsutsikt</h2>
+              <h2 className="text-4xl font-bold text-slate-800 mb-6">{t('helgeland.skiingWithOceanView')}</h2>
               <p className="text-lg text-slate-600 mb-3 text-left">
-                Helgeland bjuder på några av Norges mest spektakulära toppturer, där fjäll möter hav och vyerna sträcker sig mil efter mil. Våra erfarna guider leder dig säkert till de bästa topparna och ser till att du får en minnesvärd upplevelse.
+                {t('helgeland.description1')}
               </p>
               <p className="text-lg text-slate-600 mb-3 text-left">
-                Toppturerna anpassas alltid efter deltagarnas skidvana, och ingen tidigare erfarenhet krävs. Vill du prova för första gången? Då introducerar vi dig gärna till grunderna.
+                {t('helgeland.description2')}
               </p>
               <p className="text-lg text-slate-600 mb-3 text-left">
-                Egen skidutrustning behövs (kan hyras hos lokala skiduthyrningar). För att verkligen uppleva områdets mångfald rekommenderar vi att boka flera dagar i följd.
+                {t('helgeland.description3')}
               </p>
-              <p className="text-lg text-slate-600">I bokningen ingår en certifierad guide för en heldag samt komplett lavinutrustning. Transport och eventuell logi tillkommer.</p>
+              <p className="text-lg text-slate-600">{t('helgeland.description4')}</p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-slate-800 mb-6">Turdetaljer</h3>
+              <h3 className="text-2xl font-bold text-slate-800 mb-6">{t('topptur.tourDetails')}</h3>
               <div className="space-y-4">
                 <div>
-                  <span className="text-green-600 font-semibold">Tid</span>
-                  <span className="text-slate-700"> - Heldag</span>
+                  <span className="text-green-600 font-semibold">{t('topptur.time')}</span>
+                  <span className="text-slate-700"> - {t('topptur.fullDay')}</span>
                 </div>
                 <div>
-                  <span className="text-green-600 font-semibold">Gruppstorlek</span>
+                  <span className="text-green-600 font-semibold">{t('topptur.groupSize')}</span>
                   <span className="text-slate-700"> - 1-6 personer</span>
                 </div>
                 <div>
-                  <span className="text-green-600 font-semibold">Nivå</span>
-                  <span className="text-slate-700"> - Anpassas enligt grupp</span>
+                  <span className="text-green-600 font-semibold">{t('topptur.level')}</span>
+                  <span className="text-slate-700"> - {t('services.beginner')}</span>
                 </div>
                 <div>
-                  <span className="text-green-600 font-semibold">Pris</span>
-                  <span className="text-slate-700"> - Fråga oss</span>
+                  <span className="text-green-600 font-semibold">{t('topptur.price')}</span>
+                  <span className="text-slate-700"> - {t('helgeland.askUs')}</span>
                 </div>
               </div>
             </div>
@@ -86,13 +86,13 @@ Tack!`);
       <section className="py-16 bg-slate-800 text-white">
         <div className="container mx-auto px-4 max-w-6xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Redo för ett äventyr?
+            {t('topptur.readyForAdventure')}
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Kontakta oss så bokar vi en guide åt er!
+            {t('topptur.contactUs')}
           </p>
           <Button size="lg" className="bg-green-600 hover:bg-green-700" onClick={() => handleBookingEmail('Topptur i Helgeland')}>
-            Skicka meddelande
+            {t('offpist.sendMessage')}
           </Button>
         </div>
       </section>
