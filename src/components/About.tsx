@@ -21,7 +21,9 @@ const About = () => {
               <img src="/assets/fjallguide-logo.png" alt="Svenska Fjälledarorganisationen" className="w-full h-full object-contain" />
             </div>
             <h3 className="text-2xl font-semibold text-slate-800 mb-4">{t('about.expertGuides')}</h3>
-            <p className="text-slate-600 leading-relaxed">Våra guider är certifierade av Svenska Fjälledarorganisationen och har många års erfarenhet av området kring Hemavan.</p>
+            <p className="text-slate-600 leading-relaxed">
+              {t('about.expertGuidesDesc')}
+            </p>
           </div>
 
           <div className="text-center flex flex-col items-center">
