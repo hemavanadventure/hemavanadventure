@@ -47,8 +47,12 @@ Tack!`);
             <div>
               <h2 className="text-4xl font-bold text-slate-800 mb-6">Skidåkning med havsutsikt – toppturer i Helgeland</h2>
               <p className="text-lg text-slate-600 mb-6 text-left">
-                Helgeland bjuder på några av Norges mest spektakulära toppturer, där fjäll möter hav och vyerna sträcker sig mil efter mil. Våra erfarna guider leder dig säkert till de bästa topparna och ser till att du får en minnesvärd upplevelse.<br />
-                Toppturerna anpassas alltid efter deltagarnas skidvana, och ingen tidigare erfarenhet krävs. Vill du prova för första gången? Då introducerar vi dig gärna till grunderna.<br />
+                Helgeland bjuder på några av Norges mest spektakulära toppturer, där fjäll möter hav och vyerna sträcker sig mil efter mil. Våra erfarna guider leder dig säkert till de bästa topparna och ser till att du får en minnesvärd upplevelse.
+              </p>
+              <p className="text-lg text-slate-600 mb-6 text-left">
+                Toppturerna anpassas alltid efter deltagarnas skidvana, och ingen tidigare erfarenhet krävs. Vill du prova för första gången? Då introducerar vi dig gärna till grunderna.
+              </p>
+              <p className="text-lg text-slate-600 mb-6 text-left">
                 Egen skidutrustning behövs (kan hyras hos lokala skiduthyrningar). För att verkligen uppleva områdets mångfald rekommenderar vi att boka flera dagar i följd.
               </p>
               <p className="text-lg text-slate-600">I bokningen ingår en certifierad guide för en heldag samt komplett lavinutrustning. Transport och eventuell logi tillkommer.</p>
