@@ -21,22 +21,17 @@ Tack!`);
       <Navigation />
       
       {/* Hero Section */}
-      <section 
-        className="py-20 text-white pt-32 bg-cover bg-no-repeat relative"
-        style={{
-          backgroundImage: `url('/lovable-uploads/6f874705-a0cd-4316-a57d-60fdf6451a6f.png')`,
-          backgroundPosition: 'center 20%'
-        }}
-      >
+      <section className="py-20 text-white pt-32 bg-cover bg-no-repeat relative" style={{
+      backgroundImage: `url('/lovable-uploads/6f874705-a0cd-4316-a57d-60fdf6451a6f.png')`,
+      backgroundPosition: 'center 20%'
+    }}>
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="container mx-auto px-4 max-w-6xl relative z-10">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Offpist med privatguide
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              Upplev friheten av Hemavans offpist utan att behöva gå en enda höjdmeter
-            </p>
+            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Upplev Hemavans bästa offpist – utan att gå en enda höjdmeter.</p>
             <Button size="lg" className="bg-white text-slate-800 hover:bg-gray-100" onClick={handleBookingEmail}>
               Boka idag
             </Button>
