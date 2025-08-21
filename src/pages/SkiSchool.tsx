@@ -30,7 +30,7 @@ Tack!`);
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               {t('services.skiSchool')}
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Skidskola för alla nivåer – från första svängar till friåkning i terräng</p>
+            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">{t('skiSchool.subtitle')}</p>
             <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100" onClick={() => handleBookingEmail('Skidskola i offpist')}>
               {t('services.bookToday')}
             </Button>
@@ -43,31 +43,28 @@ Tack!`);
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-slate-800 mb-6">Privatlektioner</h2>
+              <h2 className="text-4xl font-bold text-slate-800 mb-6">{t('skiSchool.privateLessons')}</h2>
               <p className="text-lg text-slate-600 mb-3 text-left">
-                Oavsett om du tar dina första steg utanför pisten eller vill slipa på avancerade tekniker får du personlig vägledning av våra erfarna instruktörer. Undervisningen sker i små grupper för att du ska få ut så mycket som möjligt av tiden på snö.<br /><br />
-                Vi anpassar undervisningen efter din nivå – allt från grundläggande teknik och trygghet i backen till att bemästra brantare terräng och offpiståkning. Våra instruktörer går även igenom grunderna i säkerhet för åkning utanför pisten.<br /><br />
-                För att delta behöver du vara bekväm med att åka i röd pist under varierande förhållanden. Egen skidutrustning krävs, men går att hyra vid Centrumliften eller Solkatten.<br /><br />
-                Bokningen inkluderar en skidinstruktör i tre timmar. Liftkort köps separat.
+                {t('skiSchool.description')}
               </p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-slate-800 mb-6">Detaljer</h3>
+              <h3 className="text-2xl font-bold text-slate-800 mb-6">{t('skiSchool.details')}</h3>
               <div className="space-y-4">
                 <div>
-                  <span className="text-blue-600 font-semibold">Tid</span>
-                  <span className="text-slate-700"> - 3 timmar</span>
+                  <span className="text-blue-600 font-semibold">{t('skiSchool.time')}</span>
+                  <span className="text-slate-700"> - {t('skiSchool.duration')}</span>
                 </div>
                 <div>
-                  <span className="text-blue-600 font-semibold">Gruppstorlek</span>
+                  <span className="text-blue-600 font-semibold">{t('topptur.groupSize')}</span>
                   <span className="text-slate-700"> - 1-6 personer</span>
                 </div>
                 <div>
-                  <span className="text-blue-600 font-semibold">Nivå</span>
-                  <span className="text-slate-700"> - Alla nivåer</span>
+                  <span className="text-blue-600 font-semibold">{t('topptur.level')}</span>
+                  <span className="text-slate-700"> - {t('skiSchool.allLevels')}</span>
                 </div>
                 <div>
-                  <span className="text-blue-600 font-semibold">Pris</span>
+                  <span className="text-blue-600 font-semibold">{t('topptur.price')}</span>
                   <span className="text-slate-700"> - 4000 kr</span>
                 </div>
               </div>
@@ -80,9 +77,9 @@ Tack!`);
       <section className="py-16 bg-slate-800 text-white">
         <div className="container mx-auto px-4 max-w-6xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Redo att utveckla din åkning?
+            {t('skiSchool.readyToDevelop')}
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">Kontakta oss!</p>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">{t('skiSchool.contactUs')}</p>
           <Button size="lg" className="bg-blue-600 hover:bg-blue-700" onClick={() => handleBookingEmail('Skidskola i offpist')}>
             {t('contact.sendMessage')}
           </Button>
