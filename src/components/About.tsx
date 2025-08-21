@@ -1,12 +1,10 @@
-
 import { Award, MapPin } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-
 const About = () => {
-  const { t } = useLanguage();
-
-  return (
-    <section id="about" className="py-20 bg-white">
+  const {
+    t
+  } = useLanguage();
+  return <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
@@ -23,9 +21,7 @@ const About = () => {
               <img src="/assets/fjallguide-logo.png" alt="Svenska Fjälledarorganisationen" className="w-full h-full object-contain" />
             </div>
             <h3 className="text-2xl font-semibold text-slate-800 mb-4">{t('about.expertGuides')}</h3>
-            <p className="text-slate-600 leading-relaxed">
-              Våra guider är alla Fjälledare certifierade av den Svenska Fjälledarorganisationen och har många års erfarenhet av området runt Hemavan.
-            </p>
+            <p className="text-slate-600 leading-relaxed">Våra guider är certifierade av Svenska Fjälledarorganisationen och har många års erfarenhet av området kring Hemavan.</p>
           </div>
 
           <div className="text-center flex flex-col items-center">
@@ -62,17 +58,12 @@ const About = () => {
                 {t('about.discoverDesc2')}
               </p>
             </div>
-            <div 
-              className="rounded-xl h-64 bg-cover bg-center bg-no-repeat"
-              style={{
-                backgroundImage: `url('/lovable-uploads/337c4cba-b3f2-4478-b8b3-b7729ff3c07b.png')`
-              }}
-            ></div>
+            <div className="rounded-xl h-64 bg-cover bg-center bg-no-repeat" style={{
+            backgroundImage: `url('/lovable-uploads/337c4cba-b3f2-4478-b8b3-b7729ff3c07b.png')`
+          }}></div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
