@@ -45,11 +45,11 @@ Tack!`);
             <div>
               <h2 className="text-4xl font-bold text-slate-800 mb-6">Privatlektioner</h2>
               <p className="text-lg text-slate-600 mb-6 text-left">
-                Vår skidskola erbjuder omfattande undervisning för alla nivåer. Oavsett om du tar dina första steg i offipist eller vill förfina avancerade tekniker, ger våra instruktörer personlig vägledning i små grupper.<br /> 
-                Vi erbjuder något för alla nivåer - från nybörjare som lär sig grundläggande tekniker till avancerade åkare som vill bemästra utmanande terräng. Våra instruktörer introducerar er gärna i grunderna för offpist-åkning och säkerhet.<br />
-                Alla deltagare behöver behärska åkning i röd pist i varierande förhållanden. Egen skidutrustning krävs (finns att hyra vid skiduthyrningen vid Centrumliften eller Solkatten).
+                Oavsett om du tar dina första steg utanför pisten eller vill slipa på avancerade tekniker får du personlig vägledning av våra erfarna instruktörer. Undervisningen sker i små grupper för att du ska få ut så mycket som möjligt av tiden på snö.<br /><br />
+                Vi anpassar undervisningen efter din nivå – allt från grundläggande teknik och trygghet i backen till att bemästra brantare terräng och offpiståkning. Våra instruktörer går även igenom grunderna i säkerhet för åkning utanför pisten.<br /><br />
+                För att delta behöver du vara bekväm med att åka i röd pist under varierande förhållanden. Egen skidutrustning krävs, men går att hyra vid Centrumliften eller Solkatten.<br /><br />
+                Bokningen inkluderar en skidinstruktör i tre timmar. Liftkort köps separat.
               </p>
-              <p className="text-lg text-slate-600">Bokningen inkluderar en skidinstruktör för tre timmar. Liftkort tillkommer.</p>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-slate-800 mb-6">Detaljer</h3>
