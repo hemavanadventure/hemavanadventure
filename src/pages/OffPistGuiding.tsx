@@ -21,17 +21,22 @@ Tack!`);
       <Navigation />
       
       {/* Hero Section */}
-      <section className="py-20 text-white pt-32 bg-cover bg-no-repeat relative" style={{
-      backgroundImage: `url('/lovable-uploads/6f874705-a0cd-4316-a57d-60fdf6451a6f.png')`,
-      backgroundPosition: 'center 20%'
-    }}>
+      <section 
+        className="py-20 text-white pt-32 bg-cover bg-no-repeat relative"
+        style={{
+          backgroundImage: `url('/lovable-uploads/6f874705-a0cd-4316-a57d-60fdf6451a6f.png')`,
+          backgroundPosition: 'center 20%'
+        }}
+      >
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="container mx-auto px-4 max-w-6xl relative z-10">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Offpist med privatguide
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Upplev Hemavans bästa offpist – utan att gå en enda höjdmeter.</p>
+            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+              Upplev friheten av Hemavans offpist utan att behöva gå en enda höjdmeter
+            </p>
             <Button size="lg" className="bg-white text-slate-800 hover:bg-gray-100" onClick={handleBookingEmail}>
               Boka idag
             </Button>
@@ -45,10 +50,11 @@ Tack!`);
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-slate-800 mb-6">Offpistguidning</h2>
-              <p className="text-lg text-slate-600 mb-6">Upplev friheten av Hemavans offpist utan att behöva gå en enda höjdmeter, samtidigt som vår erfarna guide utvecklar dina kunskaper inom offpist och friåkning.<br /> 
-                Vi tar er med till våra smultronställen som få vet om och åker den bästa möjliga snön. Ni slipper lägga på stighudar och bära på tunga ryggsäckar. Lunch kan intas i ett av liftsystemets restauranger.<br /> 
-                Guidningen anpassas utifrån deltagarnas skidvana och ingen tidigare erfarenhet av offpist-åkning krävs. Våra guider introducerar er gärna i grunderna.<br /> 
-                Ni behöver ha egen skidutrustning för toppturer (finns att hyra vid skiduthyrningen vid Centrumliften eller Solkatten). Liftkort tillkommer.
+              <p className="text-lg text-slate-600 mb-6">
+                Vår erfarna guide tar dig med till hemliga smultronställen och ser till att du får åka i den bästa snön för dagen. Under turen får du även tips och personlig coachning för att utveckla din friåkning.<br /><br />
+                Här slipper du stighudar och tunga ryggsäckar – fokus ligger på själva åkningen. När hungern smyger sig på finns flera restauranger i liftsystemet att välja mellan för en välförtjänt lunchpaus.<br /><br />
+                Guidningen anpassas alltid efter gruppens skidvana och ingen tidigare erfarenhet av offpist krävs. Vill du prova för första gången hjälper vi dig gärna in i grunderna.<br /><br />
+                Egen skidutrustning behövs (kan hyras vid Centrumliften eller Solkatten). Liftkort köps separat.
               </p>
               
             </div>
