@@ -29,11 +29,11 @@ Tack!`);
         <div className="container mx-auto px-4 max-w-6xl relative z-10">
           <div className="text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Offpist med privatguide
+              {t('offpist.title')}
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Upplev Hemavans bästa offpist – utan att gå en enda höjdmeter.</p>
+            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">{t('offpist.subtitle')}</p>
             <Button size="lg" className="bg-white text-slate-800 hover:bg-gray-100" onClick={handleBookingEmail}>
-              Boka idag
+              {t('offpist.bookToday')}
             </Button>
           </div>
         </div>
@@ -44,32 +44,29 @@ Tack!`);
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-slate-800 mb-6">Offpistguidning</h2>
+              <h2 className="text-4xl font-bold text-slate-800 mb-6">{t('offpist.heading')}</h2>
               <p className="text-lg text-slate-600 mb-3">
-                Vår erfarna guide tar dig med till hemliga smultronställen och ser till att du får åka i den bästa snön för dagen. Under turen får du även tips och personlig coachning för att utveckla din friåkning.<br /><br />
-                Här slipper du stighudar och tunga ryggsäckar – fokus ligger på själva åkningen. När hungern smyger sig på finns flera restauranger i liftsystemet att välja mellan för en välförtjänt lunchpaus.<br /><br />
-                Guidningen anpassas alltid efter gruppens skidvana och ingen tidigare erfarenhet av offpist krävs. Vill du prova för första gången hjälper vi dig gärna in i grunderna.<br /><br />
-                Egen skidutrustning behövs (kan hyras vid Centrumliften eller Solkatten). Liftkort köps separat.
+                {t('offpist.description')}
               </p>
               
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-slate-800 mb-6">Turdetaljer</h3>
+              <h3 className="text-2xl font-bold text-slate-800 mb-6">{t('topptur.tourDetails')}</h3>
               <div className="space-y-4">
                 <div>
-                  <span className="text-slate-600 font-semibold">Tid</span>
-                  <span className="text-slate-700"> - Heldag</span>
+                  <span className="text-slate-600 font-semibold">{t('topptur.time')}</span>
+                  <span className="text-slate-700"> - {t('topptur.fullDay')}</span>
                 </div>
                 <div>
-                  <span className="text-slate-600 font-semibold">Gruppstorlek</span>
+                  <span className="text-slate-600 font-semibold">{t('topptur.groupSize')}</span>
                   <span className="text-slate-700"> - {t('services.groupSizeTiny')}</span>
                 </div>
                 <div>
-                  <span className="text-slate-600 font-semibold">Nivå</span>
+                  <span className="text-slate-600 font-semibold">{t('topptur.level')}</span>
                   <span className="text-slate-700"> - {t('services.advanced')}</span>
                 </div>
                 <div>
-                  <span className="text-slate-600 font-semibold">Pris</span>
+                  <span className="text-slate-600 font-semibold">{t('topptur.price')}</span>
                   <span className="text-slate-700"> - 6000 kr</span>
                 </div>
               </div>
@@ -82,11 +79,11 @@ Tack!`);
       <section className="py-16 bg-blue-600 text-white">
         <div className="container mx-auto px-4 max-w-6xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Redo för skidåkning?
+            {t('offpist.readyForSkiing')}
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">Kontakta oss för att boka din guide!</p>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">{t('offpist.contactForBooking')}</p>
           <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100" onClick={handleBookingEmail}>
-            Skicka meddelande
+            {t('offpist.sendMessage')}
           </Button>
         </div>
       </section>

@@ -99,6 +99,16 @@ const translations = {
     'topptur.readyForAdventure': 'Ready for an adventure?',
     'topptur.contactUs': 'Contact us and we\'ll book a guide for you!',
 
+    // Off-pist Guiding page
+    'offpist.title': 'Off-piste with private guide',
+    'offpist.subtitle': 'Experience Hemavan\'s best off-piste – without walking a single vertical meter.',
+    'offpist.bookToday': 'Book today',
+    'offpist.heading': 'Off-piste guiding',
+    'offpist.description': 'Our experienced guide takes you to secret honey spots and ensures you get to ski in the best snow of the day. During the tour you also get tips and personal coaching to develop your freeriding. Here you avoid climbing skins and heavy backpacks – the focus is on the skiing itself. When hunger creeps in, there are several restaurants in the lift system to choose from for a well-deserved lunch break. The guiding is always adapted to the group\'s skiing ability and no previous off-piste experience is required. If you want to try for the first time, we\'re happy to help you with the basics. Own ski equipment is needed (can be rented at Centrumliften or Solkatten). Lift tickets are purchased separately.',
+    'offpist.readyForSkiing': 'Ready for skiing?',
+    'offpist.contactForBooking': 'Contact us to book your guide!',
+    'offpist.sendMessage': 'Send message',
+
     'footer.description': 'Your trusted partner for adventures in Hemavan.',
     'footer.quickContact': 'Quick Contact',
     'footer.services': 'Services',
@@ -196,6 +206,16 @@ const translations = {
     'topptur.price': 'Pris',
     'topptur.readyForAdventure': 'Redo för ett äventyr?',
     'topptur.contactUs': 'Kontakta oss så bokar vi en guide åt er!',
+
+    // Off-pist Guiding page
+    'offpist.title': 'Offpist med privatguide',
+    'offpist.subtitle': 'Upplev Hemavans bästa offpist – utan att gå en enda höjdmeter.',
+    'offpist.bookToday': 'Boka idag',
+    'offpist.heading': 'Offpistguidning',
+    'offpist.description': 'Vår erfarna guide tar dig med till hemliga smultronställen och ser till att du får åka i den bästa snön för dagen. Under turen får du även tips och personlig coachning för att utveckla din friåkning. Här slipper du stighudar och tunga ryggsäckar – fokus ligger på själva åkningen. När hungern smyger sig på finns flera restauranger i liftsystemet att välja mellan för en välförtjänt lunchpaus. Guidningen anpassas alltid efter gruppens skidvana och ingen tidigare erfarenhet av offpist krävs. Vill du prova för första gången hjälper vi dig gärna in i grunderna. Egen skidutrustning behövs (kan hyras vid Centrumliften eller Solkatten). Liftkort köps separat.',
+    'offpist.readyForSkiing': 'Redo för skidåkning?',
+    'offpist.contactForBooking': 'Kontakta oss för att boka din guide!',
+    'offpist.sendMessage': 'Skicka meddelande',
 
     'footer.description': 'Din pålitliga partner för äventyr i Hemavan.',
     'footer.quickContact': 'Snabbkontakt',
