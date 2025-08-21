@@ -122,7 +122,7 @@ const translations = {
     'services.halfDay': 'Halvdagsturer',
     'services.halfDayDesc': 'Perfekt introduktion till skidturer med grundläggande teknikinstruktion och natursköna rutter.',
     'services.fullDay': 'Topptur med privatguide',
-    'services.fullDayDesc': 'En heldagstur med privat guide.',
+    'services.fullDayDesc': 'En heldagstur med privat guide',
     'services.multiDay': 'Offpist guidning',
     'services.multiDayDesc': 'Guidning i Hemavans offpist där vi utnyttjar liftsystemet.',
     'services.skiSchool': 'Offpist skidskola',
