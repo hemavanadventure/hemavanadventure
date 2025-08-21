@@ -20,13 +20,10 @@ Tack!`);
       <Navigation />
       
       {/* Hero Section */}
-      <section 
-        className="py-20 text-white pt-32 bg-cover bg-no-repeat relative"
-        style={{
-          backgroundImage: `url('/lovable-uploads/ce27e18a-f51c-4d51-b7c5-e1b4a2783894.png')`,
-          backgroundPosition: 'center 80%'
-        }}
-      >
+      <section className="py-20 text-white pt-32 bg-cover bg-no-repeat relative" style={{
+      backgroundImage: `url('/lovable-uploads/ce27e18a-f51c-4d51-b7c5-e1b4a2783894.png')`,
+      backgroundPosition: 'center 80%'
+    }}>
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="container mx-auto px-4 max-w-6xl relative z-10">
           <div className="text-center">
@@ -48,9 +45,7 @@ Tack!`);
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-slate-800 mb-6">
-                Skidåkning med havsutsikt
-              </h2>
+              <h2 className="text-4xl font-bold text-slate-800 mb-6">Skidåkning med havsutsikt – toppturer i Helgeland</h2>
               <p className="text-lg text-slate-600 mb-6 text-left">
                 Helgeland erbjuder några av Norges finaste toppturer med fantastiska vyer över kust och fjäll. Våra erfarna guider tar dig säkert till de bästa topparna i området.<br />
                 Toppturer kan anpassas utifrån deltagarnas skidvana och ingen tidigare erfarenhet av toppturåkning krävs. Våra guider introducerar er gärna i grunderna.<br />
