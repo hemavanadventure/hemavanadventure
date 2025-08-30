@@ -19,14 +19,14 @@ const LanguageToggle = () => {
         EN
       </button>
       <button
-        onClick={() => setLanguage('se')}
+        onClick={() => setLanguage('sv')}
         className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
-          language === 'se'
+          language === 'sv'
             ? 'bg-blue-600 text-white'
             : 'text-slate-600 hover:bg-slate-100'
         }`}
       >
-        SE
+        SV
       </button>
     </div>
   );

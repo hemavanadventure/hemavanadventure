@@ -1,11 +1,13 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState, ReactNode, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
-type Language = 'en' | 'se';
+type Language = 'en' | 'sv';
 
 interface LanguageContextType {
   language: Language;
   setLanguage: (lang: Language) => void;
   t: (key: string) => string;
+  getLocalizedPath: (path: string) => string;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
@@ -165,7 +167,7 @@ const translations = {
     'footer.privateGuiding': 'Private guiding',
     'footer.copyright': '© 2025 Hemavan Adventure. All rights reserved.'
   },
-  se: {
+  sv: {
     // Hero
     'hero.title': 'Hemavan Adventure',
     'hero.subtitle': 'Certifierade fjälledare för toppturer i svenska Lappland',
@@ -323,14 +325,58 @@ const translations = {
 };
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState<Language>('se');
+  const location = useLocation();
+  const navigate = useNavigate();
+  
+  // Determine language from URL
+  const getLanguageFromPath = (pathname: string): Language => {
+    if (pathname.startsWith('/sv')) return 'sv';
+    if (pathname.startsWith('/en')) return 'en';
+    return 'en'; // default to English
+  };
+
+  const [language, setLanguageState] = useState<Language>(() => 
+    getLanguageFromPath(location.pathname)
+  );
+
+  // Update language when URL changes
+  useEffect(() => {
+    const newLanguage = getLanguageFromPath(location.pathname);
+    if (newLanguage !== language) {
+      setLanguageState(newLanguage);
+    }
+  }, [location.pathname, language]);
+
+  const setLanguage = (lang: Language) => {
+    const currentPath = location.pathname;
+    let newPath: string;
+
+    // Remove existing language prefix
+    const pathWithoutLang = currentPath.replace(/^\/(en|sv)/, '') || '/';
+    
+    // Add new language prefix
+    if (pathWithoutLang === '/') {
+      newPath = `/${lang}`;
+    } else {
+      newPath = `/${lang}${pathWithoutLang}`;
+    }
+
+    navigate(newPath, { replace: true });
+  };
+
+  const getLocalizedPath = (path: string): string => {
+    if (path === '/') {
+      return `/${language}`;
+    }
+    return `/${language}${path}`;
+  };
 
   const t = (key: string): string => {
     return translations[language][key] || key;
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, getLocalizedPath }}>
       {children}
     </LanguageContext.Provider>
   );
