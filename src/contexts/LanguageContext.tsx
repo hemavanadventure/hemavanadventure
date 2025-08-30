@@ -345,7 +345,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     if (newLanguage !== language) {
       setLanguageState(newLanguage);
     }
-  }, [location.pathname, language]);
+  }, [location.pathname]); // Remove language from dependency array
 
   const setLanguage = (lang: Language) => {
     const currentPath = location.pathname;
