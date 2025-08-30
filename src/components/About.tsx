@@ -37,8 +37,8 @@ const About = () => {
           </div>
 
           <div className="text-center flex flex-col items-center">
-            <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-              <MapPin className="h-12 w-12 text-blue-600" />
+            <div className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden">
+              <img src="/lovable-uploads/474a2f18-59ca-45b5-9e39-95bea0ed8883.png" alt="Hemavan" className="w-full h-full object-contain" />
             </div>
             <h3 className="text-2xl font-semibold text-slate-800 mb-4">{t('about.localKnowledge')}</h3>
             <p className="text-slate-600 leading-relaxed">
