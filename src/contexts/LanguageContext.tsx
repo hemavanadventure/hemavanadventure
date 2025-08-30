@@ -71,6 +71,8 @@ const translations = {
     'services.bookToday': 'Book your adventure today',
     'services.bookNow': 'Book now',
     'services.contactUs': 'Contact us',
+    'services.price6000': '6000 sek',
+    'services.price4000': '4000 sek',
 
     // Service descriptions
     'services.toppturPrivateTitle': 'Ski touring with private guide',
@@ -218,6 +220,8 @@ const translations = {
     'services.bookToday': 'Boka ditt äventyr idag',
     'services.bookNow': 'Boka nu',
     'services.contactUs': 'Kontakta oss',
+    'services.price6000': '6000 kr',
+    'services.price4000': '4000 kr',
 
     // Service descriptions
     'services.toppturPrivateTitle': 'Topptur med privatguide',

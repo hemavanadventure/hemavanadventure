@@ -25,7 +25,7 @@ Tack!`);
       description: t('services.toppturPrivateDesc'),
       duration: t('services.serviceDuration'),
       groupSize: t('services.oneToSixPeople'), 
-      price: '6000 kr',
+      price: t('services.price6000'),
       icon: Mountain,
       link: '/topptur-privatguide',
       image: '/lovable-uploads/ff3be564-15c6-4644-ae90-53eed59ad7bc.png'
@@ -35,7 +35,7 @@ Tack!`);
       description: t('services.offpistPrivateDesc'),
       duration: t('services.serviceDuration'),
       groupSize: t('services.oneToSixPeople'),
-      price: '6000 kr',
+      price: t('services.price6000'),
       icon: Users,
       link: '/off-pist-guiding',
       image: '/lovable-uploads/6cd4dde1-cd38-4b06-93a0-a3d5fdaabdea.png'
@@ -45,7 +45,7 @@ Tack!`);
       description: t('services.skiSchoolDesc'),
       duration: t('services.threeHours'),
       groupSize: t('services.oneToSixPeople'),
-      price: '4000 kr',
+      price: t('services.price4000'),
       icon: GraduationCap,
       link: '/offpist-skidskola',
       image: '/lovable-uploads/6c37259e-9a62-4b1e-978f-5785c2490b3a.png'
