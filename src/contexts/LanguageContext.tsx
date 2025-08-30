@@ -132,7 +132,9 @@ const translations = {
     // Ski School page
     'skiSchool.subtitle': 'Ski school for all levels – from first turns to freeriding in terrain',
     'skiSchool.privateLessons': 'Private lessons',
-    'skiSchool.description': 'Whether you\'re taking your first steps off-piste or want to sharpen advanced techniques, you get personal guidance from our experienced instructors. Teaching takes place in small groups so you get the most out of your time on snow. We adapt the teaching to your level – everything from basic technique and safety on the slope to mastering steeper terrain and off-piste skiing. Our instructors also go through the basics of safety for skiing off-piste. To participate you need to be comfortable skiing red runs under varying conditions. Own ski equipment is required, but can be rented at Centrumliften or Solkatten. The booking includes a ski instructor for three hours. Lift tickets are purchased separately.',
+    'skiSchool.description1': 'Whether you\'re taking your first steps off-piste or want to sharpen advanced techniques, you get personal guidance from our experienced instructors. Teaching takes place in small groups so you get the most out of your time on snow.',
+    'skiSchool.description2': 'We adapt the teaching to your level – everything from basic technique and safety on the slope to mastering steeper terrain and off-piste skiing. Our instructors also go through the basics of safety for skiing off-piste.',
+    'skiSchool.description3': 'To participate you need to be comfortable skiing red runs under varying conditions. Own ski equipment is required, but can be rented at Centrumliften or Solkatten. The booking includes a ski instructor for three hours. Lift tickets are purchased separately.',
     'skiSchool.details': 'Details',
     'skiSchool.time': 'Time',
     'skiSchool.duration': '3 hours',
@@ -282,7 +284,9 @@ const translations = {
     // Ski School page
     'skiSchool.subtitle': 'Skidskola för alla nivåer – från första svängar till friåkning i terräng',
     'skiSchool.privateLessons': 'Privatlektioner',
-    'skiSchool.description': 'Oavsett om du tar dina första steg utanför pisten eller vill slipa på avancerade tekniker får du personlig vägledning av våra erfarna instruktörer. Undervisningen sker i små grupper för att du ska få ut så mycket som möjligt av tiden på snö. Vi anpassar undervisningen efter din nivå – allt från grundläggande teknik och trygghet i backen till att bemästra brantare terräng och offpiståkning. Våra instruktörer går även igenom grunderna i säkerhet för åkning utanför pisten. För att delta behöver du vara bekväm med att åka i röd pist under varierande förhållanden. Egen skidutrustning krävs, men går att hyra vid Centrumliften eller Solkatten. Bokningen inkluderar en skidinstruktör i tre timmar. Liftkort köps separat.',
+    'skiSchool.description1': 'Oavsett om du tar dina första steg utanför pisten eller vill slipa på avancerade tekniker får du personlig vägledning av våra erfarna instruktörer. Undervisningen sker i små grupper för att du ska få ut så mycket som möjligt av tiden på snö.',
+    'skiSchool.description2': 'Vi anpassar undervisningen efter din nivå – allt från grundläggande teknik och trygghet i backen till att bemästra brantare terräng och offpiståkning. Våra instruktörer går även igenom grunderna i säkerhet för åkning utanför pisten.',
+    'skiSchool.description3': 'För att delta behöver du vara bekväm med att åka i röd pist under varierande förhållanden. Egen skidutrustning krävs, men går att hyra vid Centrumliften eller Solkatten. Bokningen inkluderar en skidinstruktör i tre timmar. Liftkort köps separat.',
     'skiSchool.details': 'Detaljer',
     'skiSchool.time': 'Tid',
     'skiSchool.duration': '3 timmar',

@@ -44,9 +44,17 @@ Tack!`);
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-slate-800 mb-6">{t('skiSchool.privateLessons')}</h2>
-              <p className="text-lg text-slate-600 mb-3 text-left">
-                {t('skiSchool.description')}
-              </p>
+              <div className="space-y-4">
+                <p className="text-lg text-slate-600 text-left">
+                  {t('skiSchool.description1')}
+                </p>
+                <p className="text-lg text-slate-600 text-left">
+                  {t('skiSchool.description2')}
+                </p>
+                <p className="text-lg text-slate-600 text-left">
+                  {t('skiSchool.description3')}
+                </p>
+              </div>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-bold text-slate-800 mb-6">{t('skiSchool.details')}</h3>
