@@ -73,7 +73,7 @@ Tack!`);
                 </div>
                 <div>
                   <span className="text-blue-600 font-semibold">{t('topptur.price')}</span>
-                  <span className="text-slate-700"> - 4000 kr</span>
+                  <span className="text-slate-700"> - {t('services.price4000')}</span>
                 </div>
               </div>
             </div>
