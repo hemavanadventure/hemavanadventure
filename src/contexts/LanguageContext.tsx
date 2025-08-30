@@ -330,9 +330,8 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   
   // Determine language from URL
   const getLanguageFromPath = (pathname: string): Language => {
-    if (pathname.startsWith('/sv')) return 'sv';
     if (pathname.startsWith('/en')) return 'en';
-    return 'en'; // default to English
+    return 'sv'; // default to Swedish (no prefix)
   };
 
   const [language, setLanguageState] = useState<Language>(() => 
@@ -351,24 +350,26 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     const currentPath = location.pathname;
     let newPath: string;
 
-    // Remove existing language prefix
-    const pathWithoutLang = currentPath.replace(/^\/(en|sv)/, '') || '/';
-    
-    // Add new language prefix
-    if (pathWithoutLang === '/') {
-      newPath = `/${lang}`;
+    if (lang === 'sv') {
+      // Swedish: remove /en prefix if present
+      newPath = currentPath.replace(/^\/en/, '') || '/';
     } else {
-      newPath = `/${lang}${pathWithoutLang}`;
+      // English: add /en prefix, remove any existing /en first
+      const pathWithoutLang = currentPath.replace(/^\/en/, '') || '/';
+      newPath = pathWithoutLang === '/' ? '/en' : `/en${pathWithoutLang}`;
     }
 
     navigate(newPath, { replace: true });
   };
 
   const getLocalizedPath = (path: string): string => {
-    if (path === '/') {
-      return `/${language}`;
+    if (language === 'sv') {
+      // Swedish: no prefix
+      return path;
+    } else {
+      // English: add /en prefix
+      return path === '/' ? '/en' : `/en${path}`;
     }
-    return `/${language}${path}`;
   };
 
   const t = (key: string): string => {

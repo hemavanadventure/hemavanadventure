@@ -27,7 +27,7 @@ Tack!`);
       groupSize: t('services.oneToSixPeople'), 
       price: t('services.price6000'),
       icon: Mountain,
-      link: `/${language}/topptur-privatguide`,
+      link: language === 'sv' ? '/topptur-privatguide' : '/en/topptur-privatguide',
       image: '/lovable-uploads/ff3be564-15c6-4644-ae90-53eed59ad7bc.png'
     },
     {
@@ -37,7 +37,7 @@ Tack!`);
       groupSize: t('services.oneToSixPeople'),
       price: t('services.price6000'),
       icon: Users,
-      link: `/${language}/off-pist-guiding`,
+      link: language === 'sv' ? '/off-pist-guiding' : '/en/off-pist-guiding',
       image: '/lovable-uploads/6cd4dde1-cd38-4b06-93a0-a3d5fdaabdea.png'
     },
     {
@@ -47,7 +47,7 @@ Tack!`);
       groupSize: t('services.oneToSixPeople'),
       price: t('services.price4000'),
       icon: GraduationCap,
-      link: `/${language}/offpist-skidskola`,
+      link: language === 'sv' ? '/offpist-skidskola' : '/en/offpist-skidskola',
       image: '/lovable-uploads/6c37259e-9a62-4b1e-978f-5785c2490b3a.png'
     },
     {
@@ -57,7 +57,7 @@ Tack!`);
       groupSize: t('services.oneToSixPeople'),
       price: t('services.contactUs'),
       icon: Compass,
-      link: `/${language}/topptur-helgeland`,
+      link: language === 'sv' ? '/topptur-helgeland' : '/en/topptur-helgeland',
       image: '/lovable-uploads/859f3432-d877-4ada-971d-bf3dfeef2fa0.png'
     }
   ];

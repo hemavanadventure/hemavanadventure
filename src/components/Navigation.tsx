@@ -18,11 +18,11 @@ const Navigation = () => {
   const location = useLocation();
 
   const scrollToSection = (sectionId: string) => {
-    // Check if we're on the Index page (either root or with language prefix)
-    const isIndexPage = location.pathname === '/' || location.pathname === '/en' || location.pathname === '/sv';
+    // Check if we're on the Index page 
+    const isIndexPage = location.pathname === '/' || location.pathname === '/en';
     
     if (!isIndexPage) {
-      navigate(`/${language}`);
+      navigate(language === 'sv' ? '/' : '/en');
       // Use setTimeout to ensure navigation completes before scrolling
       setTimeout(() => {
         const element = document.getElementById(sectionId);
@@ -44,7 +44,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to={`/${language}`} className="flex items-center space-x-2">
+          <Link to={language === 'sv' ? '/' : '/en'} className="flex items-center space-x-2">
             <img 
               src="/assets/logo.png" 
               alt="Hemavan Adventure Logo" 
@@ -131,7 +131,7 @@ const Navigation = () => {
 
                 <DropdownMenuItem asChild>
                   <Link 
-                    to={`/${language}/topptur-privatguide`}
+                    to={language === 'sv' ? '/topptur-privatguide' : '/en/topptur-privatguide'}
                     className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block py-3 px-4 text-base"
                   >
                     {t('nav.toppturPrivate')}
@@ -139,7 +139,7 @@ const Navigation = () => {
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link 
-                    to={`/${language}/off-pist-guiding`}
+                    to={language === 'sv' ? '/off-pist-guiding' : '/en/off-pist-guiding'}
                     className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block py-3 px-4 text-base"
                   >
                     {t('nav.offpistPrivate')}
@@ -147,7 +147,7 @@ const Navigation = () => {
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link 
-                    to={`/${language}/offpist-skidskola`}
+                    to={language === 'sv' ? '/offpist-skidskola' : '/en/offpist-skidskola'}
                     className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block py-3 px-4 text-base"
                   >
                     {t('services.skiSchool')}
@@ -155,7 +155,7 @@ const Navigation = () => {
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link 
-                    to={`/${language}/topptur-helgeland`}
+                    to={language === 'sv' ? '/topptur-helgeland' : '/en/topptur-helgeland'}
                     className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block py-3 px-4 text-base"
                   >
                     {t('nav.toppturHelgeland')}

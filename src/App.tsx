@@ -22,28 +22,19 @@ const App = () => (
       <BrowserRouter>
         <LanguageProvider>
           <Routes>
-            {/* Redirect root to default language */}
+            {/* Swedish routes (default, no prefix) */}
             <Route path="/" element={<Index />} />
+            <Route path="/topptur-privatguide" element={<ToppturPrivatguide />} />
+            <Route path="/off-pist-guiding" element={<OffPistGuiding />} />
+            <Route path="/offpist-skidskola" element={<SkiSchool />} />
+            <Route path="/topptur-helgeland" element={<ToppturHelgeland />} />
             
-            {/* English routes */}
+            {/* English routes (with /en prefix) */}
             <Route path="/en" element={<Index />} />
             <Route path="/en/topptur-privatguide" element={<ToppturPrivatguide />} />
             <Route path="/en/off-pist-guiding" element={<OffPistGuiding />} />
             <Route path="/en/offpist-skidskola" element={<SkiSchool />} />
             <Route path="/en/topptur-helgeland" element={<ToppturHelgeland />} />
-            
-            {/* Swedish routes */}
-            <Route path="/sv" element={<Index />} />
-            <Route path="/sv/topptur-privatguide" element={<ToppturPrivatguide />} />
-            <Route path="/sv/off-pist-guiding" element={<OffPistGuiding />} />
-            <Route path="/sv/offpist-skidskola" element={<SkiSchool />} />
-            <Route path="/sv/topptur-helgeland" element={<ToppturHelgeland />} />
-            
-            {/* Legacy routes (redirect to English) */}
-            <Route path="/topptur-privatguide" element={<ToppturPrivatguide />} />
-            <Route path="/off-pist-guiding" element={<OffPistGuiding />} />
-            <Route path="/offpist-skidskola" element={<SkiSchool />} />
-            <Route path="/topptur-helgeland" element={<ToppturHelgeland />} />
             
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
