@@ -101,7 +101,7 @@ const translations = {
     'contact.namePlaceholder': 'Your name',
     'contact.emailPlaceholder': 'your@email.com',
     'contact.message': 'Message',
-    'contact.messagePlaceholder': 'Tell us about your ski touring experience and what you\'re looking for...',
+    'contact.messagePlaceholder': 'How can we help you?',
     'contact.sendButton': 'Send Message',
 
     // Topptur Privatguide page
