@@ -45,9 +45,17 @@ Tack!`);
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-slate-800 mb-6">{t('offpist.heading')}</h2>
-              <p className="text-lg text-slate-600 mb-3">
-                {t('offpist.description')}
-              </p>
+              <div className="space-y-4">
+                <p className="text-lg text-slate-600">
+                  {t('offpist.description1')}
+                </p>
+                <p className="text-lg text-slate-600">
+                  {t('offpist.description2')}
+                </p>
+                <p className="text-lg text-slate-600">
+                  {t('offpist.description3')}
+                </p>
+              </div>
               
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
