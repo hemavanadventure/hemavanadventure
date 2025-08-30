@@ -130,6 +130,7 @@ const translations = {
     'offpist.readyForSkiing': 'Ready for skiing?',
     'offpist.contactForBooking': 'Contact us to book your guide!',
     'offpist.sendMessage': 'Send message',
+    'offpist.price': '6000 sek',
 
     // Ski School page
     'skiSchool.subtitle': 'Ski school for all levels – from first turns to freeriding in terrain',
@@ -284,6 +285,7 @@ const translations = {
     'offpist.readyForSkiing': 'Redo för skidåkning?',
     'offpist.contactForBooking': 'Kontakta oss för att boka din guide!',
     'offpist.sendMessage': 'Skicka meddelande',
+    'offpist.price': '6000 kr',
 
     // Ski School page
     'skiSchool.subtitle': 'Skidskola för alla nivåer – från första svängar till friåkning i terräng',

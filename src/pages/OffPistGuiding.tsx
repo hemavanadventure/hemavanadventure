@@ -75,7 +75,7 @@ Tack!`);
                 </div>
                 <div>
                   <span className="text-slate-600 font-semibold">{t('topptur.price')}</span>
-                  <span className="text-slate-700"> - 6000 sek</span>
+                  <span className="text-slate-700"> - {t('offpist.price')}</span>
                 </div>
               </div>
             </div>
