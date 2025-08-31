@@ -60,13 +60,9 @@ const About = () => {
                 {t('about.discoverDesc2')}
               </p>
             </div>
-            <div className="relative rounded-xl h-64 bg-cover bg-center bg-no-repeat" style={{
+            <div className="rounded-xl h-64 bg-cover bg-center bg-no-repeat" style={{
             backgroundImage: `url('/lovable-uploads/337c4cba-b3f2-4478-b8b3-b7729ff3c07b.png')`
-          }}>
-              <div className="absolute bottom-2 right-2 text-xs text-white/80 bg-black/30 px-2 py-1 rounded">
-                Foto: Sam Hedman
-              </div>
-            </div>
+          }}></div>
           </div>
         </div>
       </div>

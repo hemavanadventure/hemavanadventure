@@ -60,6 +60,9 @@ const Footer = () => {
           <p className="text-slate-400">
             {t('footer.copyright')}
           </p>
+          <p className="text-slate-500 text-sm mt-2">
+            Foto: Sam Hedman
+          </p>
         </div>
       </div>
     </footer>
