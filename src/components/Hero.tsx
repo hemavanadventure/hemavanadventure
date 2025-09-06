@@ -29,7 +29,7 @@ const Hero = () => {
             className="h-32 md:h-40 w-auto mb-4"
           />
         </div>
-        <p className="mb-8 text-blue-100 font-oswald font-light leading-relaxed" style={{ fontSize: '50px' }}>
+        <p className="mb-8 text-blue-100 font-oswald font-light leading-relaxed" style={{ fontSize: 'clamp(24px, 5vw, 50px)' }}>
           {t('hero.subtitle2')}
         </p>
         <div className="flex items-center justify-center text-lg text-blue-200 mb-12">
