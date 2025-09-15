@@ -17,13 +17,13 @@ function setupEnglishRoutes() {
     fs.mkdirSync(enPath, { recursive: true });
   }
   
-  // Copy index-en.html to dist/en/index.html
-  const englishHtmlSource = path.join(__dirname, '..', 'index-en.html');
+  // Copy built en.html to dist/en/index.html
+  const englishHtmlSource = path.join(distPath, 'en.html');
   const englishHtmlDest = path.join(enPath, 'index.html');
   
   if (fs.existsSync(englishHtmlSource)) {
     fs.copyFileSync(englishHtmlSource, englishHtmlDest);
-    console.log('✓ English HTML file copied to dist/en/index.html');
+    console.log('✓ Built English page copied to dist/en/index.html');
   }
   
   // Create a simple redirect for /en routes in GitHub Pages
