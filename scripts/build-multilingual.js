@@ -17,13 +17,22 @@ function setupEnglishRoutes() {
     fs.mkdirSync(enPath, { recursive: true });
   }
   
-  // Copy built en.html to dist/en/index.html
-  const englishHtmlSource = path.join(distPath, 'en.html');
+  // Prefer the built en.html, fallback to the repo source index-en.html
+  const builtEnHtml = path.join(distPath, 'en.html');
+  const sourceEnHtml = path.join(__dirname, '..', 'index-en.html');
   const englishHtmlDest = path.join(enPath, 'index.html');
-  
-  if (fs.existsSync(englishHtmlSource)) {
-    fs.copyFileSync(englishHtmlSource, englishHtmlDest);
-    console.log('✓ Built English page copied to dist/en/index.html');
+
+  let copied = false;
+  if (fs.existsSync(builtEnHtml)) {
+    fs.copyFileSync(builtEnHtml, englishHtmlDest);
+    copied = true;
+    console.log('✓ Copied built en.html → dist/en/index.html');
+  } else if (fs.existsSync(sourceEnHtml)) {
+    fs.copyFileSync(sourceEnHtml, englishHtmlDest);
+    copied = true;
+    console.log('✓ Copied source index-en.html → dist/en/index.html');
+  } else {
+    console.warn('⚠️ No English HTML source found. Skipping copy.');
   }
   
   // Create a simple redirect for /en routes in GitHub Pages
@@ -37,12 +46,17 @@ function setupEnglishRoutes() {
     </script>
   `;
   
-  // Add redirect script to the English HTML
-  let englishHtml = fs.readFileSync(englishHtmlDest, 'utf8');
-  englishHtml = englishHtml.replace('</head>', redirectScript + '\n  </head>');
-  fs.writeFileSync(englishHtmlDest, englishHtml);
-  
-  console.log('✓ Multilingual build setup complete');
+  // Add redirect script to the English HTML if it exists
+  if (fs.existsSync(englishHtmlDest)) {
+    let englishHtml = fs.readFileSync(englishHtmlDest, 'utf8');
+    if (!englishHtml.includes('Redirect to base path but preserve the /en prefix')) {
+      englishHtml = englishHtml.replace('</head>', redirectScript + '\n  </head>');
+      fs.writeFileSync(englishHtmlDest, englishHtml);
+    }
+    console.log('✓ Multilingual build setup complete');
+  } else if (copied) {
+    console.warn('⚠️ dist/en/index.html not found after copy. Skipping redirect injection.');
+  }
 }
 
 setupEnglishRoutes();
