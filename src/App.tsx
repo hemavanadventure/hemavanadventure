@@ -37,7 +37,6 @@ const App = () => (
             <Route path="/en/topptur-helgeland" element={<ToppturHelgeland />} />
             
             {/* Legacy routes for backwards compatibility */}
-            <Route path="/offpist-skidskola" element={<SkiSchool />} />
             <Route path="/en/offpist-skidskola" element={<SkiSchool />} />
             
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
