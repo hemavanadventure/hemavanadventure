@@ -45,9 +45,9 @@ jobs:
           echo "✓ Copied prerendered pages (kept dist/index.html and dist/en/index.html)"
           # Remove any dev-only script tags that reference source files
           if command -v grep >/dev/null; then
-            MATCHED_FILES=$(grep -rl "/src/main.tsx" dist || true)
+            MATCHED_FILES=$(grep -rl "src/main.tsx" dist || true)
             if [ -n "$MATCHED_FILES" ]; then
-              echo "$MATCHED_FILES" | xargs sed -i '/src\\/main\\.tsx/d'
+              echo "$MATCHED_FILES" | xargs sed -i '\|src/main\.tsx|d'
               echo "✓ Removed dev script tags from prerendered pages"
             fi
           fi
