@@ -36,11 +36,21 @@ jobs:
       - name: Setup multilingual files
         run: node scripts/build-multilingual.js
 
-      - name: Copy static pages for SEO
+      - name: Copy prerendered pages for SEO (without overwriting SPA entry)
         run: |
-          # Copy all static HTML pages from public-pages to dist for Google indexing
-          cp -r public-pages/* dist/
-          echo "✓ Copied static pages for SEO indexing"
+          # Ensure dist exists
+          mkdir -p dist
+          # Copy everything from public-pages except the root index.html and /en/index.html
+          rsync -av public-pages/ dist/ --exclude '/index.html' --exclude '/en/index.html'
+          echo "✓ Copied prerendered pages (kept dist/index.html and dist/en/index.html)"
+          # Remove any dev-only script tags that reference source files
+          if command -v grep >/dev/null; then
+            MATCHED_FILES=$(grep -rl "/src/main.tsx" dist || true)
+            if [ -n "$MATCHED_FILES" ]; then
+              echo "$MATCHED_FILES" | xargs sed -i '/src\\/main\\.tsx/d'
+              echo "✓ Removed dev script tags from prerendered pages"
+            fi
+          fi
 
       - name: Create .nojekyll file
         run: touch dist/.nojekyll
