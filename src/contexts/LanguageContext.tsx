@@ -334,14 +334,18 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     return 'sv'; // default to Swedish (no prefix)
   };
 
-  const [language, setLanguageState] = useState<Language>(() => 
-    getLanguageFromPath(location.pathname)
-  );
+  const [language, setLanguageState] = useState<Language>(() => {
+    const lang = getLanguageFromPath(location.pathname);
+    console.log('Initial language detection:', lang, 'for path:', location.pathname);
+    return lang;
+  });
 
   // Update language when URL changes
   useEffect(() => {
     const newLanguage = getLanguageFromPath(location.pathname);
+    console.log('URL changed - detected language:', newLanguage, 'for path:', location.pathname);
     if (newLanguage !== language) {
+      console.log('Updating language from', language, 'to', newLanguage);
       setLanguageState(newLanguage);
     }
   }, [location.pathname]); // Remove language from dependency array

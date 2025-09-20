@@ -3,7 +3,8 @@ import { MapPin } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Hero = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  console.log('Hero component rendering with language:', language);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
