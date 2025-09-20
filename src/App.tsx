@@ -26,15 +26,19 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/topptur-privatguide" element={<ToppturPrivatguide />} />
             <Route path="/off-pist-guiding" element={<OffPistGuiding />} />
-            <Route path="/offpist-skidskola" element={<SkiSchool />} />
+            <Route path="/ski-school" element={<SkiSchool />} />
             <Route path="/topptur-helgeland" element={<ToppturHelgeland />} />
             
             {/* English routes (with /en prefix) */}
             <Route path="/en" element={<Index />} />
             <Route path="/en/topptur-privatguide" element={<ToppturPrivatguide />} />
             <Route path="/en/off-pist-guiding" element={<OffPistGuiding />} />
-            <Route path="/en/offpist-skidskola" element={<SkiSchool />} />
+            <Route path="/en/ski-school" element={<SkiSchool />} />
             <Route path="/en/topptur-helgeland" element={<ToppturHelgeland />} />
+            
+            {/* Legacy routes for backwards compatibility */}
+            <Route path="/offpist-skidskola" element={<SkiSchool />} />
+            <Route path="/en/offpist-skidskola" element={<SkiSchool />} />
             
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
