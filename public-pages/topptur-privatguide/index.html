@@ -1,24 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="sv">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Topptur Privatguide - Hemavan Adventure</title>
+    <title>Topptur Privatguide – Hemavan Adventure</title>
     <meta name="description" content="Privat topptur guide i Hemavan. Skräddarsydda bergsäventyr med personlig guide för dig och din grupp." />
     <meta name="author" content="Hemavan Adventure" />
-    <meta name="keywords" content="topptur, privatguide, personlig guide, Hemavan, bergstur, skidåkning" />
-    
-    <link rel="canonical" href="https://hemavanadventure.com/topptur-privatguide/" />
-    <link rel="alternate" hreflang="en" href="https://hemavanadventure.com/en/topptur-privatguide/" />
-    <link rel="alternate" hreflang="sv" href="https://hemavanadventure.com/topptur-privatguide/" />
-    
-    <meta property="og:title" content="Topptur Privatguide - Hemavan Adventure" />
-    <meta property="og:description" content="Privat topptur guide med skräddarsydda bergsäventyr i Hemavan" />
-    <meta property="og:image" content="https://hemavanadventure.com/og-image.jpg" />
-    <meta property="og:url" content="https://hemavanadventure.com/topptur-privatguide/" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://hemavanadventure.se/topptur-privatguide/" />
+    <link rel="alternate" hreflang="sv" href="https://hemavanadventure.se/topptur-privatguide/" />
+    <link rel="alternate" hreflang="en" href="https://hemavanadventure.se/en/topptur-privatguide/" />
+    <link rel="alternate" hreflang="x-default" href="https://hemavanadventure.se/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Topptur Privatguide – Hemavan Adventure" />
+    <meta property="og:description" content="Privat topptur guide med skräddarsydda bergsäventyr i Hemavan. Personlig guiding för dig och din grupp." />
+    <meta property="og:image" content="https://hemavanadventure.se/og-image.jpg" />
+    <meta property="og:url" content="https://hemavanadventure.se/topptur-privatguide/" />
     <meta property="og:type" content="website" />
-    
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Topptur Privatguide – Hemavan Adventure" />
+    <meta name="twitter:description" content="Privat topptur guide med skräddarsydda bergsäventyr i Hemavan." />
+    <meta name="twitter:image" content="https://hemavanadventure.se/og-image.jpg" />
+
+    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -27,16 +35,43 @@
       "description": "Privat topptur guide med skräddarsydda bergsäventyr",
       "provider": {
         "@type": "Organization",
-        "name": "Hemavan Adventure"
-      }
+        "name": "Hemavan Adventure",
+        "url": "https://hemavanadventure.se",
+        "telephone": "+46701234567"
+      },
+      "areaServed": "Hemavan",
+      "serviceType": "Private Ski Touring"
     }
     </script>
-    
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/logo.png" type="image/png">
+
+    <!-- Base path -->
+    <base href="/" />
+    
+    <!-- Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
   </head>
+
   <body>
+    <h1>Topptur Privatguide – Hemavan Adventure</h1>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

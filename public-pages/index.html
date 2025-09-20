@@ -1,44 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="sv">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hemavan Adventure - Skidåkning, Toppturer och Äventyr i Hemavan</title>
-    <meta name="description" content="Upptäck Hemavan med våra professionella guider. Skidåkning, toppturer, off-pist guiding och skidskola. Boka ditt äventyr idag!" />
+    <title>Hemavan Adventure – Guidade toppturer, offpist & lavinkurser</title>
+    <meta name="description" content="Guidade toppturer, offpist och lavinkurser i Hemavan. Certifierade fjälledare för trygg och personlig fjällupplevelse." />
     <meta name="author" content="Hemavan Adventure" />
-    <meta name="keywords" content="Hemavan, skidåkning, toppturer, off-pist, skidskola, äventyr, guide, Lappland" />
-    
-    <link rel="canonical" href="https://hemavanadventure.com/" />
-    <link rel="alternate" hreflang="en" href="https://hemavanadventure.com/en/" />
-    <link rel="alternate" hreflang="sv" href="https://hemavanadventure.com/" />
-    
-    <meta property="og:title" content="Hemavan Adventure - Skidåkning och Äventyr" />
-    <meta property="og:description" content="Professionell guiding för skidåkning, toppturer och off-pist äventyr i Hemavan" />
-    <meta property="og:image" content="https://hemavanadventure.com/og-image.jpg" />
-    <meta property="og:url" content="https://hemavanadventure.com/" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://hemavanadventure.se/" />
+    <link rel="alternate" hreflang="sv" href="https://hemavanadventure.se/" />
+    <link rel="alternate" hreflang="en" href="https://hemavanadventure.se/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://hemavanadventure.se/" />
+
+
+    <!-- Open Graph (Facebook, LinkedIn m.fl.) -->
+    <meta property="og:title" content="Hemavan Adventure – Guidade toppturer och lavinkurser i Hemavan" />
+    <meta property="og:description" content="Certifierade fjälledare erbjuder toppturer, offpistguidning, lavinkurser och skidskola i Hemavan. För alla nivåer – tryggt och personligt." />
+    <meta property="og:image" content="https://hemavanadventure.se/og-image.jpg" />
+    <meta property="og:url" content="https://hemavanadventure.se/" />
     <meta property="og:type" content="website" />
-    
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hemavan Adventure – Fjälledare för toppturer och lavinsäkerhet" />
+    <meta name="twitter:description" content="Toppturer, skidskola och lavinkurser i Hemavan med erfarna guider. Din fjällupplevelse börjar här." />
+    <meta name="twitter:image" content="https://hemavanadventure.se/og-image.jpg" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsActivityLocation",
+      "name": "Hemavan Adventure",
+      "image": "https://hemavanadventure.se/og-image.jpg",
+      "url": "https://hemavanadventure.se",
+      "telephone": "+46701234567",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Centrumvägen 1",
+        "addressLocality": "Hemavan",
+        "postalCode": "92066",
+        "addressCountry": "SE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 65.819,
+        "longitude": 15.084
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
+            "Saturday", "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "description": "Guidade toppturer, offpist, lavinkurser och fjälledartjänster i Hemavan. Boka din vinterupplevelse med erfarna guider.",
+      "priceRange": "SEK 500–2500",
+      "sameAs": [
+        "https://www.instagram.com/hemavanadventure",
+        "https://www.facebook.com/hemavanadventure"
+      ]
+    }
+    </script>
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Hemavan Adventure",
-      "url": "https://hemavanadventure.com",
-      "description": "Professionell guiding för skidåkning, toppturer och off-pist äventyr i Hemavan",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Hemavan",
-        "addressCountry": "Sweden"
+      "url": "https://hemavanadventure.se",
+      "logo": "https://hemavanadventure.se/og-image.jpg",
+      "sameAs": [
+        "https://www.instagram.com/hemavanadventure",
+        "https://www.facebook.com/hemavanadventure"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+46701234567",
+        "contactType": "Customer Service",
+        "areaServed": "SE",
+        "availableLanguage": ["Swedish", "English"]
       }
     }
     </script>
-    
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/logo.png" type="image/png">
+
+    <!-- Base path -->
+    <base href="/" />
+    
+    <!-- Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
   </head>
+
   <body>
+    <h1>Hemavan Adventure – Fjälledare & guidade äventyr i fjällen</h1>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

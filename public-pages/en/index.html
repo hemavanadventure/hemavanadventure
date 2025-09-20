@@ -1,43 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hemavan Adventure - Skiing, Peak Tours and Adventures in Hemavan</title>
-    <meta name="description" content="Discover Hemavan with our professional guides. Skiing, peak tours, off-piste guiding and ski school. Book your adventure today!" />
+    <title>Hemavan Adventure – Guided ski touring, off-piste & avalanche courses</title>
+    <meta name="description" content="Guided ski touring, off-piste skiing and avalanche courses in Hemavan. Certified mountain guides for safe and personal mountain experiences." />
     <meta name="author" content="Hemavan Adventure" />
-    <meta name="keywords" content="Hemavan, skiing, peak tours, off-piste, ski school, adventure, guide, Lapland" />
-    
-    <link rel="canonical" href="https://hemavanadventure.com/en/" />
-    <link rel="alternate" hreflang="en" href="https://hemavanadventure.com/en/" />
-    <link rel="alternate" hreflang="sv" href="https://hemavanadventure.com/" />
-    
-    <meta property="og:title" content="Hemavan Adventure - Skiing and Adventures" />
-    <meta property="og:description" content="Professional guiding for skiing, peak tours and off-piste adventures in Hemavan" />
-    <meta property="og:image" content="https://hemavanadventure.com/og-image.jpg" />
-    <meta property="og:url" content="https://hemavanadventure.com/en/" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://hemavanadventure.se/en/" />
+    <link rel="alternate" hreflang="sv" href="https://hemavanadventure.se/" />
+    <link rel="alternate" hreflang="en" href="https://hemavanadventure.se/en/" />
+    <link rel="alternate" hreflang="x-default" href="https://hemavanadventure.se/" />
+
+
+    <!-- Open Graph (Facebook, LinkedIn etc.) -->
+    <meta property="og:title" content="Hemavan Adventure – Guided ski touring and avalanche courses in Hemavan" />
+    <meta property="og:description" content="Certified mountain guides offering ski touring, off-piste guiding, avalanche courses and ski school in Hemavan. For all levels – safe and personal." />
+    <meta property="og:image" content="https://hemavanadventure.se/og-image.jpg" />
+    <meta property="og:url" content="https://hemavanadventure.se/en/" />
     <meta property="og:type" content="website" />
-    
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Hemavan Adventure – Mountain guides for ski touring and avalanche safety" />
+    <meta name="twitter:description" content="Ski touring, ski school and avalanche courses in Hemavan with experienced guides. Your mountain experience starts here." />
+    <meta name="twitter:image" content="https://hemavanadventure.se/og-image.jpg" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsActivityLocation",
+      "name": "Hemavan Adventure",
+      "image": "https://hemavanadventure.se/og-image.jpg",
+      "url": "https://hemavanadventure.se/en",
+      "telephone": "+46701234567",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Centrumvägen 1",
+        "addressLocality": "Hemavan",
+        "postalCode": "92066",
+        "addressCountry": "SE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 65.819,
+        "longitude": 15.084
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
+            "Saturday", "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "description": "Guided ski touring, off-piste, avalanche courses and mountain guide services in Hemavan. Book your winter experience with experienced guides.",
+      "priceRange": "SEK 500–2500",
+      "sameAs": [
+        "https://www.instagram.com/hemavanadventure",
+        "https://www.facebook.com/hemavanadventure"
+      ]
+    }
+    </script>
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Hemavan Adventure",
-      "url": "https://hemavanadventure.com",
-      "description": "Professional guiding for skiing, peak tours and off-piste adventures in Hemavan",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Hemavan",
-        "addressCountry": "Sweden"
+      "url": "https://hemavanadventure.se/en",
+      "logo": "https://hemavanadventure.se/og-image.jpg",
+      "sameAs": [
+        "https://www.instagram.com/hemavanadventure",
+        "https://www.facebook.com/hemavanadventure"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+46701234567",
+        "contactType": "Customer Service",
+        "areaServed": "SE",
+        "availableLanguage": ["Swedish", "English"]
       }
     }
     </script>
-    
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/logo.png" type="image/png">
+
+    <!-- Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>

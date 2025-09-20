@@ -1,24 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="sv">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skidskola - Hemavan Adventure</title>
-    <meta name="description" content="Professionell skidskola i Hemavan. Privatlektioner för alla nivåer. Lär dig åka skidor med våra erfarna instruktörer." />
+    <title>Skidskola – Hemavan Adventure</title>
+    <meta name="description" content="Professionell skidskola i Hemavan. Privatlektioner för alla nivåer med certifierade instruktörer. Trygg och personlig skidundervisning." />
     <meta name="author" content="Hemavan Adventure" />
-    <meta name="keywords" content="skidskola, privatlektioner, skidlektioner, Hemavan, skidåkning, instruktör" />
-    
-    <link rel="canonical" href="https://hemavanadventure.com/ski-school/" />
-    <link rel="alternate" hreflang="en" href="https://hemavanadventure.com/en/ski-school/" />
-    <link rel="alternate" hreflang="sv" href="https://hemavanadventure.com/ski-school/" />
-    
-    <meta property="og:title" content="Skidskola - Hemavan Adventure" />
-    <meta property="og:description" content="Professionell skidskola med privatlektioner för alla nivåer i Hemavan" />
-    <meta property="og:image" content="https://hemavanadventure.com/og-image.jpg" />
-    <meta property="og:url" content="https://hemavanadventure.com/ski-school/" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://hemavanadventure.se/ski-school/" />
+    <link rel="alternate" hreflang="sv" href="https://hemavanadventure.se/ski-school/" />
+    <link rel="alternate" hreflang="en" href="https://hemavanadventure.se/en/ski-school/" />
+    <link rel="alternate" hreflang="x-default" href="https://hemavanadventure.se/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Skidskola – Hemavan Adventure" />
+    <meta property="og:description" content="Professionell skidskola med privatlektioner för alla nivåer i Hemavan. Certifierade instruktörer för trygg skidundervisning." />
+    <meta property="og:image" content="https://hemavanadventure.se/og-image.jpg" />
+    <meta property="og:url" content="https://hemavanadventure.se/ski-school/" />
     <meta property="og:type" content="website" />
-    
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Skidskola – Hemavan Adventure" />
+    <meta name="twitter:description" content="Professionell skidskola med privatlektioner för alla nivåer i Hemavan." />
+    <meta name="twitter:image" content="https://hemavanadventure.se/og-image.jpg" />
+
+    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -27,16 +35,43 @@
       "description": "Professionell skidskola med privatlektioner för alla nivåer",
       "provider": {
         "@type": "Organization",
-        "name": "Hemavan Adventure"
-      }
+        "name": "Hemavan Adventure",
+        "url": "https://hemavanadventure.se",
+        "telephone": "+46701234567"
+      },
+      "areaServed": "Hemavan",
+      "serviceType": "Ski School"
     }
     </script>
-    
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/logo.png" type="image/png">
+
+    <!-- Base path -->
+    <base href="/" />
+    
+    <!-- Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
   </head>
+
   <body>
+    <h1>Skidskola – Hemavan Adventure</h1>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
