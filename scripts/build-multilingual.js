@@ -17,8 +17,8 @@ function setupEnglishRoutes() {
     fs.mkdirSync(enPath, { recursive: true });
   }
   
-  // Prefer the built en.html, fallback to the repo source index-en.html
-  const builtEnHtml = path.join(distPath, 'en.html');
+  // Prefer the built index-en.html, fallback to the repo source index-en.html
+  const builtEnHtml = path.join(distPath, 'index-en.html');
   const sourceEnHtml = path.join(__dirname, '..', 'index-en.html');
   const englishHtmlDest = path.join(enPath, 'index.html');
 
