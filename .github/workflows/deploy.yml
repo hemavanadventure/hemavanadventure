@@ -53,7 +53,7 @@ jobs:
           fi
 
       - name: Inject SPA assets into prerendered pages
-        run: node scripts/inject-spa-assets.js
+        run: node scripts/inject-spa-assets.cjs
 
       - name: Create .nojekyll file
         run: touch dist/.nojekyll
