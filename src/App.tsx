@@ -26,7 +26,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/topptur-privatguide" element={<ToppturPrivatguide />} />
             <Route path="/off-pist-guiding" element={<OffPistGuiding />} />
-            <Route path="/ski-school" element={<SkiSchool />} />
+            <Route path="/offpist-skidskola" element={<SkiSchool />} />
             <Route path="/topptur-helgeland" element={<ToppturHelgeland />} />
             
             {/* English routes (with /en prefix) */}
