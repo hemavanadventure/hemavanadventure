@@ -5,8 +5,8 @@ This folder contains static HTML files for each page/route to help with Google i
 ## Structure
 - `/` - Main Swedish homepage
 - `/en/` - English homepage  
-- `/ski-school/` - Swedish ski school page
-- `/en/ski-school/` - English ski school page
+- `/offpist-skidskola/` - Swedish ski school page
+- `/en/offpist-skidskola/` - English ski school page
 - `/off-pist-guiding/` - Swedish off-piste page
 - `/en/off-pist-guiding/` - English off-piste page
 - `/topptur-helgeland/` - Swedish Helgeland tour page
