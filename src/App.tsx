@@ -33,7 +33,7 @@ const App = () => (
             <Route path="/en" element={<Index />} />
             <Route path="/en/topptur-privatguide" element={<ToppturPrivatguide />} />
             <Route path="/en/off-pist-guiding" element={<OffPistGuiding />} />
-            <Route path="/en/ski-school" element={<SkiSchool />} />
+            <Route path="/en/offpist-skidskola"" element={<SkiSchool />} />
             <Route path="/en/topptur-helgeland" element={<ToppturHelgeland />} />
             
             {/* Legacy routes for backwards compatibility */}
