@@ -147,7 +147,7 @@ const Navigation = () => {
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link 
-                    to={language === 'sv' ? '/offpist-skidskola' : '/en/ski-school'}
+                    to={language === 'sv' ? '/offpist-skidskola' : '/en/offpist-skidskola'}
                     className="cursor-pointer text-slate-600 hover:text-blue-600 hover:bg-slate-50 w-full block py-3 px-4 text-base"
                   >
                     {t('services.skiSchool')}
