@@ -47,7 +47,7 @@ Tack!`);
       groupSize: t('services.oneToSixPeople'),
       price: t('services.price4000'),
       icon: GraduationCap,
-      link: language === 'sv' ? '/offpist-skidskola' : '/en/ski-school',
+      link: language === 'sv' ? '/offpist-skidskola' : '/en/offpist-skidskola',
       image: '/lovable-uploads/6c37259e-9a62-4b1e-978f-5785c2490b3a.png'
     },
     {
